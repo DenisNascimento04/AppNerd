@@ -1,0 +1,1877 @@
+{
+    "personagensMarvel": [
+        {
+            "id": 0,
+            "corPri": "#39BD2C",
+            "corSec": "#7D3C98",
+            "tipoP": "Heroi",
+            "tags": [
+                "Heroi",
+                "Vingadores",
+                "Humano",
+                "Modificado"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk_teste.png?alt=media&token=1657ef37-59af-4a2d-bafd-43313da4fdbc",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_hulk.png?alt=media&token=a6804a54-f358-4549-9944-2524c416f5f6",
+            "wallpaper": "https://img.elo7.com.br/product/original/1081B0E/painel-hulk-g-frete-gratis-hulk.jpg",
+            "nomeHeroi": "Hulk",
+            "nome": "Bruce Banner",
+            "desc": "O Hulk, por vezes referido como O Incrível Hulk, é conhecido pelo sua força 'vitualmente' ilimitada e seu temperamento explosivo.",
+            "PA": "The Incredible Hulk #1 (Março, 1962)",
+            "altura": "1,78cm até 2,44cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Força 'Virtualmente' Ilimitada",
+                "Super Velocidade",
+                "Regereneração",
+                "Super Resitencia",
+                "Pele Impenetravel",
+                "Intecto: Gênio"
+            ],
+            "sinopse": [
+                "Bruce é uma das maiores mentes da Terra e o maior expecialista em radiação Gama do mundo, na tentativa de replicar o soro do super soldado do Capitão América, foi exposto a formula e a uma quantidade enorme de radiação Gama, porém ao envés de morre adquiriu um monstro verde que quanto mais raiva tem mais forte fica."
+            ],
+            "imagens": [
+                "https://www.nerdsite.com.br/wp-content/uploads/2019/11/hulk.png",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/06/201591235859-hulk.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/11/Hulk.jpg",
+                "http://1.bp.blogspot.com/-Dvx-1kDsYGg/VXsOinqpS8I/AAAAAAAALlM/2hpDZKHU1GI/s1600/1hulkfinal.jpg",
+                "https://quadrinheiros.files.wordpress.com/2013/09/robert_bruce_banner_earth-616.jpg?w=584"
+            ],
+            "criadores": [
+                {
+                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "nome": "Stan Lee"
+                },
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BMjY5MTkyNDctMTc1Zi00NTcwLWEzZWYtOWVjZjRkMzIxMmI3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+                    "nome": "Jake Kirby"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 10
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 8
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 4
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 10
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 9
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 6
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "padrão"
+        },
+        {
+            "id": 1,
+            "corPri": "#EC2008",
+            "corSec": "#EC2008",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-aranha.png?alt=media&token=ea2f55bc-7233-48fe-8728-5fb0039b5eae",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo.png?alt=media&token=3b03142f-292a-4ae3-b1c7-a70ed27afafb",
+            "wallpaper": "https://http2.mlstatic.com/D_NQ_NP_882768-MLB26681350985_012018-O.jpg",
+            "nomeHeroi": "Homem Aranha",
+            "nome": "Peter Parker",
+            "desc": "O querido e amado amigo da vizinhança, um dos heroís mais mais famosos entre os jovens justamente por ser um pesonagem jovem.",
+            "PA": "Amazing Fantasy #15 (Agosto de 1962)",
+            "altura": "1,77cm",
+            "tags": [
+                "Heroi",
+                "Humano",
+                "Urbano",
+                "Aranha",
+                "Modificado"
+            ],
+            "poderes": [
+                "Intelecto: Gênio",
+                "Super Força",
+                "Super Agilidade",
+                "Super Resistência",
+                "Sentidos Ampliados",
+                "Teias",
+                "Habilidade de Luta",
+                "Grudar em Superficies",
+                "Alerta de Perigo(Sentido Aranha)",
+                "Tecnologias Avançadas"
+            ],
+            "sinopse": [
+                "Peter Parker era apenas um garoto quieto e inteligente que sofria bullyng na escola, ninguém imaginaria que se tornaria uma dos maiores herois do mundo, o apelido de 'Amigão da Vizinhaça' não é em vão, uma da melhores coisas deste personagem é os problemas de consiliar a vida de heroi com a de adolecente, entre outros problemas que tornam sua vida ainda mais antrativa.",
+                "Como se sua habilidades sobre-humanas já não fossem o bastante, Peter tem um intelecto incrivel, sendo uma das pessoas mais inteligente do mundo, isso é demonstrado atráves das ferramentas que utiliza como Homem-Aranha como os lançadores de teias, pois até mesmo Tony Stark ficou intrigado com a tecnologia quando viu pela primeira vez."
+            ],
+            "imagens": [
+                "https://www.proibidoler.com/wp-content/uploads/2014/11/ASM-9-SL.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/cropped-Homem-Aranha-1-3.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-SGEDDON2018000cov.0.jpg",
+                "http://images.universohq.com//2014/01/AmazingSpiderMan01_des.jpg",
+                "https://cinemacomrapadura.com.br/imagens/2019/07/20190729-homem-aranha-cacado.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "nome": "Stan Lee"
+                },
+                {
+                    "image": "https://s2.glbimg.com/J65haVmGIHOMF3Im9ESLR_-gEUk=/e.glbimg.com/og/ed/f/original/2018/07/09/steven_1.jpg",
+                    "nome": "Steve Ditko"
+                },
+                {
+                    "image": "https://br.web.img3.acsta.net/pictures/19/09/11/01/26/3658781.jpg",
+                    "nome": "Gerard Way"
+                },
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BMDVjNDE3ZmUtYmY3NC00ZjM4LThlOWEtYzdiYTQzZjExNzM2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+                    "nome": "Kaare Andrews"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "Infância",
+                    "text": [
+                        "Os pais de Peter eram Richard e Mary Parker, Richard é uma pesquisador de genética avançada e um pai zelozo, Mary uma otima mãe e muito carinhosa. Devido a um acidente, os pais de Peter morreram quando ele era pequeno, devido a isso foi criado pelos tios Ben e May Parker.",
+                        "Puxando o intelecto de seu pai, Peter cresceu se destacando na escola, porém o fez ser alvo de bulling e crescer quase sem amigos. Mesmo sendo considerado o esqusito da escola alimentou uma paixão por Mary Jane Watson, a garota mais bonita e popular, em parte por sua beleza e em parte por ser o o completo oposto de Peter socialmente."
+                    ]
+                },
+                {
+                    "title": "Crescendo",
+                    "text": [
+                        "Conforme ficava mais velho seu Tio Ben influênciava Peter a ter mais responsabilidade, passou trabalhar em alguns serviços como entragdor de jornal, entregador de pizza, entre outros.",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 7
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 5
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 7
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 5
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "padrão"
+        },
+        {
+            "id": 2,
+            "corPri": "#FFC300",
+            "corSec": "#FFC300",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Firon-man.png?alt=media&token=bbb5fae1-a457-487c-9322-4cfeaf0c24bb",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_ironman.png?alt=media&token=dea1fdc7-dcba-4c0f-8b63-54601338893e",
+            "wallpaper": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/07/homem-de-ferro-1200x900-1.jpg",
+            "nomeHeroi": "Homem de Ferro",
+            "nome": "Tony Stark",
+            "desc": "Um dos maiores gênios das ficções, playboy, milionário e filantropo tem mais armaduras incrivelmente tecnogicas do que você tem camisas.",
+            "PA": "Tales of Suspense #39 (Março de 1963)",
+            "altura": "1,75cm",
+            "tags": [
+                "Heroi",
+                "Vingadores",
+                "Humano",
+                "Iluminates"
+            ],
+            "poderes": [
+                "Intelecto: Gênio",
+                "Visão de 360º",
+                "Disparo de Energia",
+                "Tecnologia Avançada",
+                "Extremis",
+                "Arsenal",
+                "Armaduras Personalizadas"
+            ],
+            "sinopse": [
+                "Tony Stark é um dos maiores gênios das ficções sendo capaz de rivalizar com outros grande nomes como Bruce Banner e  Reed Richards, é um dos heroris mais importantes e famosos nos dias de hoje devido aos filmes da Marvel, onde foi interpretado por Robert Downey Jr.",
+                "Stark usa de seu dinheiro e intelecto para criar armaduras muito poderosas e cada vez mais tecnologicas com o tempo, indo de sua primeira armadura feita com praticamente lixo até armaduras com nanotecnologia e e com metal Uru."
+            ],
+            "imagens": [
+                "https://t.ctcdn.com.br/vzQ04a8buhrU8Wqkr4jVgfCbZ6Y=/1244x700/smart/i388036.jpeg",
+                "https://www.einerd.com.br/wp-content/uploads/2019/09/Homem-de-Ferro-poss%C3%ADvel-morte-quadrinhos-capa.jpg",
+                "https://uploads.jovemnerd.com.br/wp-content/uploads/2018/03/homem-de-ferro-920x544.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2018/03/legiao_8eFuIR6zVB1C9m_4yhi2tvGJQnbrAPWdT7YfaqXEU5.png.jpeg",
+                "https://ovicio.com.br/wp-content/uploads/2020/07/20200703-iron-man2020.png"
+            ],
+            "criadores": [
+                {
+                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "nome": "Stan Lee"
+                },
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BMjY5MTkyNDctMTc1Zi00NTcwLWEzZWYtOWVjZjRkMzIxMmI3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+                    "nome": "Jake Kirby"
+                },
+                {
+                    "image": "https://s3.amazonaws.com/comicgeeks/people/avatars/2862.jpg?t=1615902206",
+                    "nome": "Don Heck"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Larry-Lieber-2012.jpg",
+                    "nome": "Larry Lieber"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "Infância",
+                    "text": [
+                        "Stark teve uma infância conturbada, tendo uma péssima convivencia com seu pai e devido a isso foi mandado para um internato com apenas 6 anos. No internato se destacou muito facil na escola estando no ensino médio ainda criança, porém não parou por ai, com 15 anos entrou para o MIT realizando mais de uma graduação de alto nivel ao mesmo tempo provando ainda mais sua genialidade.",
+                        "No MIT conheceu algumas grandes figuras do universo Marvel como Bruce Banner, como jovens de grandes intelectos foram convidados a participar da Conferência de Pensamentos Avançados ('Forward Thought Conference), onde se conhceram, e nesse dia nasceu uma grande rivalidade científica."
+                    ]
+                },
+                {
+                    "title": "Amor e Revelações",
+                    "text": [
+                        "Após o MIT Tony entrou para a Universiade de Cambridge, na inglaterra, onde conheceu uma jovem chamada Cassandra, na primeira vez que se viram uma pequena paixão surgiu Tony á salvou de um grupo de agentes da Hydra, onde também foi seu primeiro contato com a Hydra. Com isso Tony descobre que Cassandra é filha de uma grande traficante de armas que seria rival de seu pai no ramo, após saber disso Howard (pai de Tony) o leva a força devolta para os Estados Unidos encerrando a relação entre Tony e Cassandra. Tony teve uma paixão em seguida com a chamada Meredith McCall, porém esse amor foi proibido por seu pai e o pai de de Meredith, pois se trata da filha do maior rival de negócios de Howard, Creighton McCall, por causa dessa rivalidade foram proibidos de se verem.",
+                        "Logo após isso podemos dizer que Tony perdeu seu rumo, e teve muita razões para isso, pai alcólatra, internato, problemas amorosos e o pai no mundo do crime, tudo fez Tony chegar ao 20 anos sendo considerado apenas um um garoto rico que rodava o mundo gastando dinheiro com carros e mulheres, a quem diga que se divertiu bastante, varias vezes, na mansão da playboy."
+                    ]
+                },
+                {
+                    "title": "Um Novo Homem",
+                    "text": [
+                        "Quando fez 21 anos seu pais, Howard e Maria Stark, morreram em um acidente de carro isso fez Tony assumir os negócios de seu pai mas tinha um objetivo em particular, Tony jurou que seria melhor que seu pai tanto nos negocios como na vida, com isso diminuiu seu habitos ruins de antes, cortou a relações criminosas de seu pai e em pouco tempo fez As Indrustrias Stark virarem uma indústria multi-bilionária. O cargo chefe da empresa era vender armamentos e munições para o governo dos EUA, mais expecificamente para os militares. Uma curiosidade, Tony comprou a empresa de carros que fez o carro do acidente de seus pais e corrigiu falhas nos carros para que mais acidentes como este não aconteção denovo.",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 6
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 6
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 4
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 5
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "padrão"
+        },
+        {
+            "id": 3,
+            "corPri": "#FD6E05",
+            "corSec": "#FFCB03",
+            "tipoP": "Anti-Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fghost-rider.png?alt=media&token=ccb0b816-8e45-44a0-b124-68d16e9f6ae7",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_ghost-rider.png?alt=media&token=a6772827-30a8-44a5-9ca4-f4470c613c6d",
+            "wallpaper": "https://pm1.narvii.com/6549/c59fa7013f13d82f69e5ae74b488b188fde8825a_hq.jpg",
+            "nomeHeroi": "Motoqueiro Fantasma",
+            "nome": "Johnny Blaze",
+            "desc": "Era apenas um acrobata em um circo, mas tomou a decisão errada e se tornou o espirito da vingança, reponsavel por punir os culpados.",
+            "PA": "Marvel Spotlight #5 (Maio, 1972)",
+            "altura": "1,78cm até 1,88cm",
+            "tags": [
+                "Anti-Heroi",
+                "Humano",
+                "Demonio",
+                "Inferno"
+            ],
+            "poderes": [
+                "Super Força",
+                "Manipulação de Fogo Infernal",
+                "Poder Ilimitado",
+                "Regeneração",
+                "Olhar da Penitência",
+                "Grande Senso de Justiça"
+            ],
+            "sinopse": [
+                "Johnny é uma das pessoas mais azaradas do quadrinhos, quase tudo que tenta fazer da errado, na tentativa de salvar a vida de seu pai adotivo fez um pacto com Mephisto, porém foi enganado e virou o receptáculo do espírito da vingança se tornando o Motoqueiro Fantasma, que sai a noite procurando criminosos para punir utilizando seu Olhar da Penitência para voltar todos os crimes e maldades de um criminoso contra ele.",
+                "Alguns dizem que o espírito da vingança é um anjo caido e enlouquecido, outros que é a representação da pura raiva de Deus, seja o que for é muito poderoso e não para por nada."
+            ],
+            "imagens": [
+                "https://static0.cbrimages.com/wordpress/wp-content/uploads/2019/07/Ghost-RIder-Johnny-Blaze-Avengers.jpg",
+                "http://images6.fanpop.com/image/photos/36400000/Ghost-rider-club-image-ghost-rider-club-36453381-1398-1000.jpg",
+                "http://www.coxinhanerd.com.br/wp-content/uploads/2019/09/cc-9.jpg",
+                "https://www.pdvg.it/wp-content/uploads/2019/05/Ghost-Rider_01.png",
+                "https://dam.smashmexico.com.mx/wp-content/uploads/2021/05/ghost-rider-la-ruta-de-la-perdicion-salvat-marvel-garth-ennis-cover.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://static.wikia.nocookie.net/marvelanimated/images/a/a8/Gary_Friedrich.jpg/revision/latest?cb=20180831020025",
+                    "nome": "Gary Friedrich"
+                },
+                {
+                    "image": "https://www.babelio.com/users/AVT_Michael-G-Ploog_9715.jpg",
+                    "nome": "Mike Ploog"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 7
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 8
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 2
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 2
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 3
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "misto"
+        },
+        {
+            "id": 4,
+            "corPri": "#2C0902",
+            "corSec": "#DC2403",
+            "tipoP": "Vilão",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcarnificina.png?alt=media&token=955fa342-7481-4ef5-9af7-c82567501004",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_carnificina.png?alt=media&token=26f0c79d-3fb8-408f-8ea1-53db1a07032d",
+            "wallpaper": "https://i.pinimg.com/originals/06/d3/7a/06d37a06b4d3067583a30488a0930c02.jpg",
+            "nomeHeroi": "Carnificina",
+            "nome": "Cletus Kasady",
+            "desc": "Um dos maiores psicopatadas das hqs, seu nome não por acaso, só existe uma coisa que este vilão pensa MATAR.",
+            "PA": "The Amazing Spider-Man #361 (Abril de 1992)",
+            "altura": "1,85cm",
+            "tags": [
+                "Vilão",
+                "Alienigena",
+                "Simbionte"
+            ],
+            "poderes": [
+                "Super Força",
+                "Super Agilidade",
+                "Super Resistência",
+                "Escalar Paredes",
+                "Regeneração",
+                "Trasformismo",
+                "Camuflagem",
+                "Regeneração Acelerada",
+                "Criação de Armas",
+                "Sentidos Ampliados"
+            ],
+            "sinopse": [
+                "Imagine Um simbionte alienígena muito poderoso se unindo a um sociopata e assassino em série altamente perigoso para todos que entram em contato com ele, isto é o Carnificina, um supervilão que não se importa com dinheiro, poder ou qualquer outra coisa que não seja se divertir que no caso é matar que aparecer pela frente."
+            ],
+            "imagens": [
+                "https://www.strafe.com/br/apostas-esports/wp-content/uploads/sites/18/Carnage-Fortnite-1536x864-1.jpg",
+                "https://www.jlgregorio.com.br/wp-content/uploads/2018/07/max-carnage.jpg",
+                "https://sm.ign.com/ign_br/screenshot/default/carnage_rsje.jpg",
+                "https://sm.ign.com/ign_br/screenshot/default/maximum-carnage-cover-publicity-h-2018_u4v2.jpg",
+                "https://cabanadoleitor.com.br/wp-content/uploads/2021/10/venom-2-carnificina.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/10.14.11ErikLarsenByLuigiNovi.jpg",
+                    "nome": "Erik Larsen"
+                },
+                {
+                    "image": "https://s3.amazonaws.com/comicgeeks/people/avatars/2284.jpg?t=1617511048",
+                    "nome": "David Michelinie"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 2
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 4
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "misto"
+        },
+        {
+            "id": 5,
+            "corPri": "#EA2424",
+            "corSec": "#225DAD",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcapitao-america.png?alt=media&token=918b1a34-22a6-4554-8f6a-0d46cd0b24f9",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_capitao-america.png?alt=media&token=c4071426-e06a-4cd9-b811-418c35bad7b4",
+            "wallpaper": "https://www.papeldeparede.etc.br/fotos/wp-content/uploads/papel-de-parede.jpg",
+            "nomeHeroi": "Capitão América",
+            "nome": "Steven Rogers",
+            "desc": "Um soldados determinado e corajoso, um soro e muita ciência viraram o soldado mais importante da história militar sendo considerado um super soldados.",
+            "PA": "Captain America Comics #1 (Dezembro, 1940)",
+            "altura": "1,88cm",
+            "tags": [
+                "Heroi",
+                "Humano",
+                "Modificado",
+                "Soldado",
+                "Vingadores"
+            ],
+            "poderes": [
+                "Super Força",
+                "Super Agilidade",
+                "Super Reflexos",
+                "Físico Perfeito",
+                "Habilidade de Combate",
+                "Resistência",
+                "Experiencia"
+            ],
+            "sinopse": [
+                "Steven sempre teve o sonho de servir seu país mas seu porte físico e sua saúde o impediam, até que teve uma chance de entrar para o exercito Americano e divido a seu bom coração, coragem e determinação foi escolido para o experimento super soldado e se tornou o primeiro super soldado."
+            ],
+            "imagens": [
+                "https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/bbr/steve-rogers-numero-uno.jpg",
+                "https://cabanadoleitor.com.br/wp-content/uploads/2021/04/Captain-America-comics-captain-america-42697469-1300-650.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-Capitao-America-1.jpg",
+                "https://recreio.uol.com.br/images/large/2020/12/29/capitao-america-1226270.jpg",
+                "https://uploads.jovemnerd.com.br/wp-content/uploads/2017/07/rogers-1210x544.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BMjY5MTkyNDctMTc1Zi00NTcwLWEzZWYtOWVjZjRkMzIxMmI3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+                    "nome": "Jake Kirby"
+                },
+                {
+                    "image": "https://hqrock.files.wordpress.com/2011/12/joe-simon-old.jpg",
+                    "nome": "Joe Simon"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 6
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 6
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 4
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 5
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "misto"
+        },
+        {
+            "id": 6,
+            "corPri": "#A7A4A4",
+            "corSec": "#000",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fthor.png?alt=media&token=12b8d8b9-fc91-44d3-96d2-d80c979e755f",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_thor.png?alt=media&token=19f7e505-7377-43f1-af1a-38e7f1c0faba",
+            "wallpaper": "https://ovicio.com.br/wp-content/uploads/comics-thor-marvel-comics-avengers-fresh-new-hd-wallpaper.jpg",
+            "nomeHeroi": "Thor",
+            "nome": "Thor Odinson",
+            "desc": "O grande protetor da Terra, ou Midgart para os deuses, Thor criou muito afeto pela Terra e por isso se declarou o protetor do planeta e vem exercendo essa função milhares de anos.",
+            "PA": "Venus #11 (Julho, 1950)",
+            "altura": "1,98cm",
+            "tags": [
+                "Heroi",
+                "Deus",
+                "Raios",
+                "Vingadores"
+            ],
+            "poderes": [
+                "Super Força",
+                "Super Resistência",
+                "Manipulação de Raios",
+                "Manipulação de Energia",
+                "Utilizador do Martelo Mjonir"
+            ],
+            "sinopse": [
+                "Um Deus Nórdico, proclamado 'O Filho de Odin', cresceu destinado a ser o rei de Asgard porém quando a hora chegou ainda era muito imaturo então Odin o baniu para Midgart (Terra) e tirou seus poderes. Após viver como um humano entre os humanos aprendeu o valor da vida e que o poder não deve ser usado apenas para destruição mas também para contruir, então se tornou digno de empunhar o Martelo Mjonir e se tornar novamente o Deus Thor"
+            ],
+            "imagens": [
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/06/cropped-Thor.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/03/legiao_fhlI6mZN42c9A0tYFvQjJKGSHgzaT5WuVpxbEs1Lde.jpg.jpeg",
+                "https://www.planocritico.com/wp-content/uploads/2017/09/68-Thor-O-Renascer-dos-Deuses.jpg",
+                "https://www.planocritico.com/wp-content/uploads/2013/10/thor-2-prelude-imagem-destacada.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2018/06/legiao_OdL74hWYzNixG_stwbCTUkoDg1eSy2lH3VnmMKR6qI.jpg.jpeg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "nome": "Stan Lee"
+                },
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BMjY5MTkyNDctMTc1Zi00NTcwLWEzZWYtOWVjZjRkMzIxMmI3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+                    "nome": "Jake Kirby"
+                },
+                {
+                    "image": "https://s.hdnux.com/photos/02/20/64/593159/8/rawImage.jpg",
+                    "nome": "Hy Rosen"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Larry-Lieber-2012.jpg",
+                    "nome": "Larry Lieber"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 7
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 6
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 4
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 2
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 7
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "misto"
+        },
+        {
+            "id": 7,
+            "corPri": "#AB0C0C",
+            "corSec": "#DCBE02",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fdoutor-estranho.png?alt=media&token=f50cd531-1a55-4b6c-b855-c45dd08ec45e",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_doutor-estranho.png?alt=media&token=782c7266-c701-4f0e-8002-0e67fe649387",
+            "wallpaper": "https://hqscomcafe.com.br/wp-content/uploads/2016/11/doutorestranho.jpg",
+            "nomeHeroi": "Doutor Estranho",
+            "nome": "Stephen Strange",
+            "desc": "O Mago Supremo da Terra, seu dever é proteger o planeta contra ameaças de outras dimensões e para isso é necessário um grande poder, poder que somente uma Mago Supremo tem.",
+            "PA": "Strange Tales #110 (Abril, 1963)",
+            "altura": "1,88cm",
+            "tags": [
+                "Heroi",
+                "Humano",
+                "Mago",
+                "Místico"
+            ],
+            "poderes": [
+                "Inteligencia",
+                "Manipulação de Magia",
+                "Manipulação do Tempo",
+                "Levitação",
+                "Projeção Astral",
+                "Portador dos Segredos Místicos do Universo"
+            ],
+            "sinopse": [
+                "Um cirurgião arrogante e egocentrico sofre um acidente grave e nunca mais poderia fazer uma cirurgia novamente. Buscando a uma cura para suas mão gravemente feridas, usou todo o sue dinheiro tempo e energia, quando não o restava mais nada foi aprensentado a Strange as artes místicas.",
+                "Strange descobriu algo maior que ele mesmo e passou a se dedicar a aprender e praticar magia e então, como profetizado pelo Ancião, ser tornou o Mago Supremo do Universo."
+            ],
+            "imagens": [
+                "https://hqscomcafe.com.br/wp-content/uploads/2016/11/doutorestranho.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/01/legiao_9037FQZiOlVR1HrEm4sWJd56PXYAqStIygMuoecTpa.png.jpeg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2017/11/legiao_7uOLyTF_HbmaqYEI8dGf1zJxMURnvDNe0jV5rXSkcl.jpg.jpeg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2018/09/doctor-strange-header.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2020/01/legiao_bzasyn5w8uYxGkX4miR0ArKpVZ36WolNJvOMU9I7Tf.jpg.jpeg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "nome": "Stan Lee"
+                },
+                {
+                    "image": "https://s2.glbimg.com/J65haVmGIHOMF3Im9ESLR_-gEUk=/e.glbimg.com/og/ed/f/original/2018/07/09/steven_1.jpg",
+                    "nome": "Steve Ditko"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 2
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 6
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 7
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "padrão"
+        },
+        {
+            "id": 8,
+            "corPri": "#000",
+            "corSec": "#000",
+            "tipoP": "Anti-Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fvenom.png?alt=media&token=bcda5b3e-e96b-4f01-96a5-f009c6f7cea4",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_venom.png?alt=media&token=95312407-aa54-42f1-9bd9-275fe869be5c",
+            "wallpaper": "https://cdn.portalpower.com.br/wp-content/uploads/2021/10/Venom-Movie-2021-Wallpaper-24.jpg",
+            "nomeHeroi": "Venom",
+            "nome": "Eddie Brock",
+            "desc": "Tavez o maior inimigo do cabeça de teia, uma simbiose de um jornalista fracassado com uma criatura alienígena resultou em um dos maiores pesadelos do Homem Aranha.",
+            "PA": "Amazing Spider-Man #252 (Janeiro, 1984)",
+            "altura": "1,91cm",
+            "tags": [],
+            "poderes": [
+                "Super Força",
+                "Super Agilidade",
+                "Regeneração",
+                "Camuflagem",
+                "Sentidos Ampliados"
+            ],
+            "sinopse": [
+                "Um simbionete rejeitado e um homem que perdeu tudo em sua vida e está prestes a morrer, ao se juntarem se tornaram o maior rival do cabeça de teia. Os dois parecem que foram feitos um para o outro pois odeiam a mesma pessoa e ambos não estariam vivos se não fosse o outro.",
+                "Estando juntos estão o tempo matando e aterroizando pessoas inocentes e até mesmo as devorando e tentando matar o Homem Aranha, porém com o tempo Venom passou a trabalhar com o heroí em muitas situações como uma parceria agindo como um anti-heroi, no entanto no final volta a seus habitos e tentar matar o Amigão d Vizinhaça."
+            ],
+            "imagens": [
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2021/10/legiao_YEOJWjdPmRQ5.jpg.jpeg",
+                "https://www.azartes.com.br/images/noticias/239/127604005.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2021/04/legiao_5AdgCRUpue0B.png.jpeg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2018/03/legiao_aMDYV3f1dOCq2NAQc8PhmIul9nZbKkUrjye74XgFwS.jpg.jpeg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2021/06/legiao_Las8eGXIUfpV.jpg.jpeg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://pop.proddigital.com.br/wp-content/uploads/sites/8/2021/05/randy-schueller-desenho-original-e1620940092572.jpg",
+                    "nome": "Randy Schueller"
+                },
+                {
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-jim_shooter.jpg?alt=media&token=e21dbbe8-2fc3-4f08-9aed-ffbcb3c093a5",
+                    "nome": "Jim Shooter"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/6.28.13MikeZeckByLuigiNovi1.jpg",
+                    "nome": "Mike Zeck"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 4
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 2
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 4
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 2
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 3
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "padrão"
+        },
+        {
+            "id": 9,
+            "corPri": "#1E7679",
+            "corSec": "#60BFB6",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fnamor.png?alt=media&token=1e1b5c82-f046-46d1-8a11-ef41c363fb1a",
+            "logo": "https://i.ebayimg.com/images/g/T~kAAOSwq7JULRRs/s-l400.jpg",
+            "wallpaper": "https://www.geekhere.com.br/wp-content/uploads/2022/05/namor.png",
+            "nomeHeroi": "Namor",
+            "nome": "Namor McKenzie",
+            "desc": "O grande rei dos mares, mesmo crescendo no mar adquiriu carinho pela terra, sendo o lider de umas das nações mais poderosos do mundo o poder de Namor é impressionante.",
+            "PA": "Motion Picture Funnies Weekly (Abril de 1939)",
+            "altura": "1,88cm",
+            "tags": [],
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Super Força",
+                "Super Resistência",
+                "Controle dos Mares",
+                "Resipirar de Baixo da Aqua",
+                "Super Velociade(Submerso)",
+                "Telepatia"
+            ],
+            "sinopse": [
+                "Filho de um humano com um rainha do mares, cresceu no mar e se tornou importante com o tempo sendo um dos diplomatas de Atlantes, com isso seu trabalho era conversar com as outras nações incluindo o povo da terra.",
+                "Depois de alguns acontecimentos Namor assumiu o trono se tornando o Rei de Atlantes pode fim a richa entre o povo da terra e do mar criando paz dentre os povos."
+            ],
+            "imagens": [
+                "https://t.ctcdn.com.br/gFT0yPycEIWqjIcltNwQX3sg24Q=/512x288/smart/filters:format(webp)/i298929.png",
+                "https://disneyplusbrasil.com.br/wp-content/uploads/2021/05/Namor-Pantera-Negra-1024x576.jpg",
+                "https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2020/07/08102240/Sub_Mariner_Le_Prince_Namor.jpg",
+                "https://t.ctcdn.com.br/gFT0yPycEIWqjIcltNwQX3sg24Q=/512x288/smart/filters:format(webp)/i298929.png",
+                "https://www.einerd.com.br/wp-content/uploads/2019/08/Namor-capa.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://static.wikia.nocookie.net/marvelanimated/images/0/0e/Bill_Everett.jpg/revision/latest/scale-to-width-down/250?cb=20180518044417",
+                    "nome": "Bill Everett"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 6
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 2
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 4
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 2
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 3
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "misto"
+        },
+        {
+            "id": 10,
+            "corPri": "#E70404",
+            "corSec": "#000000",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fprofessor-x.png?alt=media&token=bd76b7bf-5b01-480e-a503-b68cb92a97fb",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_professor-x.png?alt=media&token=d9e0b207-b4c7-4260-b8de-8d19255bded9",
+            "wallpaper": "https://p4.wallpaperbetter.com/wallpaper/200/870/413/charles-comics-marvel-x-men-wallpaper-preview.jpg",
+            "nomeHeroi": "Professor X",
+            "nome": "Charles Xavier",
+            "desc": "Conhecido com o telepata mais poderoso do mundo, Xavier é um homem que dedicou sua vida toda ao seu sonho de paz entre humanos e mutantes.",
+            "PA": "Uncanny X-Men #1 (Setembro de 1963)",
+            "altura": "1,83cm (em pé)",
+            "tags": [],
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Telepatia",
+                "Criaçâo de Ilusões",
+                "Manipulação Mental",
+                "Projeção Astral",
+                "Intelecto: Gênio"
+            ],
+            "sinopse": [
+                "Criado em família aristocráta descendente de um brilhante ciêntista, Charles nasceu com o Gene Mutante, um pouco mais velho começou a ouvir vozes em sua cabeça, anos depois escolhe dedicar sua vida a criar um lugar onde possa educar crinças mutantes do mundo todo, a Mansão X.",
+                "Charles tem um sonho simples mas que não é facil de alcançar, um mundo onde humanos e mutantes possam viver em paz, sonho esse que vem inspirando muitas gerações de mutantes, o Maior Telepata do Mundo também é um dos maiores exemplos do mundo."
+            ],
+            "imagens": [
+                "https://www.ricardoshimosakai.com.br/wp-content/uploads/2016/04/10-personagens-dos-quadrinhos-que-possuem-defici%C3%AAncia.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2018/09/Professor-Xavier-in-wheelchair.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-charles-xavier.jpg",
+                "https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2020/09/professor-xavier-origem-historia-e-poderes-do-criador-dos-x-men.jpg",
+                "http://pm1.narvii.com/6452/bcabea34838f878b09725a796e23b0d17a3dfd2e_00.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "nome": "Stan Lee"
+                },
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BMjY5MTkyNDctMTc1Zi00NTcwLWEzZWYtOWVjZjRkMzIxMmI3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+                    "nome": "Jake Kirby"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 4
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 7
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 4
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 4
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 7
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 2
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "misto"
+        },
+        {
+            "id": 11,
+            "corPri": "#000",
+            "corSec": "#000",
+            "tipoP": "Heroi",
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fpantera-negra.png?alt=media&token=bee37280-ee55-4bf3-96af-5866beae411d",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_pantera-negra%20.png?alt=media&token=4cc61c42-a566-4805-92e2-6ffddc819c90",
+            "wallpaper": "https://images2.alphacoders.com/528/thumb-1920-528149.jpg",
+            "nomeHeroi": "Pantera  Negra",
+            "nome": "T'Challa",
+            "desc": "Rei de uma nação escondidado do mundo, guardada por um protetor que por centenas de anos manteve a nação mais desenvolvida do mundo em segredo.",
+            "PA": "The Fantastic Four #52 (Julho de 1966)",
+            "altura": "1,83cm",
+            "tags": [],
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Herança de Poderes, Experiencias e Sabedoria",
+                "Garras Retráteis",
+                "Traje de Vibranium",
+                "Super Força",
+                "Super Resistência",
+                "Super Agilidade",
+                "Super Reflexos",
+                "Sentidos Aguçados",
+                "Visão Noturna",
+                "Fator de Cura Acelerado",
+                "Habilidade de Caçador",
+                "Intelecto: Gênio",
+                "Artista Marcial",
+                "Estrategista",
+                "Invisibilidade",
+                "Ondas de Energia Cinética",
+                "Dora Milaje"
+            ],
+            "sinopse": [
+                "O Pantera Negra é o protetor de Wakanda, por gerações o povo de Wakanda seguiu e adorou o Pantera Negra, um guerreiro superior que recebeu habilidades extras do Deus Pantera, esse manto foi passado de geração em geração na realeza de Wakanda. Seu dever é manter Wakanda e o Vibranium longe do mundo e protegê-los a todo o custo.",
+                "T'Challa é o rei da nação africana secreta e altamente avançada de Wakanda - bem como o poderoso guerreiro conhecido como Pantera Negra."
+
+            ],
+            "imagens": [
+                "https://i.uai.com.br/BYC2k_0k5KMKZ_w7srGekaUWKeQ=/820x492/smart/imgsapp2.uai.com.br/app/noticia_133890394703/2018/02/21/222428/20180221110114383185o.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/06/Pantera-Negra.jpg",
+                "https://www.colunatech.com.br/wp-content/uploads/2021/07/plano-critico-black_panther_the_sound_and_the_fury_vol_1_1_marvel-pantera-negra-o-som-e-a-fc3baria-plano-critico-600x400-1.jpg",
+                "https://quintacapa.com.br/wp-content/uploads/2018/02/3b00cf7fabac730f-600x400.jpg",
+                "https://www.rbsdirect.com.br/imagesrc/26256787.jpg?w=1200&h=630&a=c&version=1575255600"
+            ],
+            "criadores": [
+                {
+                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "nome": "Stan Lee"
+                },
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BMjY5MTkyNDctMTc1Zi00NTcwLWEzZWYtOWVjZjRkMzIxMmI3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+                    "nome": "Jake Kirby"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 3
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 3
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 5
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 2
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "padrão"
+        },
+        {
+            "id": 12,
+            "corPri": "#000",
+            "corSec": "#000",
+            "tipoP": "Anti-Heroi",
+            "tags": [
+                "Vampiro",
+                "Caçador",
+                "Sobrenatural",
+                ""
+            ],
+            "thamb": "https://static.wikia.nocookie.net/nerdologiaheroespowers/images/a/ad/Blade.png/revision/latest?cb=20180217015059&path-prefix=pt-br",
+            "logo": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f359881d-6bb2-4391-aba6-779f7084edd4/dde363j-ea3c01d5-c6d0-44df-85bc-3aea188d8993.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YzNTk4ODFkLTZiYjItNDM5MS1hYmE2LTc3OWY3MDg0ZWRkNFwvZGRlMzYzai1lYTNjMDFkNS1jNmQwLTQ0ZGYtODViYy0zYWVhMTg4ZDg5OTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4eECm1z3bPfRxQqyeFcBOGtnLjrPRmaDk5IlGgGEWhw",
+            "wallpaper": "https://www.einerd.com.br/wp-content/uploads/2020/09/Blade-Marvel-2.jpg",
+            "nomeHeroi": "Blade",
+            "nome": "Eric Brooks",
+            "desc": "Um híbrido humano-vampiro desde seu trágico nascimento, Blade passou sua longa vida procurando livrar o mundo de vampiros como aquele que matou sua mãe.",
+            "PA": "Tomb of Dracula #10(April, 1973)",
+            "altura": "1,88cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Artista Marcial",
+                "Meio Vampiro",
+                "Espadachim",
+                "Especialista em Armas",
+                "Visão Noturna",
+                "Mira Precisa",
+                "Fator de Cura",
+                "Força Sobre-Humano",
+                "Resistência Sobre-Humano",
+                "Sentidos Aguçados"
+            ],
+            "sinopse": [
+                "Existem muitos homens e mulheres no mundo que caçam vampiros, mas poucos causam tanto medo em corações sugadores de sangue quanto em estacas. Blade é mais do que apenas um matador de mortos-vivos, mas o bicho-papão de um bicho-papão, a coisa que faz ghouls e monstros perderem o sono.",
+		        "Nascido de uma mãe devastada pelo vampirismo e dotada de habilidades super-humanas por uma mordida de Morbius, o Vampiro Vivo, Blade é o Daywalker – um habilidoso artista marcial que possui a maioria das forças vampíricas e nenhuma de suas fraquezas. Sua vida é a busca incansável de erradicar o mundo das feras que procuram destruir a vida inocente."
+            ],
+            "imagens": [
+                "https://www.einerd.com.br/wp-content/uploads/2020/09/Blade-Marvel-capa.jpg",
+                "https://folheandoentretenimento.com.br/wp-content/uploads/2021/11/Blade1.jpeg",
+                "https://imgix.gizmodo.com.au/content/uploads/sites/2/2021/09/06/33d196075592ac387ca411c841209ddb.png?%20Ar=16%%203A9%20&%20auto=format%20&%20fit=crop%20&%20q=80%20&%20w=1280%20&%20nr=20",
+                "https://www.einerd.com.br/wp-content/uploads/2019/07/blade-marvel-je.jpg",
+                "https://www.einerd.com.br/wp-content/uploads/2019/07/Fase-4-Blade.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://m.media-amazon.com/images/M/MV5BNTEyMDYwYjAtYzdkYy00MTQ4LWIzYmEtYmYwOGRhNjM4OTI4XkEyXkFqcGdeQXVyNzY1ODU1OTk@._V1_.jpg",
+                    "nome": "Marv Wolfman"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/GeneColan6.13.09ByLuigiNovi.jpg",
+                    "nome": "Gene Colan"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 8
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 10
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 8
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 4
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 4
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "padrão"
+        },
+        {
+            "id": 0,
+            "corPri": "#fff",
+            "corSec": "#000",
+            "tipoP": "Anti-Heroi",
+            "tags": [
+                "Egito",
+                "Cavaleiro",
+                "Lutador",
+                "Avatar"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcavaleiro-da-lua.png?alt=media&token=31f02e82-e1cc-4188-a270-96cd821e3e05",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_cavaleiro-da-lua.png?alt=media&token=0c6fb444-142b-4e4d-b47a-bc7ef0bd9341",
+            "wallpaper": "https://www.arrobanerd.com.br/wp-content/uploads/2022/03/quem-e%CC%81-o-cavaleiro-da-lua-e-onde-ele-esta%CC%81-na-linha-do-tempo-do-MCU.jpg",
+            "nomeHeroi": "Cavaleiro da Lua",
+            "nome": "Marc Spector",
+            "desc": "O Cavaleiro da Lua é titulo dado a quem recebe a benção de Khonshu, o Deus Egipicio da Lua, se transformando no punho da vingança contra o mal.",
+            "PA": "Werewolf by Night #32(Maio, 1975)",
+            "altura": "1,87cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Artisita Marcial",
+                "Especialista em Armas",
+                "Estrategista",
+                "Super Força",
+                "Super Agilidade",
+                "Fator de Cura"
+            ],
+            "sinopse": [
+                "Um ex-militar que se tornou um mercenário vai a uma missão no Egito, após tudo dar errado e vagar pelo deserto recebe uma proposta do Deus egípcio da Lua, Khonshu, se tornando seu representante no plano mortal, seu trabalho agora é assustar e punir todo o tipo de mal e se o punho da vingança."
+            ],
+            "imagens": [
+                "https://t.ctcdn.com.br/kPnLRP5C3vUPh3NYKkxQ-1Jqr9A=/16x477:1780x1415/1400x788/smart/filters:format(webp)/i583089.jpeg",
+                "https://br.web.img3.acsta.net/newsv7/19/08/24/01/42/5708450.jpg",
+                "https://vigilianerd.com.br/wp-content/uploads/2022/01/20220124-cavaleiro-da-lua-vigilianerd.jpeg",
+                "http://oyster.ignimgs.com/wordpress/stg.ign.com/2019/08/Moon-Knight-1.jpg",
+                "https://1.bp.blogspot.com/-qNc-juJuyEY/YHiInNXqzkI/AAAAAAAABno/P9kW1Zy7jV8TpVmFflOy-eF2b_z2fUQMACLcBGAsYHQ/s1517/marvel-moon-knight-comic.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://static.wikia.nocookie.net/batman/images/5/56/Doug_Moenchz.jpg/revision/latest/top-crop/width/360/height/450?cb=20190106170405",
+                    "nome": "Doug Moench,"
+                },
+                {
+                    "image": "https://br.web.img2.acsta.net/c_310_420/pictures/20/09/03/23/16/3139726.jpg",
+                    "nome": "Don Perlin"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 7
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 6
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 8
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 4
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 6
+                }
+            ],
+            "editora": "Marvel",
+            "estilo": "misto"
+        }
+    ],
+    "personagensDC": [
+        {
+            "id": 0,
+            "corPri": "#000",
+            "corSec": "#000",
+            "tipoP": "Heroi",
+            "tags": [
+                "Liga da Justiça",
+                "Trevas",
+                "Cavaleirodas Trevas",
+                "Gotham"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fbatman.png?alt=media&token=cd90b1d6-8e88-4956-9cc3-9ab726b79481",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_batman.png?alt=media&token=b65d6dd4-873f-4464-a27e-2f65b809be9a",
+            "wallpaper": "https://images.sentimentodeleitor.com.br/2020/04/batman-10-historias-imperdiveis.jpg",
+            "nomeHeroi": "Batman",
+            "nome": "Bruce Wayne",
+            "desc": "O homem sem medo, usando a escuridão e o medo pra pega criminosos porém seus vilões gostam de desafiar sua inteligência, o que é um grande erro.",
+            "PA": "Detective Comics #27. (1939)",
+            "altura": "1,88cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Inteligencia Avançada",
+                "Equipamentos Avançados",
+                "Estratégia",
+                "Mestre em Artes Marciais",
+                "Ausencia de Medo"
+            ],
+            "sinopse": [
+                "Passando por uma tragédia ainda pequeno, usou sua perda para se tornar um símbolo de justiça e medo dentro de uma das cidades mais perigosas do mundo.",
+                "Usando sua riqueza e inteligência desenvolve inúmeros equipamentos de alta tecnologia com muitas finalidades, além de ter se tornado um dos maiores artistas marciais do mundo. Suas habilidades o tornaram uma força a ser temida por todos os criminosos de Gotham."
+            ],
+            "imagens": [
+                "https://cdn.wallpapersafari.com/31/24/v9O7Vy.jpg",
+                "https://i.imgur.com/f4Y2Ft1.jpg",
+                "https://pop.proddigital.com.br/wp-content/uploads/sites/8/2021/11/batman.jpg",
+                "https://www.torredevigilancia.com/wp-content/uploads/2016/11/GalleryComics_1920x1080_20161130_BMAnnual_1_CVR_fnl_5824c0abf189a3.36536012.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/11/Batman-1.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 6
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 2
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 9
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 9
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 5
+                }
+            ],
+            "editora": "DC",
+            "estilo": "padrão"
+        },
+        {
+            "id": 1,
+            "corPri": "#009EF7",
+            "corSec": "#FF0000",
+            "tipoP": "Heroi",
+            "tags": [
+                "Liga da Justiça",
+                "Louis Lane",
+                "Metropolis",
+                ""
+            ],
+            "thamb": "https://purepng.com/public/uploads/large/purepng.com-supermansupermanfictional-superherocomic-booksdc-comicscharacterjerry-siegelson-of-kryptonaction-comicsman-of-steel-1701528657954mhbuw.png",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_superman.png?alt=media&token=5886bb3b-1138-4762-a183-7dfa2744fd6a",
+            "wallpaper": "https://recreio.uol.com.br/media/_versions/legacy/2021/04/22/superman-1229086_widexl.jpg",
+            "nomeHeroi": "Superman",
+            "nome": "Clark Kent ou Kal-El",
+            "desc": "Conhecido como o 'Homem de Aço', é o simbolo da editora DC. Alienígena que caiu e foi criado nos EUA é o homem mais poderoso da terra.",
+            "PA": "Booster Gold #6 (Julho, 1986)",
+            "altura": "1,90cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Super Força",
+                "Super Velocidade",
+                "Super Resistência",
+                "Sopro Congelante",
+                "Visão de Calor",
+                "Visão de Raio X"
+            ],
+            "sinopse": [
+                "Um bebê criado por fazendeiros cresceu aprendendo a ser uma pessoa amável e gentil até que percebeu que era diferente das outras pessoas. Aprendeu a controlar seu poderes e se tronou o homem mais poderosos vivo na Terra, o que é curioso pois não é humano."
+            ],
+            "imagens": [
+                "https://64.media.tumblr.com/afacdadc2994303320cce6dd94d1050d/tumblr_inline_o4swnwwldZ1tjq66k_500.jpg",
+                "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/10/superman-clark-kent-comics.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/superman-dc-comics-75jpg.jpeg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/12/legiao_Kf2gQtX5pMeUBy9rwH7cJTWuodPzl0NLY3R4nZ_AS8.jpg.jpeg",
+                "https://t.ctcdn.com.br/8Klg-Y-1iVPgKbM9c92zHZq7_UQ=/512x288/smart/i490362.jpeg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 10
+                },
+                {
+                    "titulo": "Agilidade",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 8
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 8
+                }
+            ],
+            "editora": "DC",
+            "estilo": "padrão"
+        },
+        {
+            "id": 2,
+            "corPri": "#F8D923",
+            "corSec": "#FF0000",
+            "tipoP": "Heroi",
+            "tags": [
+                "Velocidade",
+                "Velocista",
+                "Star City",
+                "Força de Aceleração"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fthe-flash.png?alt=media&token=ff02ffc9-c198-4df3-aa45-73b235a49bb4",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_flash.png?alt=media&token=3fb12eed-861c-4a44-9a6b-35555779d211",
+            "wallpaper": "https://multiversonoticias.com.br/wp-content/uploads/2022/01/multiverso-8-2.png",
+            "nomeHeroi": "The Flash",
+            "nome": "Wally West",
+            "desc": "Após um acidente obteve acesso a Força de Aceleração, que o tornou um velocista e o homem mais rápido do mundo.",
+            "PA": "The Flash #110 (Janeiro, 1960)",
+            "altura": "1,82cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Super Velocidade",
+                "Regeneração Acelerada",
+                "Intagibilidade",
+                "Manipulação da Força de Aceleração",
+                "Manipulação de Relâmpagos"
+            ],
+            "sinopse": [
+                "Após ter a mãe assassinada e seu pai ser acusado do crime, Barry cresceu como um garoto inteligente e esforçado e se juntou a polícia, até que um acidente afetou toda a cidade o deixando em coma. Após o coma Barry obteve acesso a Força de Aceleração, se tornando o homem mais rápido do mundo."
+            ],
+            "imagens": [
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-Flash-1.jpg",
+                "https://t.ctcdn.com.br/oYQskb0sxZ2-wHjAdazRfuopsyY=/1280x720/smart/i537145.jpeg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/04/Flash.jpg",
+                "https://www.einerd.com.br/wp-content/uploads/2018/10/flash-multiverso-e1540573791203-890x465.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/01/legiao_mVsUkb7C6E9tMSTizqJ0NoeFQ1dOjLx5vyhHA38lZf.jpg.jpeg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Agilidade",
+                    "number": 7
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 8
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 10
+                }
+            ],
+            "editora": "DC",
+            "estilo": "misto"
+        },
+        {
+            "id": 3,
+            "corPri": "green",
+            "corSec": "#",
+            "tipoP": "Heroi",
+            "tags": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "thamb": "https://static.wikia.nocookie.net/aurageekrpg/images/f/fd/Hal_jordan.png/revision/latest/scale-to-width-down/500?cb=20190729210913&path-prefix=pt-br",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_lanterna-verde.png?alt=media&token=3c05b34f-b39d-42b5-9dfa-6494f2feaaa4",
+            "wallpaper": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/green-lantern-sideshow-997972-1280x0.jpg",
+            "nomeHeroi": "Lanterna Verde",
+            "nome": "Hal Jordan",
+            "desc": "Um piloto do exército é escolhido por um anel verde com vontade própria, o anel a apresentou a uma nova forma de servir e ajudar, mas desta vez seria para o universo inteiro.",
+            "PA": "Showcase #22 (Outubro, 1959)",
+            "altura": "1,88cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],  
+            "poderes": [
+                "Voo",
+                "Manipulçao de Energia",
+                "Materializção de Objetos"
+            ],
+            "sinopse": [
+                "Um dos melhores piloto da aeronáutica, porém com comportamento inadequado e rebelde, após um alienígena cair na Terra e morrer, misteriosamente Hal recebe uma visita de um anel verde que permitiu que ele tivesse poderes.",
+                "Hal descobre que o anel o escolheu pois ele era o ser com maior força de vontade da Terra, desta forma sendo convocado para a Tropa dos Lanternas Verdes, os responsáveis puderam manter a ordem no Universo."
+            ],
+            "imagens": [
+                "https://geeksgamers.com.br/wp-content/uploads/2021/06/thumb-1920-820545.jpg",
+                "https://1.bp.blogspot.com/-fECQ2cLvp30/XvenjNqObwI/AAAAAAAAG-w/o8a3vDETOkwBlsrNS9A2-3IM4IS5pXXUQCK4BGAsYHg/s2560/tropa_dercy_green_lanterns_corps.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/cropped-Lanterna-Verde.jpg",
+                "https://www.planocritico.com/wp-content/uploads/2017/02/lei-de-sinestro-plano-critico.jpg",
+                "https://d33wubrfki0l68.cloudfront.net/7ef3c4c6698bfffd410746ffe1fe435d011d90cb/38dd3/static/1039e3ac241ee37325dccde3d9e0e97c/8735e/lanterna-verde-ivan-reis-wall.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 8
+                },
+                {
+                    "titulo": "Agilidade",
+                    "number": 6
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 7
+                }
+            ],
+            "editora": "DC",
+            "estilo": "padrão"
+        },
+        {
+            "id": 4,
+            "corPri": "#5B13AB",
+            "corSec": "#2CC61F",
+            "tipoP": "Vilão",
+            "tags": [
+                "Palhaço",
+                "Assassino",
+                "Louco",
+                "Perigoso"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcoringa.png?alt=media&token=bd0acc5b-6075-4258-bf0c-9e0c016cd971",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_coringa.png?alt=media&token=0b7ac2f1-3100-47be-99fc-0a4cb291a6d8",
+            "wallpaper": "https://uploads.jovemnerd.com.br/wp-content/uploads/2020/06/coringa-matou-batman.jpg",
+            "nomeHeroi": "Coringa",
+            "nome": "Desconhecido",
+            "desc": "Um maníaco homicida completamente imprevisível, sem levar em conta a vida humana, o Coringa acha o assassinato e o caos engraçados o que o leva a uma contagem de corpos que chega aos milhares.",
+            "PA": "Detective Comics #569(Dezembro, 1986)",
+            "altura": "1,95cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Imprevisível",
+                "Mestre Estratégico",
+                "Gás do Coringa",
+                "Habilidade de Luta",
+                "Inumeros Seguidores",
+                "Loucura Extrema"
+            ],
+            "sinopse": [
+                "O maior psicopata das ficções, o famoso palhaço assassino dos quadrinhos, muitas vezes um dos vilões mais sinistros e aterrorizantes dos quadrinhos, conhecido como louco e imprevisível, sempre foi o maior desafio do Batman.",
+                "Coringa é dado como um agente do caos devido a tudo que faz não ter um objetivo logico ou movido por um sentimento apenas acha bonito e engraçado causar o caos. Devido a sua loucura extrema acreditasse que seja o único vilão em Gotham que não tem medo do Cavaleiro das Trevas."
+
+            ],
+            "imagens": [
+                "https://www.einerd.com.br/wp-content/uploads/2019/10/Coringa-origens-capa.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q95/wp-content/uploads/2020/06/legiao_6FZecShpHJkG.jpg.jpeg",
+                "https://uploads.jovemnerd.com.br/wp-content/uploads/2019/04/coringa-origem-1210x544.jpeg",
+                "https://lh3.googleusercontent.com/-EcBAJsg36YU/YVjt3MIu3aI/AAAAAAAAULo/1jdW12VPLtsfeor_go__PiSOJTNz5hqGgCLcBGAsYHQ/s1600/304710.png",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-Coringa.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/ComicCon2008jerryrobinson.jpg/220px-ComicCon2008jerryrobinson.jpg",
+                    "nome": "Jerry Robinson"
+                },
+                {
+                    "image": "https://br.web.img3.acsta.net/pictures/21/02/09/16/04/2097581.jpg",
+                    "nome": "Bill Finger"
+                },
+		{
+                    "image": "https://media.fstatic.com/GIv77KaG0ha5jPRRt5Q1vVxlj74=/210x312/smart/media/artists/avatar/2018/11/bob-kane_a8630.jpg",
+                    "nome": "Bob Kane"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 4
+                }
+            ],
+            "editora": "DC",
+            "estilo": "misto"
+        }
+    ],
+    "quadrinhos": [
+        {
+            "id": 0,
+            "editora": "Marvel",
+            "titulo": "Hulk Contra o Mundo",
+            "nota": 9.4,
+            "data": "Junho 2007",
+            "capa": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/quadrinhos%2Fquad-world_war_hulk.jpg?alt=media&token=a29aaeff-3a41-4cec-b0a5-5d1e5fee26c6",
+            "equipe": [
+                {
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-greg_pak.jpg?alt=media&token=738fdf28-db1a-445a-96e7-251313a642e1",
+                    "text": "Escritor: Greg Pak"
+                },
+                {
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-john_romita.jpg?alt=media&token=52ccd188-db98-4c9e-8879-2d6e0a2bd8b8",
+                    "text": "Desenhista: John Romita"
+                },
+                {
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-david-finch.jpg?alt=media&token=dfc0e954-7071-4bf6-8643-1e1195b29fcc",
+                    "text": "Desenhista da Capa: David Finch"
+                }
+            ],
+            "personDestaque": "Hulk (Bruce Banner)",
+            "sinopse": [
+                "Um dos maiores classicos da editora, esta historia mostra o quanto o hulk pode ser realmnete perigoso e imparaval. World War Hulk é um crossover dos quadrinhos publicado em título próprio e em diversos títulos da Marvel Comics em 2007.",
+                "A história é consequência dos eventos ocorridos na saga Guerras Secretas onde Hulk está completamnete bestial e é expulso da Terra pelos Iluminate.",
+                "Após um acontecimento que deixou Hulk no auge de sua raiva e consequentemente de sua força de toda a história dos quadrinhos, Hulk volta para a Terra para se vingar e pretende enfrentar todos os herois da Terra de frente"
+            ]
+        },
+        {
+            "id": 1,
+            "editora": "Marvel",
+            "titulo": "Guerras Secretas II #1",
+            "nota": 9.2,
+            "data": "Maio 1984",
+            "capa": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/quadrinhos%2Fquad-secret_war_2.jpg?alt=media&token=99ee8e87-2577-4288-a0cd-e78b6cdbfa9e",
+            "equipe": [
+                {
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-jim_shooter.jpg?alt=media&token=e21dbbe8-2fc3-4f08-9aed-ffbcb3c093a5",
+                    "text": "Escritor: Jim Shooter"
+                },
+                {
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-al_milgrom.jpg?alt=media&token=89d6bb45-3113-43b1-a550-f212cb8fe3c0",
+                    "text": "Desenhista: Al Milgrom"
+                }
+            ],
+            "personDestaque": "Beyonder",
+            "sinopse": [
+                "A mega saga começa quando a entidade chamada Beyonder promove uma batalha nunca antes vista entre os maiores heróis e vilões do universo Marvel, oferecendo ao grupo vencedor, como prêmio, a realização de todos os seus desejos.",
+                "Poucas séries na cronologia Marvel foram tão importantes como Guerras Secretas, uma imensa história em 12 partes, envolvendo os principais heróis e vilões do universo. A lista de convocados envolve medalhões do porte de Homem-Aranha, os X-Men e Hulk, do lado dos heróis, e Doutor Destino, Lagarto, Ultron e Galactus do lado dos vilões.",
+                "A premissa é simples: uma entidade cósmica chamada Beyonder cria um planeta e transporta para lá os seres mais poderosos da Terra, dividindo-os em dois grupos. Sem mais delongas, Beyonder diz: 'Destruam seus inimigos e todos os seus sonhos serão realizados! Nenhum de seus desejos me é impossível de realizar!' Pronto. A confusão está armada e brigas começam a surgir dos dois lados."
+            ]
+        }
+    ],
+    "notiicias": [
+        {
+            "id": 0,
+            "titulo": "Cavaleiro da lua traz novidades para o UCM",
+            "escritor": "Denis Nascimento",
+            "thamb": "https://sm.ign.com/ign_br/screenshot/default/blob_fhce.jpg",
+            "data": "2022-06-01",
+            "coteudo": [
+                "Trazendo um novo lado do Universo Marvel, o lado sobrenatural da Marvel chegou com Cavaleiro da Lua, trazendo um novo herói com uma pegada completamente diferente e nova, Deuses, poderes e muito mais violência.",
+                "",
+                "",
+                "",
+                ""
+            ]
+
+        },
+        {
+            "id": 1,
+            "titulo": "Os Eternos podem participar da proxima grande guerra da Marvel",
+            "escritor": "Denis Nascimento",
+            "thamb": "https://marvelucm.com/wp-content/uploads/2021/10/Eternos-1024x680.jpg",
+            "data": "2022-06-01",
+            "coteudo": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+
+        },
+        {
+            "id": 2,
+            "titulo": "Veremos como será o futuro do UCM com Bucky e Sam",
+            "escritor": "Denis Nascimento",
+            "thamb": "https://files.tecnoblog.net/meiobit/wp-content/uploads/2021/04/falcon-winter-soldier-001.jpg",
+            "data": "2022-06-04",
+            "coteudo": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+
+        }
+    ]
+}

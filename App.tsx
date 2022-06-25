@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { LogBox } from 'react-native';
+import AppLoading from 'expo-app-loading';
+import { ComicNeue_300Light, ComicNeue_400Regular, ComicNeue_700Bold } from '@expo-google-fonts/comic-neue';
+import { Oswald_700Bold, Oswald_400Regular } from '@expo-google-fonts/oswald';
+import { Rubik_300Light, Rubik_700Bold } from '@expo-google-fonts/rubik';
+import { useFonts } from 'expo-font';
+import { Provider } from 'react-redux';
+
+import { Routes } from './src/routes';
+import store from './src/store/index';
+
+LogBox.ignoreLogs(['Setting a timer'])
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  let [fontsLoaded] = useFonts({
+    ComicNeue_300Light, 
+    ComicNeue_400Regular, 
+    ComicNeue_700Bold,
+    Oswald_700Bold, 
+    Oswald_400Regular,
+    Rubik_300Light,
+    Rubik_700Bold
+  });
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }else {
+    return (
+      <Provider store={store} >
+        <Routes />
+      </Provider>
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
