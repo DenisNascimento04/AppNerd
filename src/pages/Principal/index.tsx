@@ -12,11 +12,12 @@ import data from '../../BDTeste/banco.json';
 
 import { styles } from './styles';
 import { CompPesquisa } from '../../components/CompPesquisa';
-import {  ItemPersonagensBack, ItensNoticias, ItensQuadrinhos } from '../../components/Itens';
+import {  ItemPersonagensBack, ItensNoticias } from '../../components/Itens';
 import {  PropsPerso, propsStack } from '../../services/types';
 import { PageBase } from '../../components/PageBase';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/index';
+import { Flexbox121 } from '../../components/FlexboxN';
 
 
 const { width, height } = Dimensions.get('window');
@@ -56,6 +57,7 @@ export function Principal(){
     ]
 
     const dataHerois: any = [];
+    const dataNoticias1: any = [];
 
     data.personagensMarvel.map((item) => {
         if (item.tipoP === "Heroi" ) {
@@ -78,10 +80,15 @@ export function Principal(){
         }
     })
 
+    data.notiicias.map((item) => {
+        dataNoticias1.push({ ...item });
+    })
+
     function OpenModal(data: PropsPerso) {
         modalTeste.current?.open()
         setDataItem(data)
     }
+    console.log(dataNoticias1)
 
 
     return(
@@ -151,44 +158,9 @@ export function Principal(){
                         }}
                     />
 
-                    <ScrollView horizontal contentContainerStyle={{ paddingRight: 10, paddingLeft: 10 }} showsHorizontalScrollIndicator={false}>
-                        <View style={{ height: 260, flexDirection: 'row' }}>
-                            <View style={{ height: "100%", width: 155, marginRight: 10 }}>
-                                <Image source={{ uri: data.notiicias[0].thamb }} borderRadius={5} style={{ position: 'absolute', height: "100%", width: "100%" }} />
-                                <Text style={{ color: '#fff', backgroundColor: '#880808', padding: 5, top: 10, left: 10, borderRadius: 5, fontSize: 12, position: 'absolute' }}>Filmes</Text>
-                                <LinearGradient colors={["transparent","#000"]} style={{ height: "100%", width: "100%", justifyContent: 'flex-end', paddingHorizontal: 8, paddingBottom: 5, borderRadius: 5 }}>
-                                    <Text style={{ color: "#fff", fontSize: 17 }}>{data.notiicias[0].titulo}</Text>
-                                    <Text style={{ color: "#585858" }}>7 horas atrás</Text>
-                                </LinearGradient>
-                            </View>
-                            <View>
-                                <View style={{ height: 125, width: 300, marginBottom: 10 }}>
-                                    <Image source={{ uri: data.notiicias[2].thamb }} borderRadius={5} style={{ position: 'absolute', height: "100%", width: "100%" }} />
-                                    <Text style={{ color: '#fff', backgroundColor: '#880808', padding: 5, top: 10, left: 10, borderRadius: 5, fontSize: 12, position: 'absolute' }}>Filmes</Text>
-                                    <LinearGradient colors={["transparent","#000"]} style={{ height: "100%", width: "100%", justifyContent: 'flex-end', paddingHorizontal: 8, paddingBottom: 5, borderRadius: 5 }}>
-                                        <Text style={{ color: "#fff", fontSize: 14 }}>{data.notiicias[2].titulo}</Text>
-                                        <Text style={{ color: "#585858" }}>7 horas atrás</Text>
-                                    </LinearGradient>
-                                </View>
-                                <View style={{ height: 125, width: 300 }}>
-                                    <Image source={{ uri: data.notiicias[1].thamb }} borderRadius={5} style={{ position: 'absolute', height: "100%", width: "100%" }} />
-                                    <Text style={{ color: '#fff', backgroundColor: '#880808', padding: 5, top: 10, left: 10, borderRadius: 5, fontSize: 12, position: 'absolute' }}>Filmes</Text>
-                                    <LinearGradient colors={["transparent","#000"]} style={{ height: "100%", width: "100%", justifyContent: 'flex-end', paddingHorizontal: 8, paddingBottom: 5, borderRadius: 5 }}>
-                                        <Text style={{ color: "#fff", fontSize: 14 }}>{data.notiicias[1].titulo}</Text>
-                                        <Text style={{ color: "#585858" }}>7 horas atrás</Text>
-                                    </LinearGradient>
-                                </View>
-                            </View>
-                            <View style={{ height: "100%", width: 155, marginLeft: 10}}>
-                                <Image source={{ uri: data.notiicias[0].thamb }} borderRadius={5} style={{ position: 'absolute', height: "100%", width: "100%" }} />
-                                <Text style={{ color: '#fff', backgroundColor: '#880808', padding: 5, top: 10, left: 10, borderRadius: 5, fontSize: 12, position: 'absolute' }}>Filmes</Text>
-                                <LinearGradient colors={["transparent","#000"]} style={{ height: "100%", width: "100%", justifyContent: 'flex-end', paddingHorizontal: 8, paddingBottom: 5, borderRadius: 5 }}>
-                                    <Text style={{ color: "#fff", fontSize: 17  }}>{data.notiicias[0].titulo}</Text>
-                                    <Text style={{ color: "#585858" }}>7 horas atrás</Text>
-                                </LinearGradient>
-                            </View>
-                        </View>
-                    </ScrollView>
+                    <Flexbox121 
+                        data={dataNoticias1}
+                    />
 
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#880808', alignItems: 'center', marginHorizontal: 30, marginVertical: 20, elevation: 10, shadowColor: "#fff", borderWidth: 1, borderColor: "#585858", borderRadius: 20, }}>
                         <Image 

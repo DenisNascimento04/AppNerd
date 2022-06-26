@@ -1,6 +1,5 @@
 import { StackNavigationProp } from '@react-navigation/stack'
 import { DrawerNavigationProp } from '@react-navigation/drawer';
-import { RouteProp } from '@react-navigation/native';
 
 export type PropsRouteListDrawer = {
     Home: undefined,
@@ -103,7 +102,7 @@ export type PropsNoticias = {
     escritor: string,
     thamb: string,
     data: string,
-    coteudo: string[]
+    conteudo: string[]
 }
 
 export type propsStack = StackNavigationProp<PropsRouteListStack>

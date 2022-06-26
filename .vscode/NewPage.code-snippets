@@ -1,0 +1,19 @@
+{
+	"Estrututa": {
+		"scope": "typescript",
+		"prefix": "newPage",
+		"body": [
+			"import React from 'react';",
+			"import { View, Text } from 'react-native';",
+			"",
+			"export function Nome$1(){",
+			"\treturn(",
+			"\t\t<View>",
+			"\t\t",
+			"\t\t</View>",
+			"\t);",
+			"}"
+		],
+		"description": "Log output to console"
+	}
+}
