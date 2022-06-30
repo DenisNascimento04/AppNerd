@@ -234,23 +234,14 @@ export function ItensQuadrinhos({ data }: PropsItensQuadrinhos) {
 
 export function ItensNoticias(props: PropsItensNoticias) {
     return (
-        <Pressable onPress={() => {}} style={{ marginVertical: 20, borderRadius: 8, marginHorizontal: 10, elevation: 8}}>
+        <Pressable onPress={() => {}} style={{ marginBottom: 10, elevation: 8}}>
             <ImageBackground 
                 source={{ uri: props.data.thamb }} 
-                style={{ width: width-20, height: 200, justifyContent: 'flex-end' }}
-                borderRadius={10}
+                style={{ width: width, height: 300, justifyContent: 'flex-end' }}
             >
                 <Text style={{ color: '#fff', backgroundColor: '#880808', padding: 5, top: 15, left: 20, borderRadius: 5, fontSize: 13, position: 'absolute' }}>Filmes</Text>
-                {props.index == 0 ? 
-                    <Icons name='chevron-forward' size={22} color="#fff" style={{ position: 'absolute', zIndex: 900, left: width - 45, top: 90 }} />
-                : 
-                    <>
-                        <Icons name='chevron-forward' size={22} color="#fff" style={{ position: 'absolute', zIndex: 900, left: width - 45, top: 90 }} />
-                        <Icons name='chevron-back' size={22} color="#fff" style={{ position: 'absolute', zIndex: 900, left: 0, top: 90 }} />
-                    </>
-                }
-                <LinearGradient colors={['transparent','#000']} style={{ width: width-20, height: 120, borderRadius: 10, justifyContent: 'flex-end', paddingBottom: 10 }}>
-                    <View style={{ width: width-20, paddingHorizontal: 30, marginBottom: 10, }}>
+                <LinearGradient colors={['transparent','#000']} style={{ width: width, height: 120, justifyContent: 'flex-end', paddingBottom: 10 }}>
+                    <View style={{ width: width, paddingHorizontal: 30, marginBottom: 10, }}>
                         <Text style={{ fontSize: 18, fontFamily: 'Oswald_700Bold', color: '#fff'  }}>{ props.data.titulo }</Text>
                         <Text style={{ color: '#585858' }}>7 horas atrás</Text>
                     </View>

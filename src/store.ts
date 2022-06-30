@@ -20,7 +20,7 @@ const initialState: User = {
     id: 0,
     email: '',
     senha: '',
-    nome: '',
+    nome: 'Criar/Logar',
     imagePerfil: 'https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/perfis%2Fperfil-user.png?alt=media&token=a8631a95-df35-4a66-8f7f-15846c883af0',
     imageFundo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEY13sg0Y8cDbTL_VBFlWHsqGnzj7Un_hW9Q&usqp=CAU',
     frase: 'Fazer Login',

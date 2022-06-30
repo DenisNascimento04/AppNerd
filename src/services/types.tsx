@@ -3,8 +3,8 @@ import { DrawerNavigationProp } from '@react-navigation/drawer';
 
 export type PropsRouteListDrawer = {
     Home: undefined,
-    Vertigo: undefined,
-    DC: undefined,
+    Explorar: undefined,
+    Configurações: undefined,
 } 
 export type PropsRouteListStack = {
     Larning: undefined,

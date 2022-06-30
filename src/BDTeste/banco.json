@@ -677,7 +677,7 @@
             "wallpaper": "https://hqscomcafe.com.br/wp-content/uploads/2016/11/doutorestranho.jpg",
             "nomeHeroi": "Doutor Estranho",
             "nome": "Stephen Strange",
-            "desc": "O Mago Supremo da Terra, seu dever é proteger o planeta contra ameaças de outras dimensões e para isso é necessário um grande poder, poder que somente uma Mago Supremo tem.",
+            "desc": "O Mago Supremo da Terra, seu dever é proteger o planeta contra ameaças de outras dimensões e para isso a Terra precisa do Mago Supremo.",
             "PA": "Strange Tales #110 (Abril, 1963)",
             "altura": "1,88cm",
             "tags": [
@@ -1307,6 +1307,467 @@
                 }
             ],
             "editora": "Marvel",
+            "estilo": "misto"
+        },
+        {
+            "id": 0,
+            "corPri": "#000",
+            "corSec": "#000",
+            "tipoP": "Heroi",
+            "tags": [
+                "Liga da Justiça",
+                "Trevas",
+                "Cavaleirodas Trevas",
+                "Gotham"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fbatman.png?alt=media&token=cd90b1d6-8e88-4956-9cc3-9ab726b79481",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_batman.png?alt=media&token=b65d6dd4-873f-4464-a27e-2f65b809be9a",
+            "wallpaper": "https://images.sentimentodeleitor.com.br/2020/04/batman-10-historias-imperdiveis.jpg",
+            "nomeHeroi": "Batman",
+            "nome": "Bruce Wayne",
+            "desc": "O homem sem medo, usando a escuridão e o medo pra pega criminosos porém seus vilões gostam de desafiar sua inteligência, o que é um grande erro.",
+            "PA": "Detective Comics #27. (1939)",
+            "altura": "1,88cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Inteligencia Avançada",
+                "Equipamentos Avançados",
+                "Estratégia",
+                "Mestre em Artes Marciais",
+                "Ausencia de Medo"
+            ],
+            "sinopse": [
+                "Passando por uma tragédia ainda pequeno, usou sua perda para se tornar um símbolo de justiça e medo dentro de uma das cidades mais perigosas do mundo.",
+                "Usando sua riqueza e inteligência desenvolve inúmeros equipamentos de alta tecnologia com muitas finalidades, além de ter se tornado um dos maiores artistas marciais do mundo. Suas habilidades o tornaram uma força a ser temida por todos os criminosos de Gotham."
+            ],
+            "imagens": [
+                "https://cdn.wallpapersafari.com/31/24/v9O7Vy.jpg",
+                "https://i.imgur.com/f4Y2Ft1.jpg",
+                "https://pop.proddigital.com.br/wp-content/uploads/sites/8/2021/11/batman.jpg",
+                "https://www.torredevigilancia.com/wp-content/uploads/2016/11/GalleryComics_1920x1080_20161130_BMAnnual_1_CVR_fnl_5824c0abf189a3.36536012.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/11/Batman-1.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 6
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 2
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 9
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 9
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 5
+                }
+            ],
+            "editora": "DC",
+            "estilo": "padrão"
+        },
+        {
+            "id": 1,
+            "corPri": "#009EF7",
+            "corSec": "#FF0000",
+            "tipoP": "Heroi",
+            "tags": [
+                "Liga da Justiça",
+                "Louis Lane",
+                "Metropolis",
+                ""
+            ],
+            "thamb": "https://purepng.com/public/uploads/large/purepng.com-supermansupermanfictional-superherocomic-booksdc-comicscharacterjerry-siegelson-of-kryptonaction-comicsman-of-steel-1701528657954mhbuw.png",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_superman.png?alt=media&token=5886bb3b-1138-4762-a183-7dfa2744fd6a",
+            "wallpaper": "https://recreio.uol.com.br/media/_versions/legacy/2021/04/22/superman-1229086_widexl.jpg",
+            "nomeHeroi": "Superman",
+            "nome": "Clark Kent ou Kal-El",
+            "desc": "Conhecido como o 'Homem de Aço', é o simbolo da editora DC. Alienígena que caiu e foi criado nos EUA é o homem mais poderoso da terra.",
+            "PA": "Booster Gold #6 (Julho, 1986)",
+            "altura": "1,90cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Super Força",
+                "Super Velocidade",
+                "Super Resistência",
+                "Sopro Congelante",
+                "Visão de Calor",
+                "Visão de Raio X"
+            ],
+            "sinopse": [
+                "Um bebê criado por fazendeiros cresceu aprendendo a ser uma pessoa amável e gentil até que percebeu que era diferente das outras pessoas. Aprendeu a controlar seu poderes e se tronou o homem mais poderosos vivo na Terra, o que é curioso pois não é humano."
+            ],
+            "imagens": [
+                "https://64.media.tumblr.com/afacdadc2994303320cce6dd94d1050d/tumblr_inline_o4swnwwldZ1tjq66k_500.jpg",
+                "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/10/superman-clark-kent-comics.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/superman-dc-comics-75jpg.jpeg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/12/legiao_Kf2gQtX5pMeUBy9rwH7cJTWuodPzl0NLY3R4nZ_AS8.jpg.jpeg",
+                "https://t.ctcdn.com.br/8Klg-Y-1iVPgKbM9c92zHZq7_UQ=/512x288/smart/i490362.jpeg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 10
+                },
+                {
+                    "titulo": "Agilidade",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 8
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 8
+                }
+            ],
+            "editora": "DC",
+            "estilo": "padrão"
+        },
+        {
+            "id": 2,
+            "corPri": "#F8D923",
+            "corSec": "#FF0000",
+            "tipoP": "Heroi",
+            "tags": [
+                "Velocidade",
+                "Velocista",
+                "Star City",
+                "Força de Aceleração"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fthe-flash.png?alt=media&token=ff02ffc9-c198-4df3-aa45-73b235a49bb4",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_flash.png?alt=media&token=3fb12eed-861c-4a44-9a6b-35555779d211",
+            "wallpaper": "https://multiversonoticias.com.br/wp-content/uploads/2022/01/multiverso-8-2.png",
+            "nomeHeroi": "The Flash",
+            "nome": "Wally West",
+            "desc": "Após um acidente obteve acesso a Força de Aceleração, que o tornou um velocista e o homem mais rápido do mundo.",
+            "PA": "The Flash #110 (Janeiro, 1960)",
+            "altura": "1,82cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Super Velocidade",
+                "Regeneração Acelerada",
+                "Intagibilidade",
+                "Manipulação da Força de Aceleração",
+                "Manipulação de Relâmpagos"
+            ],
+            "sinopse": [
+                "Após ter a mãe assassinada e seu pai ser acusado do crime, Barry cresceu como um garoto inteligente e esforçado e se juntou a polícia, até que um acidente afetou toda a cidade o deixando em coma. Após o coma Barry obteve acesso a Força de Aceleração, se tornando o homem mais rápido do mundo."
+            ],
+            "imagens": [
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-Flash-1.jpg",
+                "https://t.ctcdn.com.br/oYQskb0sxZ2-wHjAdazRfuopsyY=/1280x720/smart/i537145.jpeg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/04/Flash.jpg",
+                "https://www.einerd.com.br/wp-content/uploads/2018/10/flash-multiverso-e1540573791203-890x465.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/01/legiao_mVsUkb7C6E9tMSTizqJ0NoeFQ1dOjLx5vyhHA38lZf.jpg.jpeg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Agilidade",
+                    "number": 7
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 5
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 8
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 10
+                }
+            ],
+            "editora": "DC",
+            "estilo": "misto"
+        },
+        {
+            "id": 3,
+            "corPri": "green",
+            "corSec": "#",
+            "tipoP": "Heroi",
+            "tags": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "thamb": "https://static.wikia.nocookie.net/aurageekrpg/images/f/fd/Hal_jordan.png/revision/latest/scale-to-width-down/500?cb=20190729210913&path-prefix=pt-br",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_lanterna-verde.png?alt=media&token=3c05b34f-b39d-42b5-9dfa-6494f2feaaa4",
+            "wallpaper": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/green-lantern-sideshow-997972-1280x0.jpg",
+            "nomeHeroi": "Lanterna Verde",
+            "nome": "Hal Jordan",
+            "desc": "Um piloto do exército é escolhido por um anel verde com vontade própria, o anel a apresentou a uma nova forma de servir e ajudar, mas desta vez seria para o universo inteiro.",
+            "PA": "Showcase #22 (Outubro, 1959)",
+            "altura": "1,88cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],  
+            "poderes": [
+                "Voo",
+                "Manipulçao de Energia",
+                "Materializção de Objetos"
+            ],
+            "sinopse": [
+                "Um dos melhores piloto da aeronáutica, porém com comportamento inadequado e rebelde, após um alienígena cair na Terra e morrer, misteriosamente Hal recebe uma visita de um anel verde que permitiu que ele tivesse poderes.",
+                "Hal descobre que o anel o escolheu pois ele era o ser com maior força de vontade da Terra, desta forma sendo convocado para a Tropa dos Lanternas Verdes, os responsáveis puderam manter a ordem no Universo."
+            ],
+            "imagens": [
+                "https://geeksgamers.com.br/wp-content/uploads/2021/06/thumb-1920-820545.jpg",
+                "https://1.bp.blogspot.com/-fECQ2cLvp30/XvenjNqObwI/AAAAAAAAG-w/o8a3vDETOkwBlsrNS9A2-3IM4IS5pXXUQCK4BGAsYHg/s2560/tropa_dercy_green_lanterns_corps.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/cropped-Lanterna-Verde.jpg",
+                "https://www.planocritico.com/wp-content/uploads/2017/02/lei-de-sinestro-plano-critico.jpg",
+                "https://d33wubrfki0l68.cloudfront.net/7ef3c4c6698bfffd410746ffe1fe435d011d90cb/38dd3/static/1039e3ac241ee37325dccde3d9e0e97c/8735e/lanterna-verde-ivan-reis-wall.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "",
+                    "nome": ""
+                },
+                {
+                    "image": "",
+                    "nome": ""
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 8
+                },
+                {
+                    "titulo": "Agilidade",
+                    "number": 6
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 7
+                }
+            ],
+            "editora": "DC",
+            "estilo": "padrão"
+        },
+        {
+            "id": 4,
+            "corPri": "#5B13AB",
+            "corSec": "#2CC61F",
+            "tipoP": "Vilão",
+            "tags": [
+                "Palhaço",
+                "Assassino",
+                "Louco",
+                "Perigoso"
+            ],
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcoringa.png?alt=media&token=bd0acc5b-6075-4258-bf0c-9e0c016cd971",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_coringa.png?alt=media&token=0b7ac2f1-3100-47be-99fc-0a4cb291a6d8",
+            "wallpaper": "https://uploads.jovemnerd.com.br/wp-content/uploads/2020/06/coringa-matou-batman.jpg",
+            "nomeHeroi": "Coringa",
+            "nome": "Desconhecido",
+            "desc": "Um maníaco homicida completamente imprevisível, sem levar em conta a vida humana, o Coringa acha o assassinato e o caos engraçados o que o leva a uma contagem de corpos que chega aos milhares.",
+            "PA": "Detective Comics #569(Dezembro, 1986)",
+            "altura": "1,95cm",
+            "equipes": [
+                {
+                    "id": ""
+                },
+                {
+                    "id": ""
+                }
+            ],
+            "poderes": [
+                "Imprevisível",
+                "Mestre Estratégico",
+                "Gás do Coringa",
+                "Habilidade de Luta",
+                "Inumeros Seguidores",
+                "Loucura Extrema"
+            ],
+            "sinopse": [
+                "O maior psicopata das ficções, o famoso palhaço assassino dos quadrinhos, muitas vezes um dos vilões mais sinistros e aterrorizantes dos quadrinhos, conhecido como louco e imprevisível, sempre foi o maior desafio do Batman.",
+                "Coringa é dado como um agente do caos devido a tudo que faz não ter um objetivo logico ou movido por um sentimento apenas acha bonito e engraçado causar o caos. Devido a sua loucura extrema acreditasse que seja o único vilão em Gotham que não tem medo do Cavaleiro das Trevas."
+
+            ],
+            "imagens": [
+                "https://www.einerd.com.br/wp-content/uploads/2019/10/Coringa-origens-capa.jpg",
+                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q95/wp-content/uploads/2020/06/legiao_6FZecShpHJkG.jpg.jpeg",
+                "https://uploads.jovemnerd.com.br/wp-content/uploads/2019/04/coringa-origem-1210x544.jpeg",
+                "https://lh3.googleusercontent.com/-EcBAJsg36YU/YVjt3MIu3aI/AAAAAAAAULo/1jdW12VPLtsfeor_go__PiSOJTNz5hqGgCLcBGAsYHQ/s1600/304710.png",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-Coringa.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/ComicCon2008jerryrobinson.jpg/220px-ComicCon2008jerryrobinson.jpg",
+                    "nome": "Jerry Robinson"
+                },
+                {
+                    "image": "https://br.web.img3.acsta.net/pictures/21/02/09/16/04/2097581.jpg",
+                    "nome": "Bill Finger"
+                },
+		{
+                    "image": "https://media.fstatic.com/GIv77KaG0ha5jPRRt5Q1vVxlj74=/210x312/smart/media/artists/avatar/2018/11/bob-kane_a8630.jpg",
+                    "nome": "Bob Kane"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 4
+                }
+            ],
+            "editora": "DC",
             "estilo": "misto"
         }
     ],

@@ -62,7 +62,7 @@ export const styles = StyleSheet.create({
 
     itens: { 
         paddingHorizontal: 40,
-        paddingVertical: 50,  
+        paddingVertical: 40,  
         borderRadius: 30,
         marginHorizontal: 8,
         elevation: 20,
@@ -79,7 +79,7 @@ export const styles = StyleSheet.create({
         width: 208, 
         height: 200, 
         position: 'absolute', 
-        top: -150, 
+        top: -140, 
         zIndex: 2
     },
 

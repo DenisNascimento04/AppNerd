@@ -9,6 +9,7 @@ import Icons from 'react-native-vector-icons/Ionicons';
 import Vector from '../../assets/vector1.png' 
 
 import data from '../../BDTeste/banco.json';
+import { BAntiHerois, BHerois, BViloes } from '../../mente';
 
 import { styles } from './styles';
 import { CompPesquisa } from '../../components/CompPesquisa';
@@ -28,6 +29,7 @@ export function Principal(){
     const usuario = useSelector((state: RootState) => state.usuario)
     const modalTeste = useRef<Modalize>(null); 
     const [dataItem, setDataItem] = useState<PropsPerso>(); 
+    const [activeIndex, setActiveIndex] = useState(0); 
     const category = [
         {
             icon: 'newspaper',
@@ -56,46 +58,24 @@ export function Principal(){
         }
     ]
 
-    const dataHerois: any = [];
     const dataNoticias1: any = [];
 
-    data.personagensMarvel.map((item) => {
-        if (item.tipoP === "Heroi" ) {
-            dataHerois.push({ ...item })
-        }
-    })
-
-    const dataViloes: any = []
-
-    data.personagensMarvel.map((item) => {
-        if (item.tipoP === "Vilão" ) {
-            dataViloes.push({ ...item })
-        }
-    })
-    const dataAnti: any = []
-
-    data.personagensMarvel.map((item) => {
-        if (item.tipoP === "Anti-Heroi" ) {
-            dataAnti.push({ ...item })
-        }
-    })
-
     data.notiicias.map((item) => {
-        dataNoticias1.push({ ...item });
+        dataNoticias1.push({ ...item })
     })
 
     function OpenModal(data: PropsPerso) {
         modalTeste.current?.open()
         setDataItem(data)
     }
-    console.log(dataNoticias1)
+    // console.log(dataNoticias1)
 
 
     return(
         <PageBase backgroudColor="#353935" dataModal={dataItem} modalProps={modalTeste} frase={usuario.frase} image={usuario.imagePerfil} title='Mundo Nerd'>
             <View style={{ zIndex: 0, flex: 1 }}>
 
-                <View style={{ width: width, height: 250, marginBottom: 30, marginTop: 10 }}>
+                {/* <View style={{ width: width, height: 250, marginBottom: 30, marginTop: 10 }}>
                     <View style={{ backgroundColor: 'rgba(0,0,0,0.6)', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
                         <Text style={{ color: '#FFF', fontSize: 20, textAlign: 'center', marginHorizontal: 20, marginBottom: 10 }} >
                             Explore o Mundo das Revistas em Quadrinhos 
@@ -115,20 +95,48 @@ export function Principal(){
                         source={{ uri: "https://thenexus.one/storage/2022/05/Injustice-3-Marvel-vs-DC-Characters-Fighting-Game.jpg" }} 
                         style={{ zIndex: -1, position: 'absolute', width: '100%', height: '100%' }} 
                     />
+                </View> */}
+
+                <View>
+                    <FlatList
+                        data={data.notiicias}
+                        pagingEnabled
+                        horizontal
+                        onMomentumScrollEnd={(event) => {
+                            setActiveIndex(Math.round(event.nativeEvent.contentOffset.x/width))
+                        }}
+                        scrollEventThrottle={16}
+                        showsHorizontalScrollIndicator={false}
+                        keyExtractor={(item) => String(item?.id)}
+                        renderItem={({ item, index }) => <ItensNoticias index={index} data={item} /> }
+                    />
+
+                    {
+                        data.notiicias.length > 1 ?
+                            <View style={{ width: width, marginBottom: 20, alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
+                                {
+                                    data.notiicias.map((_,i) => (
+                                        <View 
+                                            key={i.toString()}
+                                            style={{ width: 8, height: 8, borderRadius: 10, marginHorizontal: 1, backgroundColor: i === activeIndex ? "#000" : "#585858" }}
+                                        />
+                                    ))
+                                }
+                            </View>
+                        : null
+                    }
                 </View>
 
                 {/* <LinearGradient colors={["#03eaff","#6d4fe7"]} style={{ width: 50, height: 50, marginLeft: 40 }} /> */}
-
-                <CompPesquisa />
                 
                 <View style={{ marginVertical: 10 }} >
                     <View style={styles.flatList}>
-                        <Text style={styles.title}>Categorias</Text>
+                        <Text style={[styles.title, { color: "#fff" }]}>Categorias</Text>
                     </View>
                     <FlatList 
                         data={category}
                         horizontal
-                        contentContainerStyle={{ paddingLeft: 20, marginBottom: 10 }}
+                        contentContainerStyle={{ paddingLeft: 10, marginBottom: 10 }}
                         showsHorizontalScrollIndicator={false}
                         keyExtractor={(item,index) => index.toString()}
                         renderItem={({ item, index }) => (
@@ -141,23 +149,8 @@ export function Principal(){
                         )}
                     />
                 </View>
-                <View style={{ backgroundColor: '#fff', borderTopLeftRadius: 30, borderTopRightRadius: 30, flex: 1, paddingTop: 30 }}>
-                    <Carousel
-                        layout={'default'}
-                        data={data.notiicias}
-                        firstItem={0}
-                        sliderWidth={width}
-                        itemWidth={width}
-                        renderItem={({ item, index }) => {
-                            return(
-                                <ItensNoticias 
-                                    index={index}
-                                    data={item}
-                                />
-                            );
-                        }}
-                    />
-
+                <View style={{ backgroundColor: '#fff', borderTopLeftRadius: 30, borderTopRightRadius: 30, paddingTop: 30, flex: 1, }}>
+                    <Text style={[styles.title, { color: "#880808", marginLeft: 20, marginBottom: 10 }]}>Novidades</Text>                    
                     <Flexbox121 
                         data={dataNoticias1}
                     />
@@ -177,6 +170,12 @@ export function Principal(){
                             </View>
                         </View>
                     </View>
+
+                    <Text style={[styles.title, { color: "#880808", marginLeft: 20, marginBottom: 10 }]}>Novidades</Text>                    
+                    <Flexbox121 
+                        data={dataNoticias1}
+                    />
+
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#880808', alignItems: 'center', marginHorizontal: 30, marginVertical: 20, elevation: 7, shadowColor: "#fff", borderWidth: 1, borderColor: "#585858", borderRadius: 20,  }}>
                         <View style={{ alignItems: 'center' }}>
                             <View style={{ marginHorizontal: 20, marginBottom: 10 }}>

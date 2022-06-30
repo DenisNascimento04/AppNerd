@@ -1,9 +1,9 @@
 import React from 'react';
-import { Easing, Image, View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { Easing, Image, View, Text, Pressable } from 'react-native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { CardStyleInterpolators, createStackNavigator, StackScreenProps } from '@react-navigation/stack';
-import { createDrawerNavigator, DrawerScreenProps } from '@react-navigation/drawer';
-import { PropsRouteListDrawer, PropsRouteListStack } from '../services/types';
+import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList, DrawerScreenProps } from '@react-navigation/drawer';
+import { PropsRouteListDrawer, PropsRouteListStack, propsStack } from '../services/types';
 
 import { Principal } from '../pages/Principal';
 import { Vertigo } from '../pages/Vertigo';
@@ -16,6 +16,9 @@ import { Testes } from '../pages/Testes';
 import { PageQuadrinhos } from '../pages/PageQuadrinhos';
 import { PageVerTudo } from '../pages/PageVerTudo';
 import { Explorar } from '../pages/Explorar';
+import { RootState } from '../store/index';
+import { useSelector } from 'react-redux';
+import { HeaderDrawer } from '../components/HeaderDrawer';
 
 export type PropsDrawer = DrawerScreenProps<PropsRouteListDrawer, 'Home'>
 export type PropsStack = StackScreenProps<PropsRouteListStack, 'PagePerso'>
@@ -63,10 +66,13 @@ export function Routes(){
 
                             drawerInactiveTintColor: '#000',
 
-                            drawerActiveTintColor: '#FFF',
+                            drawerActiveTintColor: '#D40D0D',
                             drawerActiveBackgroundColor: '#000',
                             drawerType: 'slide'
                         }}
+                        drawerContent={(props) => (
+                                <HeaderDrawer {...props} />
+                        )}
                     >
                         <Drawer.Screen name='Home' component={Principal} 
                             options={{ 
@@ -81,32 +87,40 @@ export function Routes(){
                                         size={focused ? size+2 : size } 
                                         color={color} 
                                     /> 
-                                ) 
-                            }} 
+                                    ) 
+                                }} 
                         />
-                        <Drawer.Screen name='Vertigo' component={Vertigo} 
+                        <Drawer.Screen name='Explorar' component={Explorar} 
                             options={{ 
                                 drawerActiveBackgroundColor: '#666768', 
                                 drawerLabel: ({ color, focused }) => (
                                     <View>
-                                        <Text style={{  marginLeft: -15, color: color, fontSize: focused ? 16 : 14 }}>Vertigo</Text>
+                                        <Text style={{  marginLeft: -15, color: color, fontSize: focused ? 16 : 14 }}>Explorar</Text>
                                     </View>
                                 ),
-                                drawerIcon: ({ focused,size }) => (
-                                    <Image source={{ uri: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/9216c235-7a7a-46fd-ad62-016c213986f7/d84vn7q-586b76f6-4736-4a38-858b-c2be8153f3ab.png' }} style={{ width: focused ? size + 5 : size, height: focused ? size + 5 : size }} /> 
+                                drawerIcon: ({ color, focused,size }) => (
+                                    <Icons 
+                                        name={focused ? 'planet': 'planet-outline'} 
+                                        size={focused ? size+2 : size } 
+                                        color={color} 
+                                    /> 
                                 )
                             }}
                         />
-                        <Drawer.Screen name='DC' component={DC} 
+                        <Drawer.Screen name='Configurações' component={DC} 
                             options={{
                                 drawerActiveBackgroundColor: '#3469E1', 
                                 drawerLabel: ({ color, focused }) => (
                                     <View>
-                                        <Text style={{  marginLeft: -15, color: color, fontSize: focused ? 16 : 14 }}>DC Comics</Text>
+                                        <Text style={{  marginLeft: -15, color: color, fontSize: focused ? 16 : 14 }}>Configurações</Text>
                                     </View>
                                 ),
-                                drawerIcon: ({ focused,size }) => (
-                                    <Image source={{ uri: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/4aaff140-1f64-4844-93ea-f14dd42d68c1/dcam06n-afa0c62e-58e6-4c9f-8a83-3316950618c7.png' }} style={{ width: focused ? size + 5 : size, height: focused ? size + 5 : size }} /> 
+                                drawerIcon: ({ color,focused,size }) => (
+                                    <Icons 
+                                        name={focused ? 'settings': 'settings-outline'} 
+                                        size={focused ? size+2 : size } 
+                                        color={color} 
+                                    />     
                                 ) 
                             }}
                         />
@@ -117,7 +131,7 @@ export function Routes(){
                 <Stack.Screen name='PageQuadrinhos' component={PageQuadrinhos} />
                 <Stack.Screen name='Pesquisa' component={Pesquisa} />
                 <Stack.Screen name='Perfil' component={Perfil} />
-                <Stack.Screen name='Explorar' component={Explorar} />
+                {/* <Stack.Screen name='Explorar' component={Explorar} /> */}
                 <Stack.Screen name='Testes' component={Testes} />
             </Stack.Navigator>
         </NavigationContainer>

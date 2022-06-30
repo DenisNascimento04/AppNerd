@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     },
 
     buttonTudo: {
-        color: '#D3D2CF', 
+        color: '#880808', 
         fontSize: 14, 
         fontWeight: '700',
     },
