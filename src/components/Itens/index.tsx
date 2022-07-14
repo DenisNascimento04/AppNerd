@@ -5,52 +5,11 @@ import { useNavigation } from '@react-navigation/native';
 import Icons from 'react-native-vector-icons/Ionicons';
 
 import { stylesItensBack, styles } from './styles';
-import { PropsNoticias, PropsPerso, propsStack } from '../../services/types';
+import { PropsItem, PropsItemBack, PropsItensNoticias, PropsItensPersonagensPadrao, PropsItensQuadrinhos, PropsNoticias, PropsPerso, propsStack } from '../../services/types';
 import { RectButton } from 'react-native-gesture-handler';
 import { theme } from '../../themes';
 
 const { width } = Dimensions.get('screen')
-
-type PropsItem = {
-    data: PropsPerso
-    navig: () => void,
-    estilo: string
-}
-
-type PropsItemBack = {
-    data: PropsPerso
-    navig: () => void, 
-    small?: any, 
-    vertical?: any, 
-    horizontal?: any
-}
-
-type PropsItensPersonagensPadrao = {
-    data: PropsPerso,
-    navig: () => void
-}
-
-type PropsItensNoticias = {
-    index: number
-    data: PropsNoticias
-}
-
-type PropsItensQuadrinhos = {
-    data: {
-        id: number,
-        editora: string,
-        titulo: string,
-        nota: number,
-        data: string,
-        capa: string,
-        equipe: {
-            image: string;
-            text: string;
-        }[],
-        personDestaque: string,
-        sinopse: string[]
-    }
-}
 
 export function ItemPersonagens(props: PropsItem){
 

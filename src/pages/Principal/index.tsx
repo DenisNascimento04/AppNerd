@@ -18,7 +18,7 @@ import {  PropsPerso, propsStack } from '../../services/types';
 import { PageBase } from '../../components/PageBase';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/index';
-import { Flexbox121 } from '../../components/FlexboxN';
+import { Flexbox11G, Flexbox121 } from '../../components/FlexboxN';
 
 
 const { width, height } = Dimensions.get('window');
@@ -59,6 +59,7 @@ export function Principal(){
     ]
 
     const dataNoticias1: any = [];
+    const dataHerois = BHerois();
 
     data.notiicias.map((item) => {
         dataNoticias1.push({ ...item })
@@ -118,7 +119,7 @@ export function Principal(){
                                     data.notiicias.map((_,i) => (
                                         <View 
                                             key={i.toString()}
-                                            style={{ width: 8, height: 8, borderRadius: 10, marginHorizontal: 1, backgroundColor: i === activeIndex ? "#000" : "#585858" }}
+                                            style={{ width: 8, height: 8, borderRadius: 10, marginHorizontal: 3, backgroundColor: i === activeIndex ? "#000" : "#585858" }}
                                         />
                                     ))
                                 }
@@ -150,8 +151,33 @@ export function Principal(){
                     />
                 </View>
                 <View style={{ backgroundColor: '#fff', borderTopLeftRadius: 30, borderTopRightRadius: 30, paddingTop: 30, flex: 1, }}>
-                    <Text style={[styles.title, { color: "#880808", marginLeft: 20, marginBottom: 10 }]}>Novidades</Text>                    
+                    <Text style={[styles.title, { color: "#880808", marginLeft: 20, marginBottom: 10 }]}>Destaques</Text>                    
                     <Flexbox121 
+                        data={dataNoticias1}
+                    />
+
+                    <View style={{ marginVertical: 10 }}>
+                        <Text style={[styles.title, { color: "#880808", marginLeft: 20, marginBottom: 15, marginTop: 20 }]}>Favoritos da Galera</Text> 
+                        <FlatList 
+                            data={dataHerois}
+                            keyExtractor={(item, index) => index.toString()}
+                            horizontal
+                            showsHorizontalScrollIndicator={false}
+                            contentContainerStyle={{ alignItems: 'center', paddingTop: 5, paddingBottom: 20, paddingLeft: 15}}
+                            renderItem={({ item }) => (
+                                <Pressable onPress={() => OpenModal(item)} style={{ backgroundColor: item.corPri, width: 80, height: 80, borderRadius: 40, alignItems: 'center', marginHorizontal: 10 }}>
+                                    <Image 
+                                        source={{ uri: item.thamb }}
+                                        style={{ width: 100, height: 100, top: -10 }}
+                                        resizeMode='contain'
+                                    />
+                                </Pressable>
+                            )}
+                        />
+                    </View>
+
+                    <Text style={[styles.title, { color: "#880808", marginLeft: 20, marginBottom: 10, marginTop: 20 }]}>Novidades</Text>                    
+                    <Flexbox11G 
                         data={dataNoticias1}
                     />
 
@@ -170,77 +196,7 @@ export function Principal(){
                             </View>
                         </View>
                     </View>
-
-                    <Text style={[styles.title, { color: "#880808", marginLeft: 20, marginBottom: 10 }]}>Novidades</Text>                    
-                    <Flexbox121 
-                        data={dataNoticias1}
-                    />
-
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#880808', alignItems: 'center', marginHorizontal: 30, marginVertical: 20, elevation: 7, shadowColor: "#fff", borderWidth: 1, borderColor: "#585858", borderRadius: 20,  }}>
-                        <View style={{ alignItems: 'center' }}>
-                            <View style={{ marginHorizontal: 20, marginBottom: 10 }}>
-                                <Text style={{ fontSize: 18, maxWidth: 250, fontFamily: 'Oswald_700Bold', color: '#fff' }}>Falcão é o novo Capitão !</Text>
-                                <Text style={{ maxWidth: 230, marginTop: 5, color: '#fff' }}>
-                                    Após a série falcão assume o manto e o escudo fazendo por merecer.
-                                </Text>
-                            </View>
-                        </View>
-                        <Image 
-                            source={{ uri: 'https://images.universohq.com/2014/07/captainamericasamwilson_destaque.jpg' }} 
-                            style={{ width: 110, height: 120 }}
-                            borderRadius={20}
-                        />
-                    </View>
-                    <Pressable style={{ marginBottom: 50, marginTop: 30 }}>
-                        <View style={{ width: width, height: 200, alignItems: 'center', justifyContent: 'center' }}>
-                            <View style={{ backgroundColor: '#fff', width: "90%", height: "100%", borderTopLeftRadius: 40, elevation: 3 }}>
-                                <Image 
-                                    source={{ uri: 'https://cabanadoleitor.com.br/wp-content/uploads/2022/02/Illuminati-originais.webp' }} 
-                                    style={{ width: '100%', height: '100%' }}
-                                    borderTopLeftRadius={40}
-                                    borderBottomRightRadius={40} 
-                                />
-                            </View>
-                            <View style={{ position: 'absolute', top: 139, left: 0, flexDirection: 'row', elevation: 4 }}>
-                                <View style={{ backgroundColor: '#fff', left: 20, paddingBottom: 0, paddingTop: 10, paddingLeft: 20 }}>
-                                    <Text style={{ fontSize: 24 }}>Os Iluminates</Text>
-                                </View>
-                                <Image 
-                                    source={Vector} 
-                                    resizeMode='contain'
-                                    style={{ width: 88, height: "auto", left: 8, top: 0 }} 
-                                />
-                            </View>
-                            <View style={{ backgroundColor: '#fff', width: "90%", borderBottomRightRadius: 20, borderBottomLeftRadius: 20, elevation: 3 }}>
-                                <Text style={{ paddingHorizontal: 10, paddingVertical: 10 }}>Grupo formado pelos super-herois mais influentes do mundo</Text>
-                            </View>
-                        </View>
-                    </Pressable>
-                    <Pressable style={{ marginBottom: 50, marginTop: 30 }}>
-                        <View style={{ width: width, height: 200, alignItems: 'center', justifyContent: 'center' }}>
-                            <View style={{ backgroundColor: '#fff', width: "90%", height: "100%", borderTopLeftRadius: 40, elevation: 3 }}>
-                                <Image 
-                                    source={{ uri: 'https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/avengers-vingadores-hqs.jpg' }} 
-                                    style={{ width: '100%', height: '100%' }}
-                                    borderTopLeftRadius={40}
-                                    borderBottomRightRadius={40} 
-                                />
-                            </View>
-                            <View style={{ position: 'absolute', top: 139, left: 0, flexDirection: 'row', elevation: 4 }}>
-                                <View style={{ backgroundColor: '#fff', left: 20, paddingBottom: 0, paddingTop: 10, paddingLeft: 20 }}>
-                                    <Text style={{ fontSize: 24 }}>Os Vingadores</Text>
-                                </View>
-                                <Image 
-                                    source={Vector} 
-                                    resizeMode='contain'
-                                    style={{ width: 88, height: "auto", left: 8, top: 0 }} 
-                                />
-                            </View>
-                            <View style={{ backgroundColor: '#fff', width: "90%", borderBottomRightRadius: 20, borderBottomLeftRadius: 20, elevation: 3 }}>
-                                <Text style={{ paddingHorizontal: 10, paddingVertical: 10 }}>São o grupo dos maiores super-heroís da terra.</Text>
-                            </View>
-                        </View>
-                    </Pressable>
+                    
                 </View>
             </View>
         </PageBase>

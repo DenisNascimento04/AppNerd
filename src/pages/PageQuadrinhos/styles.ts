@@ -1,87 +1,107 @@
 import { Oswald_700Bold } from '@expo-google-fonts/oswald';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+import { theme } from '../../themes';
+
+const { width, height } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
     header: {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1
-    },
-
-    headerImageBack: {
-        position:'absolute', 
-        height: "100%", 
-        justifyContent: 'center', 
+        position: 'absolute', 
         top: 0, 
         left: 0, 
-        right: 0, 
-        marginBottom: 50
+        width: width, 
+        height: 300, 
+        borderRadius: 20, 
+        overflow: 'hidden',
+        zIndex: 1, 
     },
 
-    title: {
-        fontSize: 22, 
-        fontFamily: 'Oswald_700Bold', 
-        marginBottom: 5,
-    },
-
-    texts: {
-        fontSize: 16, 
-        fontFamily: 'ComicNeue_400Regular', 
-        marginBottom: 10
-    },
-
-    viewBody: {
-        flex: 1, 
-        backgroundColor: 'rgba(58,58,58,0.3)', 
-        borderRadius: 40, 
-        paddingTop: 40
-    },
-
-    viewHeader: {
-        flexDirection: 'row', 
+    imageHeader: {
+        position: 'absolute', 
         width: "100%", 
-        justifyContent: 'space-between', 
-        alignItems: 'center',
-        marginBottom: 20, 
-        paddingHorizontal: 20
+        height: "100%", 
+        zIndex: -1
     },
 
-    viewPD: {
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        alignItems: 'center'
-    },
+/////////////////////////////////////////////////////////////////////////////////////
 
-    textPerso: {
-        fontSize: 15, 
-        fontFamily: 'ComicNeue_400Regular', 
-        marginBottom: 20
-    },
-
-    viewNota: {
-        flexDirection: 'row', 
+    buttonLike: {
+        backgroundColor: "#fff", 
+        width: 44, 
+        height: 44, 
         alignItems: 'center', 
-        backgroundColor: '#fff', 
-        elevation: 4, 
-        borderRadius: 10, 
-        padding: 5
+        justifyContent: 'center',
+        borderRadius: 24, 
+        elevation: 10,  
+    },
+    buttonBack: {
+        backgroundColor: "#fff", 
+        width: 42, 
+        height: 42, 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        marginRight: 30,
+        borderRadius: 24,
+        elevation: 10,  
     },
 
-    viewEquipe: {
-        flexDirection: 'row', 
-        flexWrap: 'wrap', 
-        justifyContent: "space-between", 
-        paddingHorizontal: 15
+    
+/////////////////////////////////////////////////////////////////////////////////////
+
+    card: {
+        position: 'absolute', 
+        left: 20, 
+        flexDirection: 'row',
+        zIndex: 5, 
     },
 
-    descEquipe: {
-        fontSize: 14, 
-        fontFamily: 'ComicNeue_400Regular', 
-        marginBottom: 10, 
-        marginLeft: 2, 
-        marginTop: 5, 
-        maxWidth: 150
+    cardNota: {
+        fontFamily: theme.text, 
+        fontSize: 13, 
+        color: "#fff"
     },
+
+    cardTitulo: {
+        fontFamily: theme.title, 
+        fontSize: 26, 
+        color: "#fff", 
+        maxWidth: 200, 
+        height: 70
+    },
+
+    cardTexto: {
+        fontFamily: theme.text, 
+        fontSize: 13,
+        maxWidth: 150, 
+        color: "#585858",
+    },
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+    content: {},
+    contentTitulo: {
+        fontFamily: theme.title, 
+        fontSize: 22, 
+        marginVertical: 7
+    },
+    contentText: {
+        fontFamily: theme.text, 
+        fontSize: 14,
+        marginBottom: 5
+    },
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+    imagemEquipes: {
+        width: 100, 
+        height: 100, 
+        borderRadius: 50
+    },
+    imagemDesc: {
+        maxWidth: 80, 
+        fontSize: 12,
+        textAlign: 'center'
+    }
+
+
 });

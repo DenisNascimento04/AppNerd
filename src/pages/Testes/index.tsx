@@ -1,90 +1,240 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { View, Text, ImageBackground, Image, ScrollView, Dimensions, FlatList } from 'react-native';
+import React, { useRef } from 'react';
+import { View, Text, ImageBackground, Image, ScrollView, Dimensions, FlatList, TextProps, Pressable } from 'react-native';
 import Icons from 'react-native-vector-icons/Ionicons';
-import { HabilidadeBar } from '../../components/HabilidadeBar';
+import { Rating, AirbnbRating } from 'react-native-ratings';
+import { theme } from '../../themes';
+
+import data from '../../BDTeste/banco.json';
+import Animated, { Extrapolate, interpolate, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue } from 'react-native-reanimated';
+import { propsStack } from '../../services/types';
+import { useNavigation } from '@react-navigation/native';
 
 const { width } = Dimensions.get('screen')
-
+const flameIcon = require("../../assets/flame.svg");
 
 export function Testes() {
 
-    const Hulk = [
-        {
-            titulo: 'Força',
-            number: 10
-        },
-        {
-            titulo: 'Agilidade',
-            number: 4
-        },
-        {
-            titulo: 'Resistência',
-            number: 8
-        },
-        {
-            titulo: 'Inteligência',
-            number: 9
-        },
-        {
-            titulo: 'Velocidade',
-            number: 4
-        },
-    ];
+    const teste = useRef<TextProps>(null);
 
-    const keys = [
-        0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
-    ]
+    const scrollY = useSharedValue(0);
+    const navigation = useNavigation<propsStack>();
+    const scrollHandler = useAnimatedScrollHandler((event) => {
+        scrollY.value = event.contentOffset.y;
+    });
+
+    const CardStyle = useAnimatedStyle(() => {
+        return {
+            top: interpolate(
+                scrollY.value,
+                [0, 270],
+                [160, 30],
+                Extrapolate.CLAMP,
+            ),
+        };
+    });
+    const headerStyle = useAnimatedStyle(() => {
+        return {
+            height: interpolate(
+                scrollY.value,
+                [0, 270],
+                [275, 120],
+                Extrapolate.CLAMP,
+            ),
+        };
+    });
+
+    const titleStyle = useAnimatedStyle(() => {
+        return {
+            left: interpolate(
+                scrollY.value,
+                [0, 270],
+                [0, -30],
+                Extrapolate.CLAMP,
+            ),
+        };
+    });
+
+    
+    const dadosOpacityStyle = useAnimatedStyle(() => {
+        return {
+            transform:[
+                {
+                    scale: interpolate(
+                        scrollY.value,
+                        [0, 50],
+                        [1, 0],
+                        Extrapolate.CLAMP,
+                    ), 
+                }
+            ] 
+        };
+    });
+    const imageFade = useAnimatedStyle(() => {
+        return {
+            transform:[
+                {
+                    scale: interpolate(
+                        scrollY.value,
+                        [0, 50],
+                        [1, 0],
+                        Extrapolate.CLAMP,
+                    ), 
+                }
+            ] 
+        };
+    });
+    const buttonBack = useAnimatedStyle(() => {
+        return {
+            top: interpolate(
+                scrollY.value,
+                [0, 280],
+                [40, 50],
+                Extrapolate.CLAMP
+            )
+        };
+    });
+    const buttoLike = useAnimatedStyle(() => {
+        return {
+            top: interpolate(
+                scrollY.value,
+                [0, 280],
+                [245, 50],
+                Extrapolate.CLAMP
+            )
+        };
+    });
+
 
     return(
+        <View>
+            <Animated.View style={[ headerStyle, { width: width, height: 300, position: 'absolute', top: 0, left: 0, zIndex: 1, borderRadius: 20, overflow: 'hidden' }]}>
+                <View style={{ width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,.3)" }}>
+                    <Animated.View style={[buttonBack, { position: 'absolute', left: 20,}]}>
+                        <Pressable style={{ 
+                            backgroundColor: "#fff", 
+                            elevation: 10,  
+                            alignItems: 'center', 
+                            justifyContent: 'center',
+                            marginRight: 30,
+                            width: 42, 
+                            height: 42, 
+                            borderRadius: 24 
+                        }}>
+                            <Icons name='chevron-back' size={28} color="#000" />
+                        </Pressable>
+                    </Animated.View>
+                </View>
+                <Image source={{ uri: "https://www.planocritico.com/wp-content/uploads/2014/12/hulk-contra-o-mundo.jpg" }} style={{ width: "100%", height: "100%", position: 'absolute', zIndex: -1 }} />
+            </Animated.View>
 
-        <ImageBackground source={require("../../assets/base-Page.png")} style={{ flex: 1, paddingTop: 40 }} >
-            <Text>Testes</Text>
-        </ImageBackground>
+            <Animated.View style={[ CardStyle, { position: 'absolute', left: 20, zIndex: 5, flexDirection: 'row' }]}>
+                <View style={{ width: 130, height: 200 }}>
+                    <Animated.Image source={{ uri: data.quadrinhos[0].capa }} fadeDuration={500} style={[ imageFade, { width: "100%", height: "100%" }]} borderRadius={5} />
+                </View>
+                <View style={{ paddingVertical: 10, marginLeft: 10 }}>
+                    <View style={{ marginBottom: 20 }}>
+                        <Animated.Text style={[ titleStyle ,{ fontFamily: theme.titleRoboto, fontSize: 26, color: "#fff", maxWidth: 250, height: 70 }]}>{data.quadrinhos[0].titulo}</Animated.Text>
+                        <Animated.View style={[ dadosOpacityStyle, { flexDirection: 'row', alignItems: 'center' }]}>
+                            <View style={{ marginRight: 5, flexDirection: 'row' }}>
+                                { data.quadrinhos[0].nota-5 > 1 ? <Icons name='heart' size={14} color="red" /> : <Icons name='heart' size={14} color="#585858" /> }
+                                { data.quadrinhos[0].nota-5 > 2 ? <Icons name='heart' size={14} color="red" /> : <Icons name='heart' size={14} color="#585858" /> }
+                                { data.quadrinhos[0].nota-5 > 3 ? <Icons name='heart' size={14} color="red" /> : <Icons name='heart' size={14} color="#585858" /> }
+                                { data.quadrinhos[0].nota-5 > 4 ? <Icons name='heart' size={14} color="red" /> : <Icons name='heart' size={14} color="#585858" /> }
+                                { data.quadrinhos[0].nota-5 > 5 ? <Icons name='heart' size={14} color="red" /> : <Icons name='heart' size={14} color="#585858" /> }
+                            </View>
+                            <Text style={{ fontFamily: theme.textRoboto, fontSize: 14, color: "#fff" }}>
+                                {data.quadrinhos[0].nota}
+                            </Text>
+                        </Animated.View>
+                    </View>
+                    <Animated.View style={[ dadosOpacityStyle ]}>
+                        <Text style={{ fontFamily: theme.textRoboto, fontSize: 13, maxWidth: 150, color: "#585858", marginBottom: 10 }}>
+                            {`Destaque: \n${data.quadrinhos[0].personDestaque}`}
+                        </Text>
+                        <Text style={{ fontFamily: theme.textRoboto, fontSize: 13, maxWidth: 150, color: "#585858" }}>
+                            Gênero: Ação, Aventura, Guerra, Violencia
+                        </Text>
+                    </Animated.View>
+                </View>
+            </Animated.View>
 
-        // <View style={{ flex: 1 }}>
-        //     <StatusBar style='light' backgroundColor='rgba(58,58,58,0.1)' />
-        //     <ScrollView>
-        //         <ImageBackground 
-        //             source={{ uri: 'https://images-na.ssl-images-amazon.com/images/I/91k51Kz1P-L.jpg' }} 
-        //             style={{ width: '100%', height: 450, justifyContent: 'center', paddingTop: 10 }}
-        //             borderBottomRightRadius={40}
-        //             borderBottomLeftRadius={40}
-        //             resizeMode='cover'
-        //             blurRadius={10}
-        //         >
-        //             <Image 
-        //                 source={{ uri: 'https://images-na.ssl-images-amazon.com/images/I/91k51Kz1P-L.jpg' }}
-        //                 resizeMode='center'
-        //                 style={{ width: '100%', height: 325 }}
-        //             />
-        //         </ImageBackground>
-        //         <View style={{ width: 250, height: 50, borderRadius: 20, backgroundColor: '#585858', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 10, position: 'absolute', top: 420, left: width/4.6 }}>
-        //             <Text style={{ color: '#fff' }}>
-        //                 #Julho de 2007
-        //             </Text>
-        //             <Text style={{ color: '#fff' }}>
-        //                 <Icons name='flash' size={16} color='#F39C12'  />
-        //                 9.2
-        //             </Text>
-        //         </View>
-        //         <View style={{ paddingHorizontal: 20, paddingTop: 40 }}>
-        //             <Text style={{ fontSize: 26, fontFamily: 'ComicNeue_700Bold', marginBottom: 10 }} >Hulk Contra o Mundo</Text>
-        //             <Text style={{ fontFamily: 'ComicNeue_400Regular', fontSize: 16, marginBottom: 10 }} >
-        //                 Um dos maiores classicos da editora, esta historia mostra o quanto o hulk pode ser realmnete perigoso e imparaval.
-        //             </Text>
-        //             <Text style={{ fontFamily: 'ComicNeue_400Regular', fontSize: 16, marginBottom: 10 }} >
-        //                 World War Hulk é um crossover dos quadrinhos publicado em título próprio e em diversos outros 
-        //                 títulos da Marvel Comics em 2007. A história é consequência dos eventos ocorridos na saga Planeta Hulk. 
-        //                 A história foi escrita por Greg Pak com arte de John Romita Jr. e capas por David Finch.
-        //             </Text>
-        //         </View>
-        //         <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingRight: 45, alignItems: 'center', paddingHorizontal: 20, paddingTop: 40 }}>
-                    
-        //         </View>
-                
-        //     </ScrollView>
-        // </View>
+            <Animated.View style={[ buttoLike, { position: 'absolute', right: 0, marginRight: 10, zIndex: 5 }]}>
+                <Pressable style={{ 
+                    backgroundColor: "#fff", 
+                    elevation: 10,  
+                    alignItems: 'center', 
+                    justifyContent: 'center',
+                    marginRight: 30,
+                    width: 44, 
+                    height: 44, 
+                    borderRadius: 24 
+                }}>
+                    <Icons name='heart' size={32} color="red" />
+                </Pressable>
+            </Animated.View> 
+
+
+            <View>
+                <Animated.ScrollView 
+                    onScroll={scrollHandler} 
+                    scrollEventThrottle={16}
+                    contentContainerStyle={{ paddingTop: 280 }}
+                >
+                    <StatusBar style='light' />
+                    <View style={{ backgroundColor: 'transparent', paddingTop: 80, paddingHorizontal: 20 }}>
+                        <Text style={{ fontFamily: theme.titleRoboto, fontSize: 22, marginVertical: 7 }}>Sinopse</Text>
+                        {data.quadrinhos[0].sinopse.map((item: string, index: number) => (
+                            <Text key={index} style={{ fontFamily: theme.textRoboto, fontSize: 14 }} >
+                                {item}
+                            </Text>
+                        ))}
+                        <Text style={{ fontFamily: theme.titleRoboto, fontSize: 22, marginVertical: 7 }}>Equipe</Text>
+                        <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+                            {data.quadrinhos[0].equipe.map((item: {image: string, text: string}, index: number) => (
+                                <View key={index} style={{ marginBottom: 10, marginRight: 10 }}>
+                                    <Image 
+                                        source={{ uri: item.image }}
+                                        style={{ width: 80, height: 80, borderRadius: 40 }}
+                                    />
+                                    <Text style={{ maxWidth: 80, fontSize: 12, textAlign: 'center' }} >
+                                        {item.text}
+                                    </Text>
+                                </View>
+                            ))}
+                        </View>
+                        <Text style={{ fontFamily: theme.titleRoboto, fontSize: 22, marginVertical: 7 }}>Equipe</Text>
+                        <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+                            {data.quadrinhos[0].equipe.map((item: {image: string, text: string}, index: number) => (
+                                <View key={index} style={{ marginBottom: 10, marginRight: 10 }}>
+                                    <Image 
+                                        source={{ uri: item.image }}
+                                        style={{ width: 80, height: 80, borderRadius: 40 }}
+                                    />
+                                    <Text style={{ maxWidth: 80, fontSize: 12, textAlign: 'center' }} >
+                                        {item.text}
+                                    </Text>
+                                </View>
+                            ))}
+                        </View>
+                        <Text style={{ fontFamily: theme.titleRoboto, fontSize: 22, marginVertical: 7 }}>Equipe</Text>
+                        <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+                            {data.quadrinhos[0].equipe.map((item: {image: string, text: string}, index: number) => (
+                                <View key={index} style={{ marginBottom: 10, marginRight: 10 }}>
+                                    <Image 
+                                        source={{ uri: item.image }}
+                                        style={{ width: 80, height: 80, borderRadius: 40 }}
+                                    />
+                                    <Text style={{ maxWidth: 80, fontSize: 12, textAlign: 'center' }} >
+                                        {item.text}
+                                    </Text>
+                                </View>
+                            ))}
+                        </View>
+                    </View>
+                </Animated.ScrollView>
+            </View>
+        </View>
     );
 
 }

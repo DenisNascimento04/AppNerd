@@ -1,6 +1,7 @@
 import React, {useState, useEffect, ReactNode} from 'react';
-import { View, FlatList, Text,Pressable, Animated, Dimensions, TextInput } from 'react-native';
+import { View, FlatList, Text,Pressable, Animated, Dimensions, TextInput, TouchableOpacity } from 'react-native';
 import Icons from 'react-native-vector-icons/Ionicons';
+import { theme } from '../../themes';
 
 import { styles } from './styles';
 
@@ -8,11 +9,13 @@ const { height } = Dimensions.get('screen')
 
 type PropsModal = {
     show: boolean,
-    close?: () => void,
+    sign: boolean,
+    signIn: () => void,
+    signUp: () => void,
     children: ReactNode
 }
 
-export function Modal (props: PropsModal){
+export function ModalLogin (props: PropsModal){
 
     const [statusModal, setStatusModal] = useState({
         container: new Animated.Value(height),
@@ -54,6 +57,32 @@ export function Modal (props: PropsModal){
                 ]
             }]}
         >
+           <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginHorizontal: 95, marginBottom: 10 }}>
+                <Pressable onPress={props.signIn} style={{ }}>
+                    <Text style={{ 
+                        fontFamily: theme.titleRubik, 
+                        fontSize: 20, 
+                        paddingBottom: 2, 
+                        color: props.sign ? theme.colors.light : "rgba(258,258,258,0.8)", 
+                        borderBottomWidth: props.sign ? 2.5 : 0, 
+                        borderColor: props.sign ? theme.colors.light : "rgba(258,258,258,0.8)"
+                    }} >
+                        Sign In
+                    </Text>
+                </Pressable>
+                <Text style={{ fontSize: 20, marginHorizontal: 15, color: "#fff", fontFamily: theme.titleRubik }}>|</Text>
+                <Pressable onPress={props.signUp}>
+                    <Text style={{ 
+                        fontSize: 20, 
+                        fontFamily: theme.titleRubik,
+                        color: !props.sign ? theme.colors.light : "rgba(258,258,258,0.8)", 
+                        borderBottomWidth: !props.sign ? 2.5 : 0, 
+                        borderColor: !props.sign ? theme.colors.light : "rgba(258,258,258,0.8)" 
+                    }} >
+                        Sign Up
+                    </Text>
+                </Pressable>
+            </View>
             <Animated.View 
             style={[styles.contentModal, {
                 transform: [
@@ -61,11 +90,6 @@ export function Modal (props: PropsModal){
                 ]
             }]}
             >
-                <View style={{ width: '100%', justifyContent: 'flex-end', flexDirection: 'row' }} >
-                    <Pressable onPress={props.close}>
-                        <Icons name='close' size={22} color='#000'/>
-                    </Pressable>
-                </View>
                 {props.children}
             </Animated.View>
         </Animated.View>

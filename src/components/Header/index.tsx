@@ -7,10 +7,10 @@ import { useNavigation } from '@react-navigation/native';
 import { deleteFavoritos, setFavoritos } from '../../store';
 import { useDispatch } from 'react-redux';
 import { LinearGradient } from 'expo-linear-gradient';
+import { propsDrawer } from '../../services/types';
 
 type PropsHeader = {
     title: string,
-    route?: () => void,
     settings?: () => void,
     image?: string,
     back?: any,
@@ -30,6 +30,7 @@ type PropsHeaderPage = {
 export function Header(props: PropsHeader){
 
     const navigation = useNavigation();
+    const navigationDrawer = useNavigation<propsDrawer>()
 
     return(
         <>
@@ -38,7 +39,7 @@ export function Header(props: PropsHeader){
                     <Pressable style={styles.headerIcons} onPress={() => navigation.goBack()}>
                         <Icons name='chevron-back' size={30} color='#FFFFFF' />
                     </Pressable>
-                    <Text style={{ fontSize: 22, width: 190, fontWeight: '700', textAlign: 'center', color: '#fff' }} >{ props.title }</Text>
+                    <Text style={styles.titleHeader} >{ props.title }</Text>
                     <View style={{padding: 2, borderRadius: 30 }}>
                         
                     </View>
@@ -47,10 +48,10 @@ export function Header(props: PropsHeader){
             {!props.back && !props.perfil &&
                 <>
                     <View style={[styles.container, { backgroundColor: props.colorBack }]}>
-                        <Pressable style={styles.headerIconsHome} onPress={props.route}>
+                        <Pressable style={styles.headerIconsHome} onPress={() => navigationDrawer.openDrawer()}>
                             <Icons name='menu-outline' size={30} color='#000' />
                         </Pressable>
-                        <Text style={{ fontSize: 22, width: 190, fontWeight: '700', textAlign: 'center', color: '#fff' }} >{ props.title }</Text>
+                        <Text style={styles.titleHeader} >{ props.title }</Text>
                         <Pressable style={{ backgroundColor: '#fff', elevation: 5, padding: 3, justifyContent: 'center', alignItems: 'center', borderRadius: 50, shadowColor: "#fff" }} onPress={props.settings}>
                             <Image 
                                 source={{ uri: props.image }} 

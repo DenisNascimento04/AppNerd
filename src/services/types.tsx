@@ -40,12 +40,37 @@ export type PropsRouteListStack = {
     Testes: undefined
 } 
 
+export type PropsItem = {
+    data: PropsPerso
+    navig: () => void,
+    estilo: string
+}
+
+export type PropsItemBack = {
+    data: PropsPerso
+    navig: () => void, 
+    small?: any, 
+    vertical?: any, 
+    horizontal?: any
+}
+
+export type PropsItensPersonagensPadrao = {
+    data: PropsPerso,
+    navig: () => void
+}
+
+export type PropsItensNoticias = {
+    index: number
+    data: PropsNoticias
+}
+
 export type PropsItensQuadrinhos = {
     data: {
         id: number,
         editora: string,
         titulo: string,
         nota: number,
+        thamb: string,
         data: string,
         capa: string,
         equipe: {
@@ -53,7 +78,8 @@ export type PropsItensQuadrinhos = {
             text: string;
         }[],
         personDestaque: string,
-        sinopse: string[]
+        sinopse: string[],
+        imagens: string[]
     }
 }
 

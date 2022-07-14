@@ -12,6 +12,7 @@ interface User {
         id: string,
         editora: string
     }],
+    uid: string,
     isLogin: boolean
 }
 
@@ -28,6 +29,7 @@ const initialState: User = {
         id: '',
         editora: ''
     }],
+    uid: '',
     isLogin: false
 }
 

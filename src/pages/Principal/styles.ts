@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     
     title: {
         fontSize: 18,
-        fontFamily: theme.titleRubik,
+        fontFamily: theme.title,
         // paddingBottom: 2, 
         // borderBottomWidth: 0.5,
         // borderBottomColor: "#585858",

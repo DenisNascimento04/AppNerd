@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { theme } from '../../themes';
 
 export const styles = StyleSheet.create({
     container: {
@@ -19,6 +20,15 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',  
         borderRadius: 60
     },
+
+    titleHeader: {
+        fontSize: 22, 
+        width: 190,  
+        textAlign: 'center', 
+        color: '#fff',
+        fontFamily: theme.titleRubik
+    },
+
     headerIconsHome: {
         backgroundColor: '#FFF', 
         padding: 4,

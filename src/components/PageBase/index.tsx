@@ -69,7 +69,7 @@ export function PageBase(props: PropsPageBase){
             <SafeAreaView style={{flex: 1, backgroundColor: props.backgroudColor }}>
                 <StatusBar style='light' backgroundColor="transparent" />
                 <AnimatedScroll.View style={[headerScroll, { position: 'absolute',top: 25, left: 0, right: 0 }]}>
-                    <Header colorBack={props.backgroudColor} image={props.image} title={props.title} route={() => navigation.openDrawer()} settings={() => onPressUser()} />
+                    <Header colorBack={props.backgroudColor} image={props.image} title={props.title} settings={() => onPressUser()} />
                 </AnimatedScroll.View>
                 <Animated.View style={[styles.teste, {
                     transform: [

@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
 
     textDados: {
         color: '#fff',
-        fontFamily: theme.textRubik,
+        fontFamily: theme.text,
         fontSize: 14,
         textAlign: 'center'
     },
@@ -54,7 +54,7 @@ export const styles = StyleSheet.create({
     text: {
         textAlign: 'justify', 
         fontSize: 14, 
-        fontFamily: theme.textRubik,
+        fontFamily: theme.text,
         lineHeight: 22
     },
 

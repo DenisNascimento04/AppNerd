@@ -2234,12 +2234,29 @@
             "estilo": "misto"
         }
     ],
+    "equipes": [
+        {
+            "id": 0,
+            "nome": "Os Iluminati",
+            "desc": "Grupo formado pelos super-herois mais influentes do mundo",
+            "texto": "",
+            "thamb": "https://cabanadoleitor.com.br/wp-content/uploads/2022/02/Illuminati-originais.webp",
+            "membros": [
+                2,
+                7,
+                9,
+                10
+            ],
+            "editora": "Marvel" 
+        }
+    ],
     "quadrinhos": [
         {
             "id": 0,
             "editora": "Marvel",
             "titulo": "Hulk Contra o Mundo",
             "nota": 9.4,
+            "thamb": "https://www.planocritico.com/wp-content/uploads/2014/12/hulk-contra-o-mundo.jpg",
             "data": "Junho 2007",
             "capa": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/quadrinhos%2Fquad-world_war_hulk.jpg?alt=media&token=a29aaeff-3a41-4cec-b0a5-5d1e5fee26c6",
             "equipe": [
@@ -2261,6 +2278,11 @@
                 "Um dos maiores classicos da editora, esta historia mostra o quanto o hulk pode ser realmnete perigoso e imparaval. World War Hulk é um crossover dos quadrinhos publicado em título próprio e em diversos títulos da Marvel Comics em 2007.",
                 "A história é consequência dos eventos ocorridos na saga Guerras Secretas onde Hulk está completamnete bestial e é expulso da Terra pelos Iluminate.",
                 "Após um acontecimento que deixou Hulk no auge de sua raiva e consequentemente de sua força de toda a história dos quadrinhos, Hulk volta para a Terra para se vingar e pretende enfrentar todos os herois da Terra de frente"
+            ],
+            "imagens": [
+                "https://sm.ign.com/ign_br/screenshot/default/blob_5uta.jpg",
+                "https://static.gamevicio.com/imagens_up/big/61/marvel-ira-adaptar-hulk-contra-o-mundo-para-os-cinemas-afirma-site-060319.webp",
+                "https://nobleorderbrewing.com/img/comics/71/hulk-vs-avengers-who-won-marvel-heroesmost-brutal-battles.jpg"
             ]
         },
         {
@@ -2268,6 +2290,7 @@
             "editora": "Marvel",
             "titulo": "Guerras Secretas II #1",
             "nota": 9.2,
+            "thamb": "https://static1.srcdn.com/wordpress/wp-content/uploads/2017/07/marvel-crossover-secret-wars-ii-beyonder.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5",
             "data": "Maio 1984",
             "capa": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/quadrinhos%2Fquad-secret_war_2.jpg?alt=media&token=99ee8e87-2577-4288-a0cd-e78b6cdbfa9e",
             "equipe": [
@@ -2285,6 +2308,11 @@
                 "A mega saga começa quando a entidade chamada Beyonder promove uma batalha nunca antes vista entre os maiores heróis e vilões do universo Marvel, oferecendo ao grupo vencedor, como prêmio, a realização de todos os seus desejos.",
                 "Poucas séries na cronologia Marvel foram tão importantes como Guerras Secretas, uma imensa história em 12 partes, envolvendo os principais heróis e vilões do universo. A lista de convocados envolve medalhões do porte de Homem-Aranha, os X-Men e Hulk, do lado dos heróis, e Doutor Destino, Lagarto, Ultron e Galactus do lado dos vilões.",
                 "A premissa é simples: uma entidade cósmica chamada Beyonder cria um planeta e transporta para lá os seres mais poderosos da Terra, dividindo-os em dois grupos. Sem mais delongas, Beyonder diz: 'Destruam seus inimigos e todos os seus sonhos serão realizados! Nenhum de seus desejos me é impossível de realizar!' Pronto. A confusão está armada e brigas começam a surgir dos dois lados."
+            ],
+            "imagens": [
+                "https://quintacapa.com.br/wp-content/uploads/2021/03/Secret_Wars_II_Vol_1_8_capa.jpg",
+                "https://protocolosmarvel.files.wordpress.com/2014/04/image07.jpg?w=555&h=406",
+                "https://trecobox.com.br/wp-content/uploads/2022/03/Beyonder-2.jpg"
             ]
         }
     ],

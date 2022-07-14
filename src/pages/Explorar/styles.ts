@@ -10,14 +10,24 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 20, 
         marginBottom: 20
     },
+
+    header: {
+        backgroundColor: "transparent", 
+        flexDirection: 'row', 
+        alignItems: 'center', 
+        marginHorizontal: 20, 
+        paddingBottom: 20
+    },
+    titleHeader: {
+        color: '#fff', 
+        fontSize: 20,
+        fontFamily: theme.titleRubik
+    },
     
     title: {
         fontSize: 18,
         fontFamily: theme.titleRubik,
         color: "#000"
-        // paddingBottom: 2, 
-        // borderBottomWidth: 0.5,
-        // borderBottomColor: "#585858",
     },
 
     buttonTudo: {
