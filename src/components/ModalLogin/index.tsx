@@ -57,32 +57,6 @@ export function ModalLogin (props: PropsModal){
                 ]
             }]}
         >
-           <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginHorizontal: 95, marginBottom: 10 }}>
-                <Pressable onPress={props.signIn} style={{ }}>
-                    <Text style={{ 
-                        fontFamily: theme.titleRubik, 
-                        fontSize: 20, 
-                        paddingBottom: 2, 
-                        color: props.sign ? theme.colors.light : "rgba(258,258,258,0.8)", 
-                        borderBottomWidth: props.sign ? 2.5 : 0, 
-                        borderColor: props.sign ? theme.colors.light : "rgba(258,258,258,0.8)"
-                    }} >
-                        Sign In
-                    </Text>
-                </Pressable>
-                <Text style={{ fontSize: 20, marginHorizontal: 15, color: "#fff", fontFamily: theme.titleRubik }}>|</Text>
-                <Pressable onPress={props.signUp}>
-                    <Text style={{ 
-                        fontSize: 20, 
-                        fontFamily: theme.titleRubik,
-                        color: !props.sign ? theme.colors.light : "rgba(258,258,258,0.8)", 
-                        borderBottomWidth: !props.sign ? 2.5 : 0, 
-                        borderColor: !props.sign ? theme.colors.light : "rgba(258,258,258,0.8)" 
-                    }} >
-                        Sign Up
-                    </Text>
-                </Pressable>
-            </View>
             <Animated.View 
             style={[styles.contentModal, {
                 transform: [
@@ -90,6 +64,32 @@ export function ModalLogin (props: PropsModal){
                 ]
             }]}
             >
+                <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginHorizontal: 95, marginBottom: 10 }}>
+                    <Pressable onPress={props.signIn} style={{ }}>
+                        <Text style={{ 
+                            fontFamily: theme.title, 
+                            fontSize: 20, 
+                            paddingBottom: 2, 
+                            color: props.sign ? theme.colors.destaque : "rgba(258,258,258,0.4)", 
+                            borderBottomWidth: props.sign ? 2.5 : 0, 
+                            borderColor: props.sign ? theme.colors.destaque : "rgba(258,258,258,0.4)"
+                        }} >
+                            Sign In
+                        </Text>
+                    </Pressable>
+                    <Text style={{ fontSize: 20, marginHorizontal: 15, color: "#fff", fontFamily: theme.title }}>|</Text>
+                    <Pressable onPress={props.signUp}>
+                        <Text style={{ 
+                            fontSize: 20, 
+                            fontFamily: theme.title,
+                            color: !props.sign ? theme.colors.destaque : "rgba(258,258,258,0.4)", 
+                            borderBottomWidth: !props.sign ? 2.5 : 0, 
+                            borderColor: !props.sign ? theme.colors.destaque : "rgba(258,258,258,0.4)" 
+                        }} >
+                            Sign Up
+                        </Text>
+                    </Pressable>
+                </View>
                 {props.children}
             </Animated.View>
         </Animated.View>

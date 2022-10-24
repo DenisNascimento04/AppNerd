@@ -10,10 +10,10 @@ export const styles = StyleSheet.create({
         top: 0, 
         left: 0, 
         width: width, 
-        height: 300, 
         borderRadius: 20, 
         overflow: 'hidden',
-        zIndex: 1, 
+        zIndex: 1,
+        shadowColor: theme.colors.contraste 
     },
 
     imageHeader: {
@@ -26,23 +26,23 @@ export const styles = StyleSheet.create({
 /////////////////////////////////////////////////////////////////////////////////////
 
     buttonLike: {
-        backgroundColor: "#fff", 
-        width: 44, 
-        height: 44, 
+        backgroundColor: theme.colors.contraste, 
+        width: 45, 
+        height: 45, 
         alignItems: 'center', 
         justifyContent: 'center',
         borderRadius: 24, 
-        elevation: 10,  
+        zIndex: 1 
     },
     buttonBack: {
-        backgroundColor: "#fff", 
+        backgroundColor: theme.colors.contraste, 
         width: 42, 
         height: 42, 
         alignItems: 'center', 
         justifyContent: 'center',
         marginRight: 30,
         borderRadius: 24,
-        elevation: 10,  
+        elevation: 0,  
     },
 
     
@@ -52,19 +52,19 @@ export const styles = StyleSheet.create({
         position: 'absolute', 
         left: 20, 
         flexDirection: 'row',
-        zIndex: 5, 
+        zIndex: 1, 
     },
 
     cardNota: {
         fontFamily: theme.text, 
         fontSize: 13, 
-        color: "#fff"
+        color: theme.colors.contraste
     },
 
     cardTitulo: {
         fontFamily: theme.title, 
         fontSize: 26, 
-        color: "#fff", 
+        color: theme.colors.contraste, 
         maxWidth: 200, 
         height: 70
     },
@@ -73,21 +73,23 @@ export const styles = StyleSheet.create({
         fontFamily: theme.text, 
         fontSize: 13,
         maxWidth: 150, 
-        color: "#585858",
+        color: theme.colors.contraste,
     },
 
 //////////////////////////////////////////////////////////////////////////////////////
 
     content: {},
     contentTitulo: {
-        fontFamily: theme.title, 
+        fontFamily: theme.titleItalic, 
         fontSize: 22, 
-        marginVertical: 7
+        marginVertical: 7,
+        color: theme.colors.contraste
     },
     contentText: {
         fontFamily: theme.text, 
         fontSize: 14,
-        marginBottom: 5
+        marginBottom: 5,
+        color: theme.colors.contraste
     },
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -98,9 +100,10 @@ export const styles = StyleSheet.create({
         borderRadius: 50
     },
     imagemDesc: {
-        maxWidth: 80, 
+        maxWidth: 100, 
         fontSize: 12,
-        textAlign: 'center'
+        textAlign: 'center',
+        color: theme.colors.contraste
     }
 
 

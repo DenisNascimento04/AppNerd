@@ -5,6 +5,7 @@ import { DrawerContentComponentProps, DrawerContentScrollView, DrawerItemList } 
 import { useNavigation } from "@react-navigation/native";
 import { propsStack } from "../../services/types";
 import { RootState } from "../../store/index";
+import { theme } from '../../themes';
 
 
 
@@ -21,7 +22,7 @@ export function HeaderDrawer(props: DrawerContentComponentProps) {
                     style={{ width: 45, height: 45, borderRadius: 30, marginRight: 10 }} 
                 />
                 <Pressable onPress={() => navigationStack.navigate("Perfil")}>
-                    <Text style={{ color: '#D40D0D' }}>{usuario.nome}</Text>
+                    <Text style={{ color: theme.colors.regularLight }}>{usuario.nome}</Text>
                 </Pressable>
             </View>
             <DrawerItemList {...props} />

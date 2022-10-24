@@ -1,19 +1,18 @@
 import { StackNavigationProp } from '@react-navigation/stack'
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 
-export type PropsRouteListDrawer = {
-    Home: undefined,
+export type PropsRouteListTab = {
+    Galeria: undefined,
     Explorar: undefined,
-    Configurações: undefined,
+    Pessoal: undefined,
+    Loja: undefined,
+    Pesquisa: { filtro?: string }
 } 
 export type PropsRouteListStack = {
     Larning: undefined,
     PagePerso: {
         id: string, 
         edit: string
-    },
-    Pesquisa: {
-        text: string
     },
     PageQuadrinhos: {
         data: {
@@ -37,13 +36,26 @@ export type PropsRouteListStack = {
     },
     Perfil: undefined,
     Explorar: undefined,
+    PageNoticia: {
+        data: PropsNoticias
+    },
+    Produto: { data: PropsProdutos }
+    PageLista: undefined,
+    PesquisarPerso: {text?: string},
+    PageImagem: { data: PropsImagens }
     Testes: undefined
 } 
 
+export type PropsImagens = {
+    id: number,
+    desc: string,
+    url: string,
+    tags: string[]
+}
+
 export type PropsItem = {
-    data: PropsPerso
-    navig: () => void,
-    estilo: string
+    data: PropsPerso,
+    navig: () => void
 }
 
 export type PropsItemBack = {
@@ -60,15 +72,18 @@ export type PropsItensPersonagensPadrao = {
 }
 
 export type PropsItensNoticias = {
-    index: number
-    data: PropsNoticias
+    index?: number
+    data: PropsNoticias,
+    small?: any
 }
 
 export type PropsItensQuadrinhos = {
+    navig: () => void,
     data: {
         id: number,
         editora: string,
         titulo: string,
+        preco: string,
         nota: number,
         thamb: string,
         data: string,
@@ -88,16 +103,22 @@ export type PropsPerso = {
     corPri: string,
     corSec: string,
     tipoP: string,
+    especie?: string,
     tags: string[],
-    thamb: string,
-    logo: string,
-    wallpaper: string,
-    nomeHeroi: string,
+    thamb?: string,
+    logo?: string,
+    wallpaper?: string,
+    nomePerso: string,
     nome: string,
     desc: string,
     PA: string,
     altura: string,
-    poderes: string[],
+    poderes: [
+        {
+            poder: string,
+            desc: string
+        }
+    ],
     sinopse: string[],
     imagens: string[],
     criadores: [
@@ -125,11 +146,40 @@ export type PropsPerso = {
 export type PropsNoticias = {
     id: number,
     titulo: string,
+    desc: string,
     escritor: string,
     thamb: string,
     data: string,
     conteudo: string[]
 }
 
+export type PropsQuadrinhos = {
+    id: number,
+    editora: string,
+    titulo: string,
+    nota: number,
+    thamb: string,
+    data: string,
+    capa: string,
+    equipe: [
+        {
+            image: string,
+            text: string,
+            funcao: string
+        }
+    ],
+    personDestaque: string,
+    sinopse: string[],
+    imagens: string[]
+}
+
+export type PropsProdutos = {
+    id: number,
+    titulo: string,
+    img: string,
+    preco: string,
+    detalhes: string[]
+}
+
 export type propsStack = StackNavigationProp<PropsRouteListStack>
-export type propsDrawer = DrawerNavigationProp<PropsRouteListDrawer>
+export type propsTab = DrawerNavigationProp<PropsRouteListTab>

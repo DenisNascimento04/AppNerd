@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 import { deleteFavoritos, setFavoritos } from '../../store';
 import { useDispatch } from 'react-redux';
 import { LinearGradient } from 'expo-linear-gradient';
-import { propsDrawer } from '../../services/types';
+import { propsDrawer, propsStack } from '../../services/types';
 
 type PropsHeader = {
     title: string,
@@ -15,7 +15,7 @@ type PropsHeader = {
     image?: string,
     back?: any,
     perfil?: any,
-    colorBack: string 
+    colorBack?: string 
 }
 type PropsHeaderPage = {
     titulo: string,
@@ -29,15 +29,15 @@ type PropsHeaderPage = {
 
 export function Header(props: PropsHeader){
 
-    const navigation = useNavigation();
+    const navigation = useNavigation<propsStack>();
     const navigationDrawer = useNavigation<propsDrawer>()
 
     return(
         <>
             {props.back && 
                 <View style={[styles.container, { backgroundColor: 'transparent' }]}>
-                    <Pressable style={styles.headerIcons} onPress={() => navigation.goBack()}>
-                        <Icons name='chevron-back' size={30} color='#FFFFFF' />
+                    <Pressable style={{ marginRight: 10 }} onPress={() => navigation.goBack()} >
+                        <Icons name='chevron-back-outline' size={26} color='#fff' />
                     </Pressable>
                     <Text style={styles.titleHeader} >{ props.title }</Text>
                     <View style={{padding: 2, borderRadius: 30 }}>
@@ -48,30 +48,16 @@ export function Header(props: PropsHeader){
             {!props.back && !props.perfil &&
                 <>
                     <View style={[styles.container, { backgroundColor: props.colorBack }]}>
-                        <Pressable style={styles.headerIconsHome} onPress={() => navigationDrawer.openDrawer()}>
-                            <Icons name='menu-outline' size={30} color='#000' />
-                        </Pressable>
                         <Text style={styles.titleHeader} >{ props.title }</Text>
-                        <Pressable style={{ backgroundColor: '#fff', elevation: 5, padding: 3, justifyContent: 'center', alignItems: 'center', borderRadius: 50, shadowColor: "#fff" }} onPress={props.settings}>
+                        <Pressable style={{ backgroundColor: '#fff', marginLeft: 20, elevation: 5, padding: 3, justifyContent: 'center', alignItems: 'center', borderRadius: 50, shadowColor: "#fff" }} onPress={props.settings}>
                             <Image 
                                 source={{ uri: props.image }} 
-                                style={{ width: 45, height: 45, borderRadius: 30 }} 
+                                style={{ width: 38, height: 38, borderRadius: 30 }} 
                             />
                         </Pressable>
                     </View>
-                    <LinearGradient colors={[props.colorBack, "transparent"]} style={{ width: "100%", height: 20 }} />
+                    {/* <LinearGradient colors={[props.colorBack, "transparent"]} style={{ width: "100%", height: 10 }} /> */}
                 </>
-            }
-            {props.perfil && 
-                <View style={[styles.container, { backgroundColor: 'trasnparent' }]}>
-                    <Pressable style={styles.headerIcons} onPress={() => navigation.goBack()}>
-                        <Icons name='chevron-back' size={30} color='#FFFFFF' />
-                    </Pressable>
-                    <View />
-                    <Pressable style={styles.headerIcons}>
-                        <Icons name='notifications' size={30} color='#FFFFFF' />
-                    </Pressable>
-                </View>
             }
         </>
     );
@@ -83,16 +69,16 @@ export function HeaderPage(props: PropsHeaderPage){
     const dispatch = useDispatch()
     const [buttomHeart, setButtomHeart] = useState(false);
 
-    function SetFavoritos(id: string, editora: string) {
+    function SetFavoritos(id: string) {
         if (props.userLoading) {
             setButtomHeart(true);
-            dispatch(setFavoritos({ id: id, editora: editora }));
+            dispatch(setFavoritos(id));
         }
     }
-    function DeleteFavoritos(id: string, editora: string) {
+    function DeleteFavoritos(id: string) {
         if (props.userLoading) {
             setButtomHeart(false);
-            dispatch(deleteFavoritos({ id: id, editora: editora }));
+            dispatch(deleteFavoritos(id));
         }
     }
 
@@ -101,29 +87,29 @@ export function HeaderPage(props: PropsHeaderPage){
             
             {props.modal ? 
                 <Pressable style={styles.headerIcons} onPress={props.close}>
-                    <Icons name='close' size={33} color='#FFF' />
+                    <Icons name='close' size={28} color='#000' />
                 </Pressable>
             :
                 <Pressable style={styles.headerIcons} onPress={() => navigation.goBack()}>
-                    <Icons name='chevron-back' size={33} color='#FFF' />
+                    <Icons name='chevron-back' size={28} color='#000' />
                 </Pressable>
             }
 
             <Text style={{ fontSize: 22, fontWeight: '700', color: '#fff' }}>{props.titulo}</Text>
 
             {props.stateFavorito && props.userLoading ? 
-                <Pressable style={styles.headerIcons} onPress={() => DeleteFavoritos(props.id, props.editora)}>
-                    <Icons name='heart' size={33} color='#F50303' />
+                <Pressable style={styles.headerIcons} onPress={() => DeleteFavoritos(props.id)}>
+                    <Icons name='heart' size={28} color='#F50303' />
                 </Pressable>
             :
                 <>
                     {buttomHeart ? 
-                         <Pressable style={styles.headerIcons} onPress={() => DeleteFavoritos(props.id, props.editora)}>
-                            <Icons name='heart' size={33} color='#F50303' />
+                         <Pressable style={styles.headerIcons} onPress={() => DeleteFavoritos(props.id)}>
+                            <Icons name='heart' size={28} color='#F50303' />
                         </Pressable>
                     :
-                        <Pressable style={styles.headerIcons} onPress={() => SetFavoritos(props.id, props.editora)}>
-                            <Icons name='heart-outline' size={33} color='#FFF' />
+                        <Pressable style={styles.headerIcons} onPress={() => SetFavoritos(props.id)}>
+                            <Icons name='heart-outline' size={28} color='#000' />
                         </Pressable>
                     }
                 </>

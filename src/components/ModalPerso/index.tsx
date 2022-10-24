@@ -1,20 +1,21 @@
-import React, { Ref, useEffect, useRef, useState } from 'react';
-import { View, Text, Image, ScrollView, Dimensions, FlatList, TouchableOpacity, ActivityIndicator, ImageBackground } from 'react-native';
-import Animated, { BounceInRight, FadeInLeft, BounceInLeft, BounceInUp, BounceInDown} from 'react-native-reanimated';
-import { HeaderPage } from '../Header';
-
-import { styles } from './styles';
-import Carousel from 'react-native-snap-carousel';
+import React, { useEffect, useState } from 'react';
+import { View, Text, Image, Dimensions, TouchableOpacity, ActivityIndicator, ImageBackground, Pressable, ScrollView } from 'react-native';
+import Reanimated, { BounceInRight, BounceInLeft, BounceInDown, useAnimatedStyle, interpolate, Extrapolate, useSharedValue, withSpring} from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../store/index';
-import { setFavoritos } from '../../store';
-import { HabilidadeBar } from '../HabilidadeBar';
-import { PropsPerso } from '../../services/types';
-import  *  as  Progress  from  'react-native-progress' ;
 import { StatusBar } from 'expo-status-bar';
+import  *  as  Progress  from  'react-native-progress' ;
+import Icons from 'react-native-vector-icons/Ionicons';
 
-const {width, height} = Dimensions.get('window')
+import { styles } from './styles';
+import { HeaderPage } from '../Header';
+import { RootState } from '../../store/index';
+import { PropsPerso, propsTab } from '../../services/types';
+import { ComponenteA, ComponenteB } from '../ComponentesGrid';
+import { useNavigation } from '@react-navigation/native';
+import { theme } from '../../themes';
+
+const { width, height } = Dimensions.get('window')
 
 type Props = {
     data: PropsPerso,
@@ -26,62 +27,54 @@ export function ModalPerso(props:Props){
     const usuario = useSelector((state: RootState) => state.usuario)
     const dispatch = useDispatch();
 
-    const [data, setData] = useState(props.data);
+    const data = props.data;
     
     const [historia, setHistoria] = useState(true);
     const [poderes, setPoderes] = useState(false);
     const [habilidades, setHabilidades] = useState(false);
-    const [criadores, setCriadores] = useState(false);
+    const [imagens, setImagens] = useState(false);
     const [loadingLogo, setloadingLogo] = useState(true);
     const [loadingThamb, setloadingThamb] = useState(true);
     const [active, setActive] = useState(true);
-    const [stateFavoritos, setStateFavoritos] = useState(true);
+    const stateFavoritos = usuario.favoritos.includes(data.id) 
     const [X, setX] = useState(0);
 
-    const ferramentas = [
-        (
-            <View style={{ paddingHorizontal: 30, paddingTop: 20 }}>
-                {data.historia?.map((item, index) => (
-                    <View key={index}>
-                        <Text style={[ styles.subtitle,{ marginBottom: 10}]}>{item.title}</Text>
-                        {item.text?.map((item, index) => (
-                            <Text key={index} style={[styles.text, { marginBottom: 10 }]}>{item}</Text>
-                        ))}
-                    </View>
-                ))}
-            </View>
-        ),
-        (
-            <View style={{ paddingHorizontal: 30, paddingTop: 20 }}>
-                {data.poderes?.map((item,index) => (
-                    <Text key={index} style={{ fontSize: 14, lineHeight: 22 }} >- {item}</Text>
-                ))}
-            </View>
-        ),
-        (
-            <View>
-                <HabilidadeBar 
-                    hab={data.habilidades}
-                    color={data.corPri}
-                />
-            </View>
-        ),
-        (
-            <View style={styles.viewCriadores}>
-                {data.criadores.map((item, index: number) => (
-                    <View key={index} style={{ marginBottom: 20, marginRight: index%2 === 0 ? 20 : 0 }}>
-                        <Image 
-                            source={{ uri: item.image }}
-                            style={{ width: 150, height: 200, borderRadius: 10 }}
-                        />
-                        <Text style={styles.textCriadores} >
-                            {item.nome}
-                        </Text>
-                    </View>
-                ))}
-            </View>
-        )
-    ]
+    // const animatedValue = useRef(new Animated.Value(0)).current;
+    const animatedValue = useSharedValue(0)
+    const [indexUser, setIndexUser] = useState(0);
+    
+
+    const teste1 = useAnimatedStyle(() => {
+        return{
+            height: interpolate(
+                animatedValue.value,
+                [0, 0.5, 1],
+                [50, 90, 130],
+                Extrapolate.CLAMP,
+            ),
+        }
+    })
+    const teste2 = useAnimatedStyle(() => {
+        return{
+            height: interpolate(
+                animatedValue.value,
+                [0, 0.5, 1],
+                [0, 30, 75],
+                Extrapolate.CLAMP,
+            ),
+            translateY: interpolate(
+                animatedValue.value,
+                [0, 0.5, 1],
+                [0, 10, 30],
+                Extrapolate.CLAMP,
+            ),
+        }
+    })
+
+    function Test2(){
+        setIndexUser(indexUser === 1 ? 0 : 1);
+        animatedValue.value = indexUser === 1 ? withSpring(0) : withSpring(1);
+    }
 
 
     function LoadingImagens() {
@@ -95,23 +88,120 @@ export function ModalPerso(props:Props){
         LoadingImagens();
     },[loadingLogo, loadingThamb])
 
-    useEffect(() => {
-       usuario.favoritos.forEach((item) => {
-            if (item.id === data.id.toString() && item.editora === data.editora) {
-                setStateFavoritos(true);
-            }
-        })
-    },[usuario.favoritos])
 
     return(
         <View key={data.id}>
-            <Animated.ScrollView 
-                entering={BounceInDown.duration(1000)}
+            {/* <ScrollView 
                 scrollEventThrottle={16}
                 contentContainerStyle={{ }}
-            >
-                <View style={[{backgroundColor: 'transparent', paddingTop: 410}]}>
-                    <View style={{ backgroundColor: '#ffffff', paddingTop: 20, paddingBottom :50 }}>
+            > */}
+                <Reanimated.View  style={[styles.header, {  width: width }]}>
+
+                    {data.logo === "" && data.wallpaper === "" ? 
+                        <View style={styles.viewHeader}>
+                            <LinearGradient end={{ x: 0, y: 1.7}} colors={[ data.corSec , data.corPri]} 
+                                style={[styles.viewGradi]}
+                            >
+                                <HeaderPage 
+                                    modal={true} 
+                                    close={props.close}
+                                    userLoading={usuario.isLogin}
+                                    stateFavorito={stateFavoritos} 
+                                    id={data.id.toString()}
+                                    editora={data.editora} 
+                                    titulo={data.nomePerso} 
+                                />
+                                <View>
+                                    <Reanimated.Image 
+                                        entering={BounceInRight.delay(500)}
+                                        onLoad={() => {setloadingThamb(false), setloadingLogo(false)}}
+                                        resizeMode='contain'
+                                        borderRadius={50}
+                                        source={{ uri: data.thamb }} style={{ width: width, height: 200 }} 
+                                    /> 
+                                </View>
+                                <Reanimated.View entering={BounceInDown.duration(600)} style={styles.dadosHeader}>
+                                    <View style={{ alignItems: 'center', width: 100}}>
+                                        <Text style={styles.titledDados}>Nome:</Text>
+                                        <Text style={styles.textDados}>{data.nome}</Text>
+                                    </View>
+                                    <View style={{ alignItems: 'center', width: 100}}>
+                                        <Text style={styles.titledDados}>Espécie:</Text>
+                                        <Text style={styles.textDados}>{data.especie?.split(" ")[0]}{'\n'}{data.especie?.split(" ")[1]}</Text>
+                                    </View>
+                                    <View style={{ alignItems: 'center', width: 150 }}>
+                                        <Text style={styles.titledDados}>Primeira Aparição:</Text>
+                                        <Text style={[styles.textDados, { paddingLeft: 10 }]}>{data.PA}</Text>
+                                    </View>
+                                </Reanimated.View>
+                            </LinearGradient>
+                        </View>
+                    :                       
+                        <ImageBackground source={{ uri: data.wallpaper }}
+                            borderBottomLeftRadius={40} 
+                            borderBottomRightRadius={40} 
+                            style={[]}
+                        >
+                            <View style={styles.viewHeader}>
+                                <LinearGradient end={{ x: 0, y: 1.7}} colors={[ "transparent" , data.corPri]} 
+                                    style={[styles.viewGradi]}
+                                >
+                                    <HeaderPage 
+                                        modal={true} 
+                                        close={props.close}
+                                        userLoading={usuario.isLogin}
+                                        stateFavorito={stateFavoritos} 
+                                        id={data.id.toString()}
+                                        editora={data.editora} 
+                                        titulo={data.nomePerso} 
+                                    />
+                                    <View style={{ width: '100%', alignItems: 'center'}}>
+                                        {active ?
+                                            <View style={{ position: 'absolute', zIndex: 999 }} >
+                                                <ActivityIndicator 
+                                                    size={60}
+                                                    color='#9E9D9A'
+                                                    style={{ height: 220 }}
+                                                />
+                                            </View> 
+                                        : null }
+                                            
+                                        <Reanimated.Image 
+                                            entering={BounceInRight.delay(500)}
+                                            onLoad={() => setloadingThamb(false)}
+                                            resizeMode='contain'
+                                            source={{ uri: data.thamb }} style={styles.image} 
+                                        /> 
+                                        <Reanimated.Image  
+                                            entering={BounceInLeft.delay(500)}
+
+                                            source={{ uri: data.logo }} 
+                                            onLoad={() => setloadingLogo(false)}
+                                            style={{ position: 'absolute', width: 270, height: 270, zIndex: 0 }} 
+                                        /> 
+                                    </View>
+                                    <Reanimated.View entering={BounceInDown.duration(600)} style={styles.dadosHeader}>
+                                        <View style={{ alignItems: 'center', width: 100}}>
+                                            <Text style={styles.titledDados}>Nome:</Text>
+                                            <Text style={styles.textDados}>{data.nome}</Text>
+                                        </View>
+                                        <View style={{ alignItems: 'center', width: 100}}>
+                                            <Text style={styles.titledDados}>Espécie:</Text>
+                                            <Text style={styles.textDados}>{data.especie?.split(" ")[0]}{'\n'}{data.especie?.split(" ")[1]}</Text>
+                                        </View>
+                                        <View style={{ alignItems: 'center', width: 150 }}>
+                                            <Text style={styles.titledDados}>Primeira Aparição:</Text>
+                                            <Text style={[styles.textDados, { paddingLeft: 10 }]}>{data.PA}</Text>
+                                        </View>
+                                    </Reanimated.View>
+                                </LinearGradient>
+                            </View>
+                        </ImageBackground>
+                    }
+                </Reanimated.View>
+
+                <View style={[{backgroundColor: 'transparent'}]}>
+                    <View style={{ backgroundColor: '#ffffff', paddingBottom: 80 }}>
                         <View style={{ paddingHorizontal: 30 }}>
                             <Text style={ styles.titles }>Sinopse</Text>
                             {data.sinopse?.map((item: any, index: number) => (
@@ -126,7 +216,7 @@ export function ModalPerso(props:Props){
                                     <View key={index} style={{ marginBottom: 20, alignItems :'center', marginRight: index != data.criadores.length-1 ? 20 : 0 }}>
                                         <Image 
                                             source={{ uri: item.image }}
-                                            style={{ width: 80, height: 80, borderRadius: 40 }}
+                                            style={{ width: 60, height: 60, borderRadius: 30 }}
                                         />
                                         <Text style={styles.textCriadores} >
                                             {item.nome}
@@ -135,29 +225,14 @@ export function ModalPerso(props:Props){
                                 ))}
                             </View>
                         </View>
-                        <View>
-                            <Text style={[styles.titles ,{marginLeft: 30} ]}>Imagens</Text>
-                            <Carousel 
-                                data={data.imagens}
-                                layout={'default'}
-                                sliderWidth={width}
-                                firstItem={2}
-                                itemWidth={300}
-                                renderItem={({ item }) => (
-                                    <View>
-                                        <Image source={{ uri: item }} style={{ width: 300, height: 200 }} />
-                                    </View>
-                                )}
-                            />
-                        </View>
-                        
+
                         <View style={styles.barTools} >
                             <TouchableOpacity 
                                 style={{ 
                                     borderBottomColor: historia ? data.corPri : "#fff" , 
                                     borderBottomWidth: historia ? 1 : 0, marginRight: 10 
                                 }} 
-                                onPress={() => { setX(0), setHistoria(true), setPoderes(false), setHabilidades(false), setCriadores(false)}}
+                                onPress={() => { setX(0), setHistoria(true), setPoderes(false), setHabilidades(false), setImagens(false)}}
                             >
                                 <Text style={ styles.titles }>História</Text>
                             </TouchableOpacity>
@@ -167,7 +242,7 @@ export function ModalPerso(props:Props){
                                     borderBottomColor: poderes ? data.corPri : "#fff", 
                                     borderBottomWidth: poderes ? 1 : 0, marginRight: 10 
                                 }} 
-                                onPress={() => { setX(1), setHistoria(false), setPoderes(true), setHabilidades(false), setCriadores(false)}}
+                                onPress={() => { setX(1), setHistoria(false), setPoderes(true), setHabilidades(false), setImagens(false)}}
                             >
                                 <Text style={ styles.titles }>Poderes</Text>
                             </TouchableOpacity>
@@ -177,18 +252,18 @@ export function ModalPerso(props:Props){
                                     borderBottomColor: habilidades ? data.corPri : "#fff", 
                                     borderBottomWidth: habilidades ? 1 : 0, marginRight: 10 
                                 }} 
-                                onPress={() => { setX(2), setHistoria(false), setPoderes(false), setHabilidades(true), setCriadores(false)}}
+                                onPress={() => { setX(2), setHistoria(false), setPoderes(false), setHabilidades(true), setImagens(false)}}
                             >
                                 <Text style={ styles.titles }>Habilidades</Text>
                             </TouchableOpacity>
                             <TouchableOpacity 
                                 style={{ 
-                                    borderBottomColor: criadores ? data.corPri : "#fff", 
-                                    borderBottomWidth: criadores ? 1 : 0 
+                                    borderBottomColor: imagens ? data.corPri : "#fff", 
+                                    borderBottomWidth: imagens ? 1 : 0 
                                 }} 
-                                onPress={() => { setX(3), setHistoria(false), setPoderes(false), setHabilidades(false), setCriadores(true)}}
+                                onPress={() => { setX(3), setHistoria(false), setPoderes(false), setHabilidades(false), setImagens(true)}}
                             >
-                                <Text style={ styles.titles }>Criadores</Text>
+                                <Text style={ styles.titles }>Imagens</Text>
                             </TouchableOpacity>
                         </View>
 
@@ -206,9 +281,22 @@ export function ModalPerso(props:Props){
                         : null}
 
                         {poderes ? 
-                            <View style={{ paddingHorizontal: 30, paddingTop: 20 }}>
+                            <View style={{ paddingHorizontal: 20, paddingTop: 20 }}>
+                                <View style={{ width: width-40, alignItems: 'flex-end' }}>
+                                    <Pressable onPress={Test2} style={{  }}>
+                                        <Icons name={indexUser === 1 ? "chevron-up-outline" : 'chevron-down-outline'} size={26} color='#000' />
+                                    </Pressable>
+                                </View>
                                 {data.poderes?.map((item,index) => (
-                                    <Text key={index} style={{ fontSize: 14, lineHeight: 22 }} >- {item}</Text>
+                                    <Reanimated.View key={index} style={[ teste1 ,{ width: width-40 }]}>
+                                        <View style={styles.viewPoderes}>
+                                            <View style={{ width: 7, height: 7, marginRight: 10, borderRadius: 20, backgroundColor: "#000" }} />
+                                            <Text style={{ fontSize: 14, lineHeight: 22 }} >{item.poder}</Text>
+                                        </View>
+                                        <Reanimated.View style={[teste2, styles.viewPoderesDesc]}>
+                                            <Text>{item.desc}</Text>
+                                        </Reanimated.View>
+                                    </Reanimated.View>
                                 ))}
                             </View>
                         : null}
@@ -246,98 +334,21 @@ export function ModalPerso(props:Props){
                             </View>
                         : null}
 
-                        {criadores ? 
-                            <></>
+                        {imagens ?
+                            <></> 
+                            // <View style={{ width: width, paddingHorizontal: 20 }}>
+                            //     <ComponenteA
+                            //         data={data.imagens.slice(0,3)}
+                            //     />
+                            //     <ComponenteB
+                            //         data={data.imagens.slice(3,6)}
+                            //     />
+                            // </View>
                         : null}
 
                     </View>
                 </View>
-            </Animated.ScrollView>
-            {/* {item.serie === 'Fables' &&
-                <Animated.View entering={BounceInRight.duration(700)} style={[headerStyle, styles.header, { width: width }]}>
-                    <StatusBar style='light' backgroundColor={item.corPri} />
-                    <LinearGradient colors={[item.corPri, item.corSec]} style={[styles.header]}>
-                        <HeaderPage titulo={item.nome} />
-                        <View style={{ width: '100%', alignItems: 'center'}}>
-                            <Animated.Image source={{ uri: item.thamb }} style={[thambStyle, { height: 200, width: 350, marginTop: 30, borderRadius: 20}]} /> 
-                        </View>
-                        <View style={styles.dadosHeader}>
-                            <View style={{ alignItems: 'center', width: 100}}>
-                                <Text style={styles.titledDados}>Outro Nome:</Text>
-                                <Text style={styles.textDados}>{item.nomeFic}</Text>
-                            </View>
-                            <View style={{ alignItems: 'center', width: 100}}>
-                                <Text style={styles.titledDados}>Altura:</Text>
-                                <Text style={[styles.textDados, { textAlign: 'center' }]}>{item.altura}</Text>
-                            </View>
-                            <View style={{ alignItems: 'center', width: 150 }}>
-                                <Text style={styles.titledDados}>Primeira Aparição:</Text>
-                                <Text style={[styles.textDados, { paddingLeft: 10 }]}>{item.PA}</Text>
-                            </View>
-                        </View>
-                    </LinearGradient>
-                </Animated.View>
-            }  */}
-            <Animated.View  style={[styles.header, {  width: width }]}>
-                <StatusBar style='light' backgroundColor="transparent"  />
-                <ImageBackground source={{ uri: data.wallpaper }}
-                    // resizeMode="cover" 
-                    borderBottomLeftRadius={40} 
-                    borderBottomRightRadius={40} 
-                    style={[]}
-                >
-                    <View style={{ width: "100%", backgroundColor: "rgba(58,58,58,0.7)", paddingTop: 25, borderBottomLeftRadius: 40, borderBottomRightRadius: 40}}>
-                        <LinearGradient end={{ x: 0, y: 1.7}} colors={[ "transparent" , data.corPri]} style={[{ width: width, alignItems: 'center', paddingBottom: 10, borderBottomLeftRadius: 40, borderBottomRightRadius: 40, }]}>
-                            <HeaderPage 
-                                modal={true} 
-                                close={props.close}
-                                userLoading={usuario.isLogin}
-                                stateFavorito={stateFavoritos} 
-                                id={data.id.toString()}
-                                editora={data.editora} 
-                                titulo={data.nomeHeroi} 
-                            />
-                            <View style={{ width: '100%', alignItems: 'center'}}>
-                                {active ?
-                                    <View style={{ position: 'absolute', zIndex: 999 }} >
-                                        <ActivityIndicator 
-                                            size={60}
-                                            color='#9E9D9A'
-                                            style={{ height: 220 }}
-                                        />
-                                    </View> 
-                                : null }
-                                <Animated.Image 
-                                    entering={BounceInRight.duration(1000)}
-                                    onLoad={() => setloadingThamb(false)}
-                                    resizeMode='contain'
-                                    source={{ uri: data.thamb }} style={styles.image} 
-                                /> 
-                                <Animated.Image  
-                                    entering={BounceInLeft.duration(1000)}
-                                    source={{ uri: data.logo }} 
-                                    onLoad={() => setloadingLogo(false)}
-                                    style={{ position: 'absolute', width: 270, height: 270, zIndex: 0 }} 
-                                /> 
-                            </View>
-                            <Animated.View entering={BounceInDown.duration(600)} style={styles.dadosHeader}>
-                                <View style={{ alignItems: 'center', width: 100}}>
-                                    <Text style={styles.titledDados}>Nome:</Text>
-                                    <Text style={styles.textDados}>{data.nome}</Text>
-                                </View>
-                                <View style={{ alignItems: 'center', width: 100}}>
-                                    <Text style={styles.titledDados}>Altura:</Text>
-                                    <Text style={styles.textDados}>{data.altura}</Text>
-                                </View>
-                                <View style={{ alignItems: 'center', width: 150 }}>
-                                    <Text style={styles.titledDados}>Primeira Aparição:</Text>
-                                    <Text style={[styles.textDados, { paddingLeft: 10 }]}>{data.PA}</Text>
-                                </View>
-                            </Animated.View>
-                        </LinearGradient>
-                    </View>
-                </ImageBackground>
-            </Animated.View>
+            {/* </ScrollView> */}
         </View>
     );
 }

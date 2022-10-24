@@ -1,39 +1,47 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import { theme } from '../../themes';
+
+const { width } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
     container: {
-        width: '100%',
-        paddingTop: 15,
+        width: width,
+        paddingTop: 45,
         paddingHorizontal: 30,
         paddingBottom: 10,
         alignItems: 'center',
         justifyContent: 'space-between',
         flexDirection: 'row',
-        zIndex: 99
+        // zIndex: -1
     },
 
     headerIcons: {
-        // backgroundColor: '#FFF', 
-        padding: 2,
-        alignItems: 'center',
-        justifyContent: 'center',  
-        borderRadius: 60
+        backgroundColor: "#fff", 
+        // elevation: 10,  
+        alignItems: 'center', 
+        justifyContent: 'center',
+        // marginRight: 30,
+        width: 42, 
+        height: 42, 
+        borderRadius: 24 
     },
 
     titleHeader: {
+        flex: 1,
         fontSize: 22, 
         width: 190,  
-        textAlign: 'center', 
         color: '#fff',
         fontFamily: theme.titleRubik
     },
 
     headerIconsHome: {
-        backgroundColor: '#FFF', 
-        padding: 4,
-        alignItems: 'center',
-        justifyContent: 'center',  
-        borderRadius: 60
+        backgroundColor: "#fff", 
+        // elevation: 10,  
+        alignItems: 'center', 
+        justifyContent: 'center',
+        // marginRight: 30,
+        width: 42, 
+        height: 42, 
+        borderRadius: 24
     },
 });

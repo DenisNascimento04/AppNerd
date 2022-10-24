@@ -1,10 +1,11 @@
 {
-    "personagensMarvel": [
+    "personagens": [
         {
             "id": 0,
             "corPri": "#39BD2C",
             "corSec": "#7D3C98",
             "tipoP": "Heroi",
+            "especie": "Humano (Modificado)",
             "tags": [
                 "Heroi",
                 "Vingadores",
@@ -14,54 +15,67 @@
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk_teste.png?alt=media&token=1657ef37-59af-4a2d-bafd-43313da4fdbc",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_hulk.png?alt=media&token=a6804a54-f358-4549-9944-2524c416f5f6",
             "wallpaper": "https://img.elo7.com.br/product/original/1081B0E/painel-hulk-g-frete-gratis-hulk.jpg",
-            "nomeHeroi": "Hulk",
+            "nomePerso": "Hulk",
             "nome": "Bruce Banner",
             "desc": "O Hulk, por vezes referido como O Incrível Hulk, é conhecido pelo sua força 'vitualmente' ilimitada e seu temperamento explosivo.",
             "PA": "The Incredible Hulk #1 (Março, 1962)",
             "altura": "1,78cm até 2,44cm",
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Força 'Virtualmente' Ilimitada",
+                    "desc": "Uma força que até hoje não chegou ao um limite e até hoje não foi possível medir."
                 },
                 {
-                    "id": ""
+                    "poder": "Super Velocidade",
+                    "desc": "Capacidade de se mover e correr em grandes velocidades."
+                },
+                {
+                    "poder": "Fator de Cura",
+                    "desc": "Capacidade de se curar em grande velocidade, Hulk tem o maior fator de cura da Marvel."
+                },
+                {
+                    "poder": "Super Resitência",
+                    "desc": "Capacidade de resistir a grandes danos como armas e bombas sem se ferir."
+                },
+                {
+                    "poder": "Pele Impenetravel",
+                    "desc": "Uma pele tão grossa e resistente que dificilmente é perfurada."
+                },
+                {
+                    "poder": "Intecto: Gênio",
+                    "desc": "O alter ego de Hulk o doutor Bruce Banner é uma gênio nato e um dos homens mais inteligentes da Terra."
                 }
-            ],
-            "poderes": [
-                "Força 'Virtualmente' Ilimitada",
-                "Super Velocidade",
-                "Regereneração",
-                "Super Resitencia",
-                "Pele Impenetravel",
-                "Intecto: Gênio"
             ],
             "sinopse": [
                 "Bruce é uma das maiores mentes da Terra e o maior expecialista em radiação Gama do mundo, na tentativa de replicar o soro do super soldado do Capitão América, foi exposto a formula e a uma quantidade enorme de radiação Gama, porém ao envés de morre adquiriu um monstro verde que quanto mais raiva tem mais forte fica."
             ],
             "imagens": [
-                "https://www.nerdsite.com.br/wp-content/uploads/2019/11/hulk.png",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/06/201591235859-hulk.jpg",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/11/Hulk.jpg",
-                "http://1.bp.blogspot.com/-Dvx-1kDsYGg/VXsOinqpS8I/AAAAAAAALlM/2hpDZKHU1GI/s1600/1hulkfinal.jpg",
-                "https://quadrinheiros.files.wordpress.com/2013/09/robert_bruce_banner_earth-616.jpg?w=584"
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img1.jpg?alt=media&token=4a8bd1fb-7314-40a7-9853-7267f658b68e",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img2.jpg?alt=media&token=a0b4462b-5baa-44c5-a8c5-3be37e2e368f",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img3.jpg?alt=media&token=d09bd4f9-0ae2-46e6-92e6-b9bdb46cba01",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img4.jpg?alt=media&token=b2c620b7-b7d9-4acc-8384-85458f9ab02e",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img5.jpg?alt=media&token=918745b0-79d5-4d15-8ba4-e5ae90507b64",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img6.jpg?alt=media&token=52ecace3-ecc3-43be-94c5-259494840071",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img7.jpg?alt=media&token=f11ee49d-648e-4211-b4da-7003704394ac",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img8.jpg?alt=media&token=d4c164d7-4e3f-4773-8724-55686f16737f",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhulk%2Fhulk-img9.jpg?alt=media&token=3d829cea-92b2-43b6-b610-b80171f807b2"
             ],
             "criadores": [
                 {
-                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-stan_lee.webp?alt=media&token=3988f2bc-43e8-4821-b1b7-5239cbef9bd6",
                     "nome": "Stan Lee"
                 },
                 {
-                    "image": "https://m.media-amazon.com/images/M/MV5BMjY5MTkyNDctMTc1Zi00NTcwLWEzZWYtOWVjZjRkMzIxMmI3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-jack-kirby.jpg?alt=media&token=6bef00d4-9bad-45b0-8d7b-65242a0612eb",
                     "nome": "Jake Kirby"
                 }
             ],
             "historia": [
                 {
-                    "title": "",
+                    "title": "Infância",
                     "text": [
-                        "",
-                        "",
-                        ""
+                        "Robert Bruce Banner filho de Brian Banner e Rebecca Walters, Brian era um renomado físico atômicos e Rebecca uma grande mãe, embora Rebecca tenha amado profundamente seu filho, que retribuiu seu afeto, Brian o odiava, seu pai nunca quis ter filhos devido a um acontecimento com suas irmãs na infância. Alcoólatra e instável, Brian tinha ciúmes do amor que sua esposa tinha por seu filho que o deixava constantemente irritado, como se não bastasse, Brian acreditava que suas experiencias com radiação haviam alterado seu DNA, fazendo de seu filho um tipo de mutante. Todos esses fatores fizeram Brian abusar fisicamente de sua esposa e de seu filho. Uma das pessoas que ajudaram Bruce a lidar com tudo isso foi sua prima Jennifer Walters.",
+                        "A vida de Bruce mudou mesmo através de uma grande tragedia, em um acesso fúria seu pai acaba assassinando sua mãe, sendo preso e internado em um hospital psiquiátrico. Longe do pai, passou a ser criado por sua tia por parte de pai Susan Banner. Susan criou Bruce com amor e carinho, como seu próprio filho, e nunca mais voltou a falar com seu irmão depois do que fez com Bruce e Rebecca. Bruce cresceu como um jovem extremamente retraído, porém com um intelecto genial."
                     ]
                 }
             ],
@@ -99,10 +113,11 @@
             "corPri": "#EC2008",
             "corSec": "#EC2008",
             "tipoP": "Heroi",
+            "especie": "Humano (Modificado)",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-aranha.png?alt=media&token=ea2f55bc-7233-48fe-8728-5fb0039b5eae",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo.png?alt=media&token=3b03142f-292a-4ae3-b1c7-a70ed27afafb",
             "wallpaper": "https://http2.mlstatic.com/D_NQ_NP_882768-MLB26681350985_012018-O.jpg",
-            "nomeHeroi": "Homem Aranha",
+            "nomePerso": "Homem Aranha",
             "nome": "Peter Parker",
             "desc": "O querido e amado amigo da vizinhança, um dos heroís mais mais famosos entre os jovens justamente por ser um pesonagem jovem.",
             "PA": "Amazing Fantasy #15 (Agosto de 1962)",
@@ -115,35 +130,69 @@
                 "Modificado"
             ],
             "poderes": [
-                "Intelecto: Gênio",
-                "Super Força",
-                "Super Agilidade",
-                "Super Resistência",
-                "Sentidos Ampliados",
-                "Teias",
-                "Habilidade de Luta",
-                "Grudar em Superficies",
-                "Alerta de Perigo(Sentido Aranha)",
-                "Tecnologias Avançadas"
+                {
+                    "poder": "Intelecto: Gênio",
+                    "desc": "Um gênio natural que domina varias varias da ciência além de usar seu intelecto em combate."
+                },
+                {
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmnetes grandes, logo uma força sobre-humana, este personagem pode estar na escala 25 toneladas."
+                },
+                {
+                    "poder": "Super Agilidade",
+                    "desc": "Capacidade de se mover e reagir rápido a várias situações."
+                },
+                {
+                    "poder": "Super Resistência",
+                    "desc": "Capacidade de resistir a grandes danos como armas e bombas sem se ferir."
+                },
+                {
+                    "poder": "Sentidos Ampliados",
+                    "desc": "Capacidade de ouvir, enxergar  e sentir de forma sobre-humana."
+                },
+                {
+                    "poder": "Teias",
+                    "desc": "Capacidade de soltar teias de seus pulsos através de um dispositivo, essas teias são orgânicas, resistentes, tem uma força de tração incrível e tem diversas utilidades."
+                },
+                {
+                    "poder": "Habilidade de Luta",
+                    "desc": "Este pesonagem tem ótimas habilidades de luta e artes marciais."
+                },
+                {
+                    "poder": "Grudar em Superficies",
+                    "desc": "Capacidade de se manter em diversas superfícies em diversas posições."
+                },
+                {
+                    "poder": "Alerta de Perigo (Sentido Aranha)",
+                    "desc": "Age como um sexto sentido, que alerta sobre perigos iminentes."
+                },
+                {
+                    "poder": "Tecnologias Avançadas",
+                    "desc": "Possui acessórios tecnológicos avançados, desenvolvidos por ele ou por outros."
+                }
             ],
             "sinopse": [
                 "Peter Parker era apenas um garoto quieto e inteligente que sofria bullyng na escola, ninguém imaginaria que se tornaria uma dos maiores herois do mundo, o apelido de 'Amigão da Vizinhaça' não é em vão, uma da melhores coisas deste personagem é os problemas de consiliar a vida de heroi com a de adolecente, entre outros problemas que tornam sua vida ainda mais antrativa.",
                 "Como se sua habilidades sobre-humanas já não fossem o bastante, Peter tem um intelecto incrivel, sendo uma das pessoas mais inteligente do mundo, isso é demonstrado atráves das ferramentas que utiliza como Homem-Aranha como os lançadores de teias, pois até mesmo Tony Stark ficou intrigado com a tecnologia quando viu pela primeira vez."
             ],
             "imagens": [
-                "https://www.proibidoler.com/wp-content/uploads/2014/11/ASM-9-SL.jpg",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/cropped-Homem-Aranha-1-3.jpg",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-SGEDDON2018000cov.0.jpg",
-                "http://images.universohq.com//2014/01/AmazingSpiderMan01_des.jpg",
-                "https://cinemacomrapadura.com.br/imagens/2019/07/20190729-homem-aranha-cacado.jpg"
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img1.jpg?alt=media&token=56705259-bbd0-4c93-8d56-9ace10539ae6",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img2.jpg?alt=media&token=9764e22f-9e81-4845-9483-22fe2dc1b31c",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img3.jpg?alt=media&token=d8d0e7ed-b77e-43f8-aeae-88bf492ffda8",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img4.jpg?alt=media&token=48412e2e-7d2e-4d98-a865-eb8fc290ea12",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img5.jpg?alt=media&token=78b111f1-48dc-4d2c-800f-6176f5e7611f",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img6.jpg?alt=media&token=0546ca55-05c7-4578-8dd6-6b7aadbdc205",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img7.jpg?alt=media&token=c3bdf928-d3e8-4832-afc5-0f4ac82227c7",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img8.jpg?alt=media&token=2ff4faaf-0bf5-4007-9b51-4d7a7cf93d2e",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem_aranha%2Fhomem_aranha-img9.jpg?alt=media&token=2586efc5-774b-4a05-91d3-8f188645e470"
             ],
             "criadores": [
                 {
-                    "image": "https://br.web.img3.acsta.net/medias/nmedia/18/87/55/12/20030422.jpg",
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-stan_lee.webp?alt=media&token=3988f2bc-43e8-4821-b1b7-5239cbef9bd6",
                     "nome": "Stan Lee"
                 },
                 {
-                    "image": "https://s2.glbimg.com/J65haVmGIHOMF3Im9ESLR_-gEUk=/e.glbimg.com/og/ed/f/original/2018/07/09/steven_1.jpg",
+                    "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-steve_ditko.webp?alt=media&token=291c9cbc-da50-44dd-b4b0-69bb2e174a40",
                     "nome": "Steve Ditko"
                 },
                 {
@@ -206,10 +255,11 @@
             "corPri": "#FFC300",
             "corSec": "#FFC300",
             "tipoP": "Heroi",
+            "especie": "Humano",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Firon-man.png?alt=media&token=bbb5fae1-a457-487c-9322-4cfeaf0c24bb",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_ironman.png?alt=media&token=dea1fdc7-dcba-4c0f-8b63-54601338893e",
             "wallpaper": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/07/homem-de-ferro-1200x900-1.jpg",
-            "nomeHeroi": "Homem de Ferro",
+            "nomePerso": "Homem de Ferro",
             "nome": "Tony Stark",
             "desc": "Um dos maiores gênios das ficções, playboy, milionário e filantropo tem mais armaduras incrivelmente tecnogicas do que você tem camisas.",
             "PA": "Tales of Suspense #39 (Março de 1963)",
@@ -221,24 +271,49 @@
                 "Iluminates"
             ],
             "poderes": [
-                "Intelecto: Gênio",
-                "Visão de 360º",
-                "Disparo de Energia",
-                "Tecnologia Avançada",
-                "Extremis",
-                "Arsenal",
-                "Armaduras Personalizadas"
+                {
+                    "poder": "Intelecto: Gênio",
+                    "desc": "Tony é um dos homens mais inteligentes da Terra e um dos mais inteligentes da ficções."
+                },
+                {
+                    "poder": "Visão de 360º",
+                    "desc": "Os sensores em sua armadura permitem que ele tenha visão total a sua volta."
+                },
+                {
+                    "poder": "Disparo de Energia",
+                    "desc": "Os propulsores em suas mão podem ser usados para disparar rajadas concentradas de energia."
+                },
+                {
+                    "poder": "Tecnologia Avançada",
+                    "desc": "Diversos tipos de tecnologias que normalmente são criadas por ele, o maior exemplo são suas armaduras incrivelmente tecnologicas."
+                },
+                {
+                    "poder": "Extremis",
+                    "desc": ""
+                },
+                {
+                    "poder": "Arsenal",
+                    "desc": "Possui um arsenal de armas embutidas em suas armaduras como respulsores, mísseis, lasers, projéteis guiados, entre outros."
+                },
+                {
+                    "poder": "Armaduras Personalizadas",
+                    "desc": "Armaduras criadas com especificações como resgate, levantamento de peso, artilharia pesada, anti-hulk, entre outras."
+                }
             ],
             "sinopse": [
                 "Tony Stark é um dos maiores gênios das ficções sendo capaz de rivalizar com outros grande nomes como Bruce Banner e  Reed Richards, é um dos heroris mais importantes e famosos nos dias de hoje devido aos filmes da Marvel, onde foi interpretado por Robert Downey Jr.",
                 "Stark usa de seu dinheiro e intelecto para criar armaduras muito poderosas e cada vez mais tecnologicas com o tempo, indo de sua primeira armadura feita com praticamente lixo até armaduras com nanotecnologia e e com metal Uru."
             ],
             "imagens": [
-                "https://t.ctcdn.com.br/vzQ04a8buhrU8Wqkr4jVgfCbZ6Y=/1244x700/smart/i388036.jpeg",
-                "https://www.einerd.com.br/wp-content/uploads/2019/09/Homem-de-Ferro-poss%C3%ADvel-morte-quadrinhos-capa.jpg",
-                "https://uploads.jovemnerd.com.br/wp-content/uploads/2018/03/homem-de-ferro-920x544.jpg",
-                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2018/03/legiao_8eFuIR6zVB1C9m_4yhi2tvGJQnbrAPWdT7YfaqXEU5.png.jpeg",
-                "https://ovicio.com.br/wp-content/uploads/2020/07/20200703-iron-man2020.png"
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img1.jpg?alt=media&token=76d4506f-dcdc-40d2-ae2a-17637ad0bf61",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img2.jpg?alt=media&token=082d555f-1907-41f4-8eea-31c046c714a7",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img3.jpg?alt=media&token=0ebd829d-a3e7-48ba-998f-589499a7bcb5",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img4.jpg?alt=media&token=019a00d1-74c6-4330-abbd-69fab6828148",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img5.jpg?alt=media&token=7c83f2ed-b362-44bd-b0f6-a6e60a6be117",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img6.jpg?alt=media&token=7ffc828b-1ac8-403a-9bfd-b87585772b99",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img7.jpg?alt=media&token=24aa8a3c-ea29-44e7-8765-a2cba49a28ba",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img8.jpg?alt=media&token=aa25e3e4-8c76-4565-bd8f-e345a8d4d6ad",
+                "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fhomem-de-ferro%2Fhomem_de_ferro-img9.jpg?alt=media&token=1a1d2543-a938-4ed7-baf8-f749a810b461"
             ],
             "criadores": [
                 {
@@ -315,10 +390,11 @@
             "corPri": "#FD6E05",
             "corSec": "#FFCB03",
             "tipoP": "Anti-Heroi",
+            "especie": "Humano",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fghost-rider.png?alt=media&token=ccb0b816-8e45-44a0-b124-68d16e9f6ae7",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_ghost-rider.png?alt=media&token=a6772827-30a8-44a5-9ca4-f4470c613c6d",
             "wallpaper": "https://pm1.narvii.com/6549/c59fa7013f13d82f69e5ae74b488b188fde8825a_hq.jpg",
-            "nomeHeroi": "Motoqueiro Fantasma",
+            "nomePerso": "Motoqueiro Fantasma",
             "nome": "Johnny Blaze",
             "desc": "Era apenas um acrobata em um circo, mas tomou a decisão errada e se tornou o espirito da vingança, reponsavel por punir os culpados.",
             "PA": "Marvel Spotlight #5 (Maio, 1972)",
@@ -330,12 +406,30 @@
                 "Inferno"
             ],
             "poderes": [
-                "Super Força",
-                "Manipulação de Fogo Infernal",
-                "Poder Ilimitado",
-                "Regeneração",
-                "Olhar da Penitência",
-                "Grande Senso de Justiça"
+                {
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmnetes grandes, logo uma força sobre-humana."
+                },
+                {
+                    "poder": "Manipulação de Fogo Infernal",
+                    "desc": "Capacidade de utilizar chamas infernais que queimam até a alma."
+                },
+                {
+                    "poder": "Poder Ilimitado",
+                    "desc": ""
+                },
+                {
+                    "poder": "Fator de Cura",
+                    "desc": "Capacidade de se curar em grande velocidade."
+                },
+                {
+                    "poder": "Olhar da Penitência",
+                    "desc": "Um poder exclusivo do espírito da vingança, é a capacidade de voltar todos os pecados de um indivíduo contra ele o deixando em um estado de sofrimento eterno."
+                },
+                {
+                    "poder": "Grande Senso de Justiça",
+                    "desc": "Responsável por vingar os inocentes, se não houver um inocente para vingar ou proteger o motoqueiro não fará nada."
+                }
             ],
             "sinopse": [
                 "Johnny é uma das pessoas mais azaradas do quadrinhos, quase tudo que tenta fazer da errado, na tentativa de salvar a vida de seu pai adotivo fez um pacto com Mephisto, porém foi enganado e virou o receptáculo do espírito da vingança se tornando o Motoqueiro Fantasma, que sai a noite procurando criminosos para punir utilizando seu Olhar da Penitência para voltar todos os crimes e maldades de um criminoso contra ele.",
@@ -346,7 +440,11 @@
                 "http://images6.fanpop.com/image/photos/36400000/Ghost-rider-club-image-ghost-rider-club-36453381-1398-1000.jpg",
                 "http://www.coxinhanerd.com.br/wp-content/uploads/2019/09/cc-9.jpg",
                 "https://www.pdvg.it/wp-content/uploads/2019/05/Ghost-Rider_01.png",
-                "https://dam.smashmexico.com.mx/wp-content/uploads/2021/05/ghost-rider-la-ruta-de-la-perdicion-salvat-marvel-garth-ennis-cover.jpg"
+                "https://dam.smashmexico.com.mx/wp-content/uploads/2021/05/ghost-rider-la-ruta-de-la-perdicion-salvat-marvel-garth-ennis-cover.jpg",
+                "https://cabanadoleitor.com.br/wp-content/uploads/2020/08/ghost-rider-marc-silvestri-feature-1.jpg",
+                "https://lh3.googleusercontent.com/-blTrCt3Is5M/YhgF_BWGTII/AAAAAAAAVrk/l2V75c8vFCIxKGOByhm9ruM97B4Pwjr_ACNcBGAsYHQ/s16000/1645741339939149-0.png",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/05/cropped-ghost-rider-1-2.jpg",
+                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/12/motoqueiro-fantasma-1200x900-1.jpg"
             ],
             "criadores": [
                 {
@@ -360,11 +458,13 @@
             ],
             "historia": [
                 {
-                    "title": "",
+                    "title": "Infância",
                     "text": [
-                        "",
-                        "",
-                        ""
+                        "Johnny Blaze cresceu em uma família de dublês fazendo várias acrobacias com motos. Seu pai, Barton Blaze, criou Johnny sozinho após a mãe de Johnny, Naomi, os deixar. A carreira da família tinha muitos riscos e seu pai os pagou, em um acidente durante uma acrobacia Barton morre, e Johnny fica totalmente sozinho e desacreditado, além de adquirir medo de motos, até que um casal de grandes amigos de seu pai, Crash e Mona Simpson, decidem adotá-lo e Johnny passa a viver com eles e a filha do casal, Roxanne. ",
+                        "Anos mais tarde Johnny e Roxanne se apaixonam, e outra tragédia acontece, ao estar com sua mãe adotiva em uma moto ambos sofrem um acidente e ficam gravemente feridos. Johnny consegue se recuperar, mas sua mãe permanece em estado grave, em seu leito Mona faz um último pedido a Johnny, para que ele não volte a pilotar uma moto novamente, porém ele não podia contar para Crash e Roxanne, isso fez com que Johnny fique com fama de covarde para eles e decide ir embora.",
+
+                        "Certo dia Roxanne vai atras de Johnny para pedir ajuda, o pai adotivo de Johnny estava morrendo de câncer e ambos precisavam fazer alguma coisa, Johnny volta e vê seu pai completamente sem esperanças de se recuperar e planejando uma acrobacia suicida, dessa forma ele morreria fazendo o que ele mais gosta.",
+                        "Desesperado para não perder mais ninguém em sua vida Johnny recorreu ao ocultismo para tentar curar a doença de seu pai adotivo. Acreditando que ele havia convocado o próprio diabo bíblico, Johnny de fato convocou o lorde demônio Mephisto e barganhou sua alma em troca da vida de Crash."
                     ]
                 }
             ],
@@ -402,10 +502,11 @@
             "corPri": "#2C0902",
             "corSec": "#DC2403",
             "tipoP": "Vilão",
+            "especie": "Klyntar",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcarnificina.png?alt=media&token=955fa342-7481-4ef5-9af7-c82567501004",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_carnificina.png?alt=media&token=26f0c79d-3fb8-408f-8ea1-53db1a07032d",
             "wallpaper": "https://i.pinimg.com/originals/06/d3/7a/06d37a06b4d3067583a30488a0930c02.jpg",
-            "nomeHeroi": "Carnificina",
+            "nomePerso": "Carnificina",
             "nome": "Cletus Kasady",
             "desc": "Um dos maiores psicopatadas das hqs, seu nome não por acaso, só existe uma coisa que este vilão pensa MATAR.",
             "PA": "The Amazing Spider-Man #361 (Abril de 1992)",
@@ -416,16 +517,42 @@
                 "Simbionte"
             ],
             "poderes": [
-                "Super Força",
-                "Super Agilidade",
-                "Super Resistência",
-                "Escalar Paredes",
-                "Regeneração",
-                "Trasformismo",
-                "Camuflagem",
-                "Regeneração Acelerada",
-                "Criação de Armas",
-                "Sentidos Ampliados"
+                {
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmente grandes, logo uma força sobre-humana."
+                },
+                {
+                    "poder": "Super Agilidade",
+                    "desc": "Capacidade de se mover e reagir rápido a várias situações."
+                },
+                {
+                    "poder": "Super Resistência",
+                    "desc": "Capacidade de resistir a grandes danos como armas e bombas sem se ferir."
+                },
+                {
+                    "poder": "Escalar Paredes",
+                    "desc": "Capacidade de escalar paredes"
+                },
+                {
+                    "poder": "Trasformismo",
+                    "desc": "O simbionte tem a capacidade de se tranformar em roupas e transformar o hopedeiro."
+                },
+                {
+                    "poder": "Camuflagem",
+                    "desc": "Capacidade de se camuflar ao ambiente."
+                },
+                {
+                    "poder": "Fator de Cura",
+                    "desc": "Capacidade de se curar em grande velocidade."
+                },
+                {
+                    "poder": "Criação de Armas",
+                    "desc": "Carnificina tem a capacidade de gerar armas como machados, laminas e projéteis."
+                },
+                {
+                    "poder": "Sentidos Ampliados",
+                    "desc": "Capacidade de ouvir, enxergar e sentir de forma sobre-humana."
+                }
             ],
             "sinopse": [
                 "Imagine Um simbionte alienígena muito poderoso se unindo a um sociopata e assassino em série altamente perigoso para todos que entram em contato com ele, isto é o Carnificina, um supervilão que não se importa com dinheiro, poder ou qualquer outra coisa que não seja se divertir que no caso é matar que aparecer pela frente."
@@ -449,11 +576,9 @@
             ],
             "historia": [
                 {
-                    "title": "",
+                    "title": "Infância ",
                     "text": [
-                        "",
-                        "",
-                        ""
+                        "Cletus Kasady teve uma infância muito problemática demonstrando muitos sinais psicóticos desde pequeno. Cletus matou sua avó empurrando-a da escada e torturou o cachorro de sua mãe. Um dia seu pai aparentemente mata sua mãe e Kasady não o defende no julgamento. Como um órfão, é enviado para o orfanato, onde seu comportamento antissocial o levou as ser abusado pelos órfãos e funcionários, cansado e ficando cada vez mais instável, Kasady mata o gerente do orfanato, mata Manny Calderon, uma garota que se recusou a sair com ele, empurrando-a na frente de um ônibus, queima o orfanato e vai embora."
                     ]
                 }
             ],
@@ -491,10 +616,11 @@
             "corPri": "#EA2424",
             "corSec": "#225DAD",
             "tipoP": "Heroi",
+            "especie": "Humano (Modificado)",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcapitao-america.png?alt=media&token=918b1a34-22a6-4554-8f6a-0d46cd0b24f9",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_capitao-america.png?alt=media&token=c4071426-e06a-4cd9-b811-418c35bad7b4",
             "wallpaper": "https://www.papeldeparede.etc.br/fotos/wp-content/uploads/papel-de-parede.jpg",
-            "nomeHeroi": "Capitão América",
+            "nomePerso": "Capitão América",
             "nome": "Steven Rogers",
             "desc": "Um soldados determinado e corajoso, um soro e muita ciência viraram o soldado mais importante da história militar sendo considerado um super soldados.",
             "PA": "Captain America Comics #1 (Dezembro, 1940)",
@@ -507,13 +633,30 @@
                 "Vingadores"
             ],
             "poderes": [
-                "Super Força",
-                "Super Agilidade",
-                "Super Reflexos",
-                "Físico Perfeito",
-                "Habilidade de Combate",
-                "Resistência",
-                "Experiencia"
+                {
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmente grandes, logo uma força sobre-humana."
+                },
+                {
+                    "poder": "Super Agilidade",
+                    "desc": "Capacidade de se mover e reagir rápido a várias situações."
+                },
+                {
+                    "poder": "Super Reflexos",
+                    "desc": ""
+                },
+                {
+                    "poder": "Físico Perfeito",
+                    "desc": "Chegou auge das capacidade física dos humanos."
+                },
+                {
+                    "poder": "Habilidade de Combate",
+                    "desc": "Este pesonagem tem ótimas habilidades de luta e artes marciais."
+                },
+                {
+                    "poder": "Super Resistência",
+                    "desc": "Capacidade de resistir a grandes danos como armas e bombas sem se ferir."
+                }
             ],
             "sinopse": [
                 "Steven sempre teve o sonho de servir seu país mas seu porte físico e sua saúde o impediam, até que teve uma chance de entrar para o exercito Americano e divido a seu bom coração, coragem e determinação foi escolido para o experimento super soldado e se tornou o primeiro super soldado."
@@ -537,11 +680,11 @@
             ],
             "historia": [
                 {
-                    "title": "",
+                    "title": "Começo",
                     "text": [
-                        "",
-                        "",
-                        ""
+                        "Um pobre órfão do lado errado dos trilhos nos dias que antecederam a Segunda Guerra Mundial, Steve Rogers de bom coração se alistou no exército para lutar contra os Poderes do Eixo, mas foi rejeitado devido ao seu pequeno tamanho e físico subdesenvolvido. Devido a frustração de não poder servir, Steve se tornou briguento por não baixar a cabeça para ninguém, quem o tirava dessas situações era seu melhor amigo Becky Barnes que sempre foi o posto de Steve a respeito do desenvolvimento de seu corpo.",
+                        "O professor Abraham Erskine, um pioneiro no desenvolvimento de um super-soldado para os Estados Unidos, viu potencial em Rogers, mas acima de tudo seu enorme coração e coragem, dando destaque para a frase ‘com o poder, o mal fica pior, o bom fica melhor’, e o levou para o Projeto Renascimento, o experimento ousado do professor para melhorar o corpo humano até seus poderes máximos.",
+                        "Rogers se viu submetido aos tratamentos de Erskine, um soro especializado e a exposição a uma forma única de radiação, e realizou o sonho do professor, tornando-se o primeiro super-soldado totalmente desenvolvido do mundo. Agora com seu físico elevado ao máximo adquiriu incrível força e agilidade. Recém transformado Steve teve que assistir um espião nazista atirando e matando Erskine, e assim garantiu que Rogers seria o último de sua espécie."
                     ]
                 }
             ],
@@ -579,10 +722,11 @@
             "corPri": "#A7A4A4",
             "corSec": "#000",
             "tipoP": "Heroi",
+            "especie": "Asgardiano",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fthor.png?alt=media&token=12b8d8b9-fc91-44d3-96d2-d80c979e755f",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_thor.png?alt=media&token=19f7e505-7377-43f1-af1a-38e7f1c0faba",
             "wallpaper": "https://ovicio.com.br/wp-content/uploads/comics-thor-marvel-comics-avengers-fresh-new-hd-wallpaper.jpg",
-            "nomeHeroi": "Thor",
+            "nomePerso": "Thor",
             "nome": "Thor Odinson",
             "desc": "O grande protetor da Terra, ou Midgart para os deuses, Thor criou muito afeto pela Terra e por isso se declarou o protetor do planeta e vem exercendo essa função milhares de anos.",
             "PA": "Venus #11 (Julho, 1950)",
@@ -594,11 +738,22 @@
                 "Vingadores"
             ],
             "poderes": [
-                "Super Força",
-                "Super Resistência",
-                "Manipulação de Raios",
-                "Manipulação de Energia",
-                "Utilizador do Martelo Mjonir"
+                {
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmente grandes, logo uma força sobre-humana."
+                },
+                {
+                    "poder": "Super Resistência",
+                    "desc": "Capacidade de resistir a grandes danos como armas e bombas sem se ferir."
+                },
+                {
+                    "poder": "Manipulação de Raios",
+                    "desc": "Capaccidade de gerar e manipular eletricade em grandes escalas."
+                },
+                {
+                    "poder": "Utilizador do Martelo Mjonir",
+                    "desc": "O principal utilizador do poderoso martelo forjado pelos maiores criadores de armas do universo."
+                }
             ],
             "sinopse": [
                 "Um Deus Nórdico, proclamado 'O Filho de Odin', cresceu destinado a ser o rei de Asgard porém quando a hora chegou ainda era muito imaturo então Odin o baniu para Midgart (Terra) e tirou seus poderes. Após viver como um humano entre os humanos aprendeu o valor da vida e que o poder não deve ser usado apenas para destruição mas também para contruir, então se tornou digno de empunhar o Martelo Mjonir e se tornar novamente o Deus Thor"
@@ -630,11 +785,16 @@
             ],
             "historia": [
                 {
-                    "title": "",
+                    "title": "Origem",
                     "text": [
-                        "",
-                        "",
-                        ""
+                        "Thor é o filho de Odin, O Pai de Todos em Asgard, e Jord, também conhecida como Gaia, a deusa que fazia parte dos Deuses Ancestrais. Odin queria que seu filho tirasse seu poder tanto de Asgard como de Midgard(Terra), por isso se deitou com Jord, a representação da Terra entre os Deuses Ancestrais. Odin criou uma caverna na Noruega onde Jord deu à luz a Thor, após ser desmamado, Odin levou seu filho para Asgard onde Frigga, a esposa de Odin, o criou como um filho. Thor só soube sobre sua mãe biológica décadas mais tarde."
+                    ]
+                },
+                {
+                    "title": "Ciclo do Ragnarok",
+                    "text": [
+                        "O Ragnarok é como o fim dos temos para Asgard, no entanto o Ragnarok sempre acontece em algum momento causando o fim e o recomeço criando um ciclo infinito. Devido esse ciclo, inúmeras versões de Asgard e da origem do Thor foram sendo criadas.",
+                        "Uma entidade antiga, que nasceu a partir do olho decepado de Odin contou ao atual Thor que antes existia outro, que não era loiro, mas sim ruivo e que no último Ragnarok ele matou a Serpente de Midgard, no entanto foi morto pelo veneno da criatura. Até mesmo Odin foi morto, mas outro surgiu através de vários deuses que sobreviveram ao Ragnarok, aparentemente esse Odin é o pai do atual Thor. Devido ao ciclo não se sabe se algum dia será contada a verdadeira origem do Thor."
                     ]
                 }
             ],
@@ -672,10 +832,11 @@
             "corPri": "#AB0C0C",
             "corSec": "#DCBE02",
             "tipoP": "Heroi",
+            "especie": "Humano",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fdoutor-estranho.png?alt=media&token=f50cd531-1a55-4b6c-b855-c45dd08ec45e",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_doutor-estranho.png?alt=media&token=782c7266-c701-4f0e-8002-0e67fe649387",
             "wallpaper": "https://hqscomcafe.com.br/wp-content/uploads/2016/11/doutorestranho.jpg",
-            "nomeHeroi": "Doutor Estranho",
+            "nomePerso": "Doutor Estranho",
             "nome": "Stephen Strange",
             "desc": "O Mago Supremo da Terra, seu dever é proteger o planeta contra ameaças de outras dimensões e para isso a Terra precisa do Mago Supremo.",
             "PA": "Strange Tales #110 (Abril, 1963)",
@@ -687,12 +848,30 @@
                 "Místico"
             ],
             "poderes": [
-                "Inteligencia",
-                "Manipulação de Magia",
-                "Manipulação do Tempo",
-                "Levitação",
-                "Projeção Astral",
-                "Portador dos Segredos Místicos do Universo"
+                {
+                    "poder": "Inteligência",
+                    "desc": "Um inteligencia superior, claramente um prodígio."
+                },
+                {
+                    "poder": "Mestre em Magia",
+                    "desc": "Capacidade de utilizar magias de todos os tipos e complexidades."
+                },
+                {
+                    "poder": "Manipulação do Tempo",
+                    "desc": "Capacidade de utilizar uma joía do inifinto para controlar o tempo(UCM)"
+                },
+                {
+                    "poder": "Levitação",
+                    "desc": "Através de um atefato mágico chamado 'Manto da levitação' pode levitar e voar a baixas velocidades."
+                },
+                {
+                    "poder": "Projeção Astral",
+                    "desc": "Capacidade de projetar o seu espirito para fora de seu corpo, entrando no plano astral."
+                },
+                {
+                    "poder": "Portador dos Segredos Místicos do Universo",
+                    "desc": "Este personagem sabe todos os grande segredos da mágia e tem sobre sua posse os atefatos mágicos mais poderosos do universo."
+                }
             ],
             "sinopse": [
                 "Um cirurgião arrogante e egocentrico sofre um acidente grave e nunca mais poderia fazer uma cirurgia novamente. Buscando a uma cura para suas mão gravemente feridas, usou todo o sue dinheiro tempo e energia, quando não o restava mais nada foi aprensentado a Strange as artes místicas.",
@@ -759,21 +938,37 @@
             "corPri": "#000",
             "corSec": "#000",
             "tipoP": "Anti-Heroi",
+            "especie": "Klyntar",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fvenom.png?alt=media&token=bcda5b3e-e96b-4f01-96a5-f009c6f7cea4",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_venom.png?alt=media&token=95312407-aa54-42f1-9bd9-275fe869be5c",
             "wallpaper": "https://cdn.portalpower.com.br/wp-content/uploads/2021/10/Venom-Movie-2021-Wallpaper-24.jpg",
-            "nomeHeroi": "Venom",
+            "nomePerso": "Venom",
             "nome": "Eddie Brock",
             "desc": "Tavez o maior inimigo do cabeça de teia, uma simbiose de um jornalista fracassado com uma criatura alienígena resultou em um dos maiores pesadelos do Homem Aranha.",
             "PA": "Amazing Spider-Man #252 (Janeiro, 1984)",
             "altura": "1,91cm",
             "tags": [],
             "poderes": [
-                "Super Força",
-                "Super Agilidade",
-                "Regeneração",
-                "Camuflagem",
-                "Sentidos Ampliados"
+                {
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmente grandes, logo uma força sobre-humana."
+                },
+                {
+                    "poder": "Super Agilidade",
+                    "desc": "Capacidade de se mover e reagir rápido a várias situações."
+                },
+                {
+                    "poder": "Fator de Cura",
+                    "desc": "Capacidade de se curar em grande velocidade."
+                },
+                {
+                    "poder": "Camuflagem",
+                    "desc": "Capacidade de se camuflar ao ambiente."
+                },
+                {
+                    "poder": "Sentidos Ampliados",
+                    "desc": "Capacidade de ouvir, enxergar e sentir de forma sobre-humana."
+                }
             ],
             "sinopse": [
                 "Um simbionete rejeitado e um homem que perdeu tudo em sua vida e está prestes a morrer, ao se juntarem se tornaram o maior rival do cabeça de teia. Os dois parecem que foram feitos um para o outro pois odeiam a mesma pessoa e ambos não estariam vivos se não fosse o outro.",
@@ -802,11 +997,12 @@
             ],
             "historia": [
                 {
-                    "title": "",
+                    "title": "Origem (Venom)",
                     "text": [
-                        "",
-                        "",
-                        ""
+                        "Venom é um simbionte criado por Knull nos tempos antigos, raça essa chamada de Klyntar, seu nascimento não pode ser dado com precisão devido as inúmeras vezes que sua memória foi apagada. Era apenas um símbolo de violência, morte e destruição, porém em algum momento se recusou a obedecer Knull o que o fez ser banido da Colmeia.",
+                        "Vagando pelo cosmos acaba sendo descoberto, por exploradores Kree, que o levam para realizar experimentos para saber mais. Acabou se ligando a um soldado Kree chamado Tel-Kar, que usaria os poderes do simbionte para agir como um espião na Guerra Kree-Skrull, mas um acidente levou a salvar vários escravos de guerra, porém o soldado Tel-Kar e o simbionte acaram se separando e o simbionte perdendo a memória.",
+                        "Como o simbionte esqueceu de seu primeiro hospedeiro para o simbionte o ‘primeiro’ é o próximo. O simbionte pensou que seu próximo hospedeiro era um guerreiro nobre e digno, porém ao se conectar o guerreiro usou o simbionte para causar um genocídio em seu planeta natal, virando um predador cheio de raiva, se tornando o primeiro hospedeiro genocida do Venom.",
+                        "Posteriormente um negociante de armas alienígenas chamado Haze Mancer capturou o simbionte, fez experiencias com ele usando compostos químicos e foi levado para uma prisão Klyntar. As experiencias mudaram suas origens, ao invés do simbionte dominar o hospedeiro ele passou a ter a vontade de se unir e proteger o hospedeiro. Como resultado, foi aprisionado por seus irmãos, que o consideravam uma aberração. Futuramente está prisão foi absorvida por Byonder ao criar o Mundo Bélico."
                     ]
                 }
             ],
@@ -844,30 +1040,37 @@
             "corPri": "#1E7679",
             "corSec": "#60BFB6",
             "tipoP": "Heroi",
+            "especie": "Atlante",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fnamor.png?alt=media&token=1e1b5c82-f046-46d1-8a11-ef41c363fb1a",
-            "logo": "https://i.ebayimg.com/images/g/T~kAAOSwq7JULRRs/s-l400.jpg",
+            "logo": "",
             "wallpaper": "https://www.geekhere.com.br/wp-content/uploads/2022/05/namor.png",
-            "nomeHeroi": "Namor",
+            "nomePerso": "Namor",
             "nome": "Namor McKenzie",
             "desc": "O grande rei dos mares, mesmo crescendo no mar adquiriu carinho pela terra, sendo o lider de umas das nações mais poderosos do mundo o poder de Namor é impressionante.",
             "PA": "Motion Picture Funnies Weekly (Abril de 1939)",
             "altura": "1,88cm",
             "tags": [],
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmente grandes, logo uma força sobre-humana."
                 },
                 {
-                    "id": ""
+                    "poder": "Super Resistência",
+                    "desc": "Capacidade de resistir a grandes danos como armas e bombas sem se ferir."
+                },
+                {
+                    "poder": "Controle dos Mares",
+                    "desc": "Dominio sobre tudo que é submerso e seus animais."
+                },
+                {
+                    "poder": "Super Velociade (Submerso)",
+                    "desc": "Capacidade de se mover em grandes velocidades."
+                },
+                {
+                    "poder": "Telepatia",
+                    "desc": "Capacidade se se cominicar com outros seres vivos através de de sua mente."
                 }
-            ],
-            "poderes": [
-                "Super Força",
-                "Super Resistência",
-                "Controle dos Mares",
-                "Resipirar de Baixo da Aqua",
-                "Super Velociade(Submerso)",
-                "Telepatia"
             ],
             "sinopse": [
                 "Filho de um humano com um rainha do mares, cresceu no mar e se tornou importante com o tempo sendo um dos diplomatas de Atlantes, com isso seu trabalho era conversar com as outras nações incluindo o povo da terra.",
@@ -930,29 +1133,37 @@
             "corPri": "#E70404",
             "corSec": "#000000",
             "tipoP": "Heroi",
+            "especie": "Mutante",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fprofessor-x.png?alt=media&token=bd76b7bf-5b01-480e-a503-b68cb92a97fb",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_professor-x.png?alt=media&token=d9e0b207-b4c7-4260-b8de-8d19255bded9",
             "wallpaper": "https://p4.wallpaperbetter.com/wallpaper/200/870/413/charles-comics-marvel-x-men-wallpaper-preview.jpg",
-            "nomeHeroi": "Professor X",
+            "nomePerso": "Professor X",
             "nome": "Charles Xavier",
             "desc": "Conhecido com o telepata mais poderoso do mundo, Xavier é um homem que dedicou sua vida toda ao seu sonho de paz entre humanos e mutantes.",
             "PA": "Uncanny X-Men #1 (Setembro de 1963)",
             "altura": "1,83cm (em pé)",
             "tags": [],
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Telepatia",
+                    "desc": "Capacidade ler, invadir e manipular mentes."
                 },
                 {
-                    "id": ""
+                    "poder": "Criaçâo de Ilusões",
+                    "desc": "Pode criar varias projeções mentais na mente das pessoas."
+                },
+                {
+                    "poder": "Manipulação Mental",
+                    "desc": "Capacidade de controlar por completo a mente das pessoas."
+                },
+                {
+                    "poder": "Projeção Astral",
+                    "desc": ""
+                },
+                {
+                    "poder": "Inteligência",
+                    "desc": "Um das pessoas mais inteligentes do mundo."
                 }
-            ],
-            "poderes": [
-                "Telepatia",
-                "Criaçâo de Ilusões",
-                "Manipulação Mental",
-                "Projeção Astral",
-                "Intelecto: Gênio"
             ],
             "sinopse": [
                 "Criado em família aristocráta descendente de um brilhante ciêntista, Charles nasceu com o Gene Mutante, um pouco mais velho começou a ouvir vozes em sua cabeça, anos depois escolhe dedicar sua vida a criar um lugar onde possa educar crinças mutantes do mundo todo, a Mansão X.",
@@ -1019,23 +1230,16 @@
             "corPri": "#000",
             "corSec": "#000",
             "tipoP": "Heroi",
+            "especie": "Humano (Modificado)",
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fpantera-negra.png?alt=media&token=bee37280-ee55-4bf3-96af-5866beae411d",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_pantera-negra%20.png?alt=media&token=4cc61c42-a566-4805-92e2-6ffddc819c90",
             "wallpaper": "https://images2.alphacoders.com/528/thumb-1920-528149.jpg",
-            "nomeHeroi": "Pantera  Negra",
+            "nomePerso": "Pantera  Negra",
             "nome": "T'Challa",
             "desc": "Rei de uma nação escondidado do mundo, guardada por um protetor que por centenas de anos manteve a nação mais desenvolvida do mundo em segredo.",
             "PA": "The Fantastic Four #52 (Julho de 1966)",
             "altura": "1,83cm",
             "tags": [],
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],
             "poderes": [
                 "Herança de Poderes, Experiencias e Sabedoria",
                 "Garras Retráteis",
@@ -1079,11 +1283,11 @@
             ],
             "historia": [
                 {
-                    "title": "",
+                    "title": "Infância",
                     "text": [
-                        "",
-                        "",
-                        ""
+                        "T'Challa foi o primeiro filho biológico de T'Chaka, rei da nação africana de Wakanda, um país mantido em segredo do resto do mundo, considerado um país de terceiro mundo, mas na verdade é tecnologicamente avançado. Por conter a única fonte do raro metal ultra-durável conhecido como Vibranium.",
+                        "Sua mãe, N'Yami, morreu uma semana depois de dar à luz seu filho por causa de uma rara doença autoimune que ela contraiu durante a gravidez. O irmão mais velho adotivo de T'Challa, Hunter, o culpou por sua morte.",
+                        "Como herdeiro do trono de Wakanda, começou a aprender seus deveres reais e sobre as propriedades do Vibranium aos cinco anos. Quando ele acompanhou seu pai na inspeção de fronteira pela primeira vez, T'Challa se perdeu, mas foi encontrado pela exploradora forasteira Ramonda. Depois de conhecer T'Chaka, Ramonda permaneceu em Wakanda e se tornou mãe de T'Challa. Ele se tornou o motivo pelo qual Ramonda decidiu ficar no país, e ela acabou se casando com T'Chaka."
                     ]
                 }
             ],
@@ -1121,6 +1325,7 @@
             "corPri": "#000",
             "corSec": "#000",
             "tipoP": "Anti-Heroi",
+            "especie": "Meio-Vampiro",
             "tags": [
                 "Vampiro",
                 "Caçador",
@@ -1130,30 +1335,44 @@
             "thamb": "https://static.wikia.nocookie.net/nerdologiaheroespowers/images/a/ad/Blade.png/revision/latest?cb=20180217015059&path-prefix=pt-br",
             "logo": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f359881d-6bb2-4391-aba6-779f7084edd4/dde363j-ea3c01d5-c6d0-44df-85bc-3aea188d8993.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YzNTk4ODFkLTZiYjItNDM5MS1hYmE2LTc3OWY3MDg0ZWRkNFwvZGRlMzYzai1lYTNjMDFkNS1jNmQwLTQ0ZGYtODViYy0zYWVhMTg4ZDg5OTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4eECm1z3bPfRxQqyeFcBOGtnLjrPRmaDk5IlGgGEWhw",
             "wallpaper": "https://www.einerd.com.br/wp-content/uploads/2020/09/Blade-Marvel-2.jpg",
-            "nomeHeroi": "Blade",
+            "nomePerso": "Blade",
             "nome": "Eric Brooks",
             "desc": "Um híbrido humano-vampiro desde seu trágico nascimento, Blade passou sua longa vida procurando livrar o mundo de vampiros como aquele que matou sua mãe.",
             "PA": "Tomb of Dracula #10(April, 1973)",
             "altura": "1,88cm",
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Artista Marcial",
+                    "desc": "Este personagem tem ótimas habilidades de luta e artes marciais."
                 },
                 {
-                    "id": ""
+                    "poder": "Meio Vampiro",
+                    "desc": ""
+                },
+                {
+                    "poder": "Espadachim",
+                    "desc": "Um dos maiores espadachins da editora."
+                },
+                {
+                    "poder": "Especialista em Armas",
+                    "desc": "Tem especialidade em utilizar armas de fogo, armas brancas e bombas."
+                },
+                {
+                    "poder": "Visão Noturna",
+                    "desc": "Capacidade de enxergar em lugares escuros."
+                },
+                {
+                    "poder": "Mira Precisa",
+                    "desc": "Esse personagem dificilmente erra tiros em batalha."
+                },
+                {
+                    "poder": "Fator de Cura",
+                    "desc": "Capacidade de se curar em grande velocidade, Hulk tem o maior fator de cura da Marvel."
+                },
+                {
+                    "poder": "Sentidos Ampliados",
+                    "desc": "Capacidade de ouvir, enxergar e sentir de forma sobre-humana."
                 }
-            ],
-            "poderes": [
-                "Artista Marcial",
-                "Meio Vampiro",
-                "Espadachim",
-                "Especialista em Armas",
-                "Visão Noturna",
-                "Mira Precisa",
-                "Fator de Cura",
-                "Força Sobre-Humano",
-                "Resistência Sobre-Humano",
-                "Sentidos Aguçados"
             ],
             "sinopse": [
                 "Existem muitos homens e mulheres no mundo que caçam vampiros, mas poucos causam tanto medo em corações sugadores de sangue quanto em estacas. Blade é mais do que apenas um matador de mortos-vivos, mas o bicho-papão de um bicho-papão, a coisa que faz ghouls e monstros perderem o sono.",
@@ -1216,10 +1435,11 @@
             "estilo": "padrão"
         },
         {
-            "id": 0,
+            "id": 13,
             "corPri": "#fff",
             "corSec": "#000",
             "tipoP": "Anti-Heroi",
+            "especie": "Humano",
             "tags": [
                 "Egito",
                 "Cavaleiro",
@@ -1229,26 +1449,36 @@
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcavaleiro-da-lua.png?alt=media&token=31f02e82-e1cc-4188-a270-96cd821e3e05",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_cavaleiro-da-lua.png?alt=media&token=0c6fb444-142b-4e4d-b47a-bc7ef0bd9341",
             "wallpaper": "https://www.arrobanerd.com.br/wp-content/uploads/2022/03/quem-e%CC%81-o-cavaleiro-da-lua-e-onde-ele-esta%CC%81-na-linha-do-tempo-do-MCU.jpg",
-            "nomeHeroi": "Cavaleiro da Lua",
+            "nomePerso": "Cavaleiro da Lua",
             "nome": "Marc Spector",
             "desc": "O Cavaleiro da Lua é titulo dado a quem recebe a benção de Khonshu, o Deus Egipicio da Lua, se transformando no punho da vingança contra o mal.",
             "PA": "Werewolf by Night #32(Maio, 1975)",
             "altura": "1,87cm",
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Artisita Marcial",
+                    "desc": "Este personagem tem ótimas habilidades de luta e artes marciais."
                 },
                 {
-                    "id": ""
+                    "poder": "Especialista em Armas",
+                    "desc": "Tem especialidade em utilizar armas de fogo, armas brancas e bombas."
+                },
+                {
+                    "poder": "Estrategista",
+                    "desc": "Esse personagem utiliza de inteligência em batalha e estratégias bem executadas."
+                },
+                {
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmente grandes, logo uma força sobre-humana."
+                },
+                {
+                    "poder": "Super Agilidade",
+                    "desc": "Capacidade de se mover e reagir rápido a várias situações."
+                },
+                {
+                    "poder": "Fator de Cura",
+                    "desc": "Capacidade de se curar em grande velocidade, Hulk tem o maior fator de cura da Marvel."
                 }
-            ],
-            "poderes": [
-                "Artisita Marcial",
-                "Especialista em Armas",
-                "Estrategista",
-                "Super Força",
-                "Super Agilidade",
-                "Fator de Cura"
             ],
             "sinopse": [
                 "Um ex-militar que se tornou um mercenário vai a uma missão no Egito, após tudo dar errado e vagar pelo deserto recebe uma proposta do Deus egípcio da Lua, Khonshu, se tornando seu representante no plano mortal, seu trabalho agora é assustar e punir todo o tipo de mal e se o punho da vingança."
@@ -1310,10 +1540,11 @@
             "estilo": "misto"
         },
         {
-            "id": 0,
+            "id": 14,
             "corPri": "#000",
             "corSec": "#000",
             "tipoP": "Heroi",
+            "especie": "Humano",
             "tags": [
                 "Liga da Justiça",
                 "Trevas",
@@ -1323,25 +1554,32 @@
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fbatman.png?alt=media&token=cd90b1d6-8e88-4956-9cc3-9ab726b79481",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_batman.png?alt=media&token=b65d6dd4-873f-4464-a27e-2f65b809be9a",
             "wallpaper": "https://images.sentimentodeleitor.com.br/2020/04/batman-10-historias-imperdiveis.jpg",
-            "nomeHeroi": "Batman",
+            "nomePerso": "Batman",
             "nome": "Bruce Wayne",
             "desc": "O homem sem medo, usando a escuridão e o medo pra pega criminosos porém seus vilões gostam de desafiar sua inteligência, o que é um grande erro.",
             "PA": "Detective Comics #27. (1939)",
             "altura": "1,88cm",
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Intelecto: Gênio",
+                    "desc": "Esse personagem é um dos maiores genios editora."
                 },
                 {
-                    "id": ""
+                    "poder": "Equipamentos Personalizados",
+                    "desc": "Esse personagem tem aparatos e equipamentos para quase tudo que possa aparecer."
+                },
+                {
+                    "poder": "Estrategista",
+                    "desc": "Esse personagem utiliza de inteligência em batalha e estratégias bem executadas."
+                },
+                {
+                    "poder": "Mestre em Artes Marciais",
+                    "desc": "Este pesonagem tem ótimas habilidades de luta e artes marciais."
+                },
+                {
+                    "poder": "Ausência de Medo",
+                    "desc": "Conhecido como o homem sem medo, esse personagem não fica ansioso, tenso ou preocupado."
                 }
-            ],
-            "poderes": [
-                "Inteligencia Avançada",
-                "Equipamentos Avançados",
-                "Estratégia",
-                "Mestre em Artes Marciais",
-                "Ausencia de Medo"
             ],
             "sinopse": [
                 "Passando por uma tragédia ainda pequeno, usou sua perda para se tornar um símbolo de justiça e medo dentro de uma das cidades mais perigosas do mundo.",
@@ -1404,10 +1642,11 @@
             "estilo": "padrão"
         },
         {
-            "id": 1,
+            "id": 15,
             "corPri": "#009EF7",
             "corSec": "#FF0000",
             "tipoP": "Heroi",
+            "especie": "Kryptoniano",
             "tags": [
                 "Liga da Justiça",
                 "Louis Lane",
@@ -1417,26 +1656,36 @@
             "thamb": "https://purepng.com/public/uploads/large/purepng.com-supermansupermanfictional-superherocomic-booksdc-comicscharacterjerry-siegelson-of-kryptonaction-comicsman-of-steel-1701528657954mhbuw.png",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_superman.png?alt=media&token=5886bb3b-1138-4762-a183-7dfa2744fd6a",
             "wallpaper": "https://recreio.uol.com.br/media/_versions/legacy/2021/04/22/superman-1229086_widexl.jpg",
-            "nomeHeroi": "Superman",
+            "nomePerso": "Superman",
             "nome": "Clark Kent ou Kal-El",
             "desc": "Conhecido como o 'Homem de Aço', é o simbolo da editora DC. Alienígena que caiu e foi criado nos EUA é o homem mais poderoso da terra.",
             "PA": "Booster Gold #6 (Julho, 1986)",
             "altura": "1,90cm",
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Super Força",
+                    "desc": "Capacidade golpear e segurar pesos incrivelmente grandes, logo uma força sobre-humana."
                 },
                 {
-                    "id": ""
+                    "poder": "Super Velocidade",
+                    "desc": "Capacidade de se mover e correr em grandes velocidades."
+                },
+                {
+                    "poder": "Super Resistência",
+                    "desc": "Capacidade de resistir a grandes danos como armas e bombas sem se ferir."
+                },
+                {
+                    "poder": "Sopro Congelante",
+                    "desc": "Seu sopro fazer qualquer coisa atingir temperaturas incrivelmente baixas."
+                },
+                {
+                    "poder": "Visão de Calor",
+                    "desc": "Capacidade de lançar rajadas de alta temperatura que podem cortar qualquer coisa."
+                },
+                {
+                    "poder": "Visão de Raio X",
+                    "desc": "Capacidade de ver através de quase quaisquer superfícies."
                 }
-            ],
-            "poderes": [
-                "Super Força",
-                "Super Velocidade",
-                "Super Resistência",
-                "Sopro Congelante",
-                "Visão de Calor",
-                "Visão de Raio X"
             ],
             "sinopse": [
                 "Um bebê criado por fazendeiros cresceu aprendendo a ser uma pessoa amável e gentil até que percebeu que era diferente das outras pessoas. Aprendeu a controlar seu poderes e se tronou o homem mais poderosos vivo na Terra, o que é curioso pois não é humano."
@@ -1494,10 +1743,11 @@
             "estilo": "padrão"
         },
         {
-            "id": 2,
+            "id": 16,
             "corPri": "#F8D923",
             "corSec": "#FF0000",
             "tipoP": "Heroi",
+            "especie": "Humano",
             "tags": [
                 "Velocidade",
                 "Velocista",
@@ -1507,25 +1757,32 @@
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fthe-flash.png?alt=media&token=ff02ffc9-c198-4df3-aa45-73b235a49bb4",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_flash.png?alt=media&token=3fb12eed-861c-4a44-9a6b-35555779d211",
             "wallpaper": "https://multiversonoticias.com.br/wp-content/uploads/2022/01/multiverso-8-2.png",
-            "nomeHeroi": "The Flash",
+            "nomePerso": "The Flash",
             "nome": "Wally West",
             "desc": "Após um acidente obteve acesso a Força de Aceleração, que o tornou um velocista e o homem mais rápido do mundo.",
             "PA": "The Flash #110 (Janeiro, 1960)",
             "altura": "1,82cm",
-            "equipes": [
+            "poderes": [
                 {
-                    "id": ""
+                    "poder": "Super Velocidade",
+                    "desc": "Capacidade de se mover e correr em grandes velocidades. Esse pesonagem atinge quase a velocidade da luz."
                 },
                 {
-                    "id": ""
+                    "poder": "Fator de Cura",
+                    "desc": "Capacidade de se curar em grande velocidade."
+                },
+                {
+                    "poder": "Intagibilidade",
+                    "desc": "Esse personagem pode vibrar suas moléculas á uma velocidade que permite que fique intangível."
+                },
+                {
+                    "poder": "Manipulação da Força de Aceleração",
+                    "desc": ""
+                },
+                {
+                    "poder": "Manipulação de Relâmpagos",
+                    "desc": "Esse personagem pode manipular estática e relâmpagos gerados por seu corpo."
                 }
-            ],
-            "poderes": [
-                "Super Velocidade",
-                "Regeneração Acelerada",
-                "Intagibilidade",
-                "Manipulação da Força de Aceleração",
-                "Manipulação de Relâmpagos"
             ],
             "sinopse": [
                 "Após ter a mãe assassinada e seu pai ser acusado do crime, Barry cresceu como um garoto inteligente e esforçado e se juntou a polícia, até que um acidente afetou toda a cidade o deixando em coma. Após o coma Barry obteve acesso a Força de Aceleração, se tornando o homem mais rápido do mundo."
@@ -1583,10 +1840,11 @@
             "estilo": "misto"
         },
         {
-            "id": 3,
+            "id": 17,
             "corPri": "green",
             "corSec": "#",
             "tipoP": "Heroi",
+            "especie": "Humano",
             "tags": [
                 "",
                 "",
@@ -1596,19 +1854,11 @@
             "thamb": "https://static.wikia.nocookie.net/aurageekrpg/images/f/fd/Hal_jordan.png/revision/latest/scale-to-width-down/500?cb=20190729210913&path-prefix=pt-br",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_lanterna-verde.png?alt=media&token=3c05b34f-b39d-42b5-9dfa-6494f2feaaa4",
             "wallpaper": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/green-lantern-sideshow-997972-1280x0.jpg",
-            "nomeHeroi": "Lanterna Verde",
+            "nomePerso": "Lanterna Verde",
             "nome": "Hal Jordan",
             "desc": "Um piloto do exército é escolhido por um anel verde com vontade própria, o anel a apresentou a uma nova forma de servir e ajudar, mas desta vez seria para o universo inteiro.",
             "PA": "Showcase #22 (Outubro, 1959)",
-            "altura": "1,88cm",
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],  
+            "altura": "1,88cm",  
             "poderes": [
                 "Voo",
                 "Manipulçao de Energia",
@@ -1671,10 +1921,11 @@
             "estilo": "padrão"
         },
         {
-            "id": 4,
+            "id": 18,
             "corPri": "#5B13AB",
             "corSec": "#2CC61F",
             "tipoP": "Vilão",
+            "especie": "Humano",
             "tags": [
                 "Palhaço",
                 "Assassino",
@@ -1684,19 +1935,11 @@
             "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcoringa.png?alt=media&token=bd0acc5b-6075-4258-bf0c-9e0c016cd971",
             "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_coringa.png?alt=media&token=0b7ac2f1-3100-47be-99fc-0a4cb291a6d8",
             "wallpaper": "https://uploads.jovemnerd.com.br/wp-content/uploads/2020/06/coringa-matou-batman.jpg",
-            "nomeHeroi": "Coringa",
+            "nomePerso": "Coringa",
             "nome": "Desconhecido",
             "desc": "Um maníaco homicida completamente imprevisível, sem levar em conta a vida humana, o Coringa acha o assassinato e o caos engraçados o que o leva a uma contagem de corpos que chega aos milhares.",
             "PA": "Detective Comics #569(Dezembro, 1986)",
             "altura": "1,95cm",
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],
             "poderes": [
                 "Imprevisível",
                 "Mestre Estratégico",
@@ -1769,429 +2012,47 @@
             ],
             "editora": "DC",
             "estilo": "misto"
-        }
-    ],
-    "personagensDC": [
-        {
-            "id": 0,
-            "corPri": "#000",
-            "corSec": "#000",
-            "tipoP": "Heroi",
-            "tags": [
-                "Liga da Justiça",
-                "Trevas",
-                "Cavaleirodas Trevas",
-                "Gotham"
-            ],
-            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fbatman.png?alt=media&token=cd90b1d6-8e88-4956-9cc3-9ab726b79481",
-            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_batman.png?alt=media&token=b65d6dd4-873f-4464-a27e-2f65b809be9a",
-            "wallpaper": "https://images.sentimentodeleitor.com.br/2020/04/batman-10-historias-imperdiveis.jpg",
-            "nomeHeroi": "Batman",
-            "nome": "Bruce Wayne",
-            "desc": "O homem sem medo, usando a escuridão e o medo pra pega criminosos porém seus vilões gostam de desafiar sua inteligência, o que é um grande erro.",
-            "PA": "Detective Comics #27. (1939)",
-            "altura": "1,88cm",
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],
-            "poderes": [
-                "Inteligencia Avançada",
-                "Equipamentos Avançados",
-                "Estratégia",
-                "Mestre em Artes Marciais",
-                "Ausencia de Medo"
-            ],
-            "sinopse": [
-                "Passando por uma tragédia ainda pequeno, usou sua perda para se tornar um símbolo de justiça e medo dentro de uma das cidades mais perigosas do mundo.",
-                "Usando sua riqueza e inteligência desenvolve inúmeros equipamentos de alta tecnologia com muitas finalidades, além de ter se tornado um dos maiores artistas marciais do mundo. Suas habilidades o tornaram uma força a ser temida por todos os criminosos de Gotham."
-            ],
-            "imagens": [
-                "https://cdn.wallpapersafari.com/31/24/v9O7Vy.jpg",
-                "https://i.imgur.com/f4Y2Ft1.jpg",
-                "https://pop.proddigital.com.br/wp-content/uploads/sites/8/2021/11/batman.jpg",
-                "https://www.torredevigilancia.com/wp-content/uploads/2016/11/GalleryComics_1920x1080_20161130_BMAnnual_1_CVR_fnl_5824c0abf189a3.36536012.jpg",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/11/Batman-1.jpg"
-            ],
-            "criadores": [
-                {
-                    "image": "",
-                    "nome": ""
-                },
-                {
-                    "image": "",
-                    "nome": ""
-                }
-            ],
-            "historia": [
-                {
-                    "title": "",
-                    "text": [
-                        "",
-                        "",
-                        ""
-                    ]
-                }
-            ],
-            "habilidades": [
-                {
-                    "titulo": "Força",
-                    "number": 6
-                },
-                {
-                    "titulo": "Energia",
-                    "number": 2
-                },
-                {
-                    "titulo": "Habilidades de luta",
-                    "number": 9
-                },
-                {
-                    "titulo": "Resistência",
-                    "number": 6
-                },
-                {
-                    "titulo": "Inteligência",
-                    "number": 9
-                },
-                {
-                    "titulo": "Velocidade",
-                    "number": 5
-                }
-            ],
-            "editora": "DC",
-            "estilo": "padrão"
         },
         {
-            "id": 1,
-            "corPri": "#009EF7",
-            "corSec": "#FF0000",
-            "tipoP": "Heroi",
-            "tags": [
-                "Liga da Justiça",
-                "Louis Lane",
-                "Metropolis",
-                ""
-            ],
-            "thamb": "https://purepng.com/public/uploads/large/purepng.com-supermansupermanfictional-superherocomic-booksdc-comicscharacterjerry-siegelson-of-kryptonaction-comicsman-of-steel-1701528657954mhbuw.png",
-            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_superman.png?alt=media&token=5886bb3b-1138-4762-a183-7dfa2744fd6a",
-            "wallpaper": "https://recreio.uol.com.br/media/_versions/legacy/2021/04/22/superman-1229086_widexl.jpg",
-            "nomeHeroi": "Superman",
-            "nome": "Clark Kent ou Kal-El",
-            "desc": "Conhecido como o 'Homem de Aço', é o simbolo da editora DC. Alienígena que caiu e foi criado nos EUA é o homem mais poderoso da terra.",
-            "PA": "Booster Gold #6 (Julho, 1986)",
-            "altura": "1,90cm",
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],
-            "poderes": [
-                "Super Força",
-                "Super Velocidade",
-                "Super Resistência",
-                "Sopro Congelante",
-                "Visão de Calor",
-                "Visão de Raio X"
-            ],
-            "sinopse": [
-                "Um bebê criado por fazendeiros cresceu aprendendo a ser uma pessoa amável e gentil até que percebeu que era diferente das outras pessoas. Aprendeu a controlar seu poderes e se tronou o homem mais poderosos vivo na Terra, o que é curioso pois não é humano."
-            ],
-            "imagens": [
-                "https://64.media.tumblr.com/afacdadc2994303320cce6dd94d1050d/tumblr_inline_o4swnwwldZ1tjq66k_500.jpg",
-                "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/10/superman-clark-kent-comics.jpg",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/superman-dc-comics-75jpg.jpeg",
-                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/12/legiao_Kf2gQtX5pMeUBy9rwH7cJTWuodPzl0NLY3R4nZ_AS8.jpg.jpeg",
-                "https://t.ctcdn.com.br/8Klg-Y-1iVPgKbM9c92zHZq7_UQ=/512x288/smart/i490362.jpeg"
-            ],
-            "criadores": [
-                {
-                    "image": "",
-                    "nome": ""
-                },
-                {
-                    "image": "",
-                    "nome": ""
-                }
-            ],
-            "historia": [
-                {
-                    "title": "",
-                    "text": [
-                        "",
-                        "",
-                        ""
-                    ]
-                }
-            ],
-            "habilidades": [
-                {
-                    "titulo": "Força",
-                    "number": 10
-                },
-                {
-                    "titulo": "Agilidade",
-                    "number": 3
-                },
-                {
-                    "titulo": "Resistência",
-                    "number": 8
-                },
-                {
-                    "titulo": "Inteligência",
-                    "number": 5
-                },
-                {
-                    "titulo": "Velocidade",
-                    "number": 8
-                }
-            ],
-            "editora": "DC",
-            "estilo": "padrão"
-        },
-        {
-            "id": 2,
-            "corPri": "#F8D923",
-            "corSec": "#FF0000",
-            "tipoP": "Heroi",
-            "tags": [
-                "Velocidade",
-                "Velocista",
-                "Star City",
-                "Força de Aceleração"
-            ],
-            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fthe-flash.png?alt=media&token=ff02ffc9-c198-4df3-aa45-73b235a49bb4",
-            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_flash.png?alt=media&token=3fb12eed-861c-4a44-9a6b-35555779d211",
-            "wallpaper": "https://multiversonoticias.com.br/wp-content/uploads/2022/01/multiverso-8-2.png",
-            "nomeHeroi": "The Flash",
-            "nome": "Wally West",
-            "desc": "Após um acidente obteve acesso a Força de Aceleração, que o tornou um velocista e o homem mais rápido do mundo.",
-            "PA": "The Flash #110 (Janeiro, 1960)",
-            "altura": "1,82cm",
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],
-            "poderes": [
-                "Super Velocidade",
-                "Regeneração Acelerada",
-                "Intagibilidade",
-                "Manipulação da Força de Aceleração",
-                "Manipulação de Relâmpagos"
-            ],
-            "sinopse": [
-                "Após ter a mãe assassinada e seu pai ser acusado do crime, Barry cresceu como um garoto inteligente e esforçado e se juntou a polícia, até que um acidente afetou toda a cidade o deixando em coma. Após o coma Barry obteve acesso a Força de Aceleração, se tornando o homem mais rápido do mundo."
-            ],
-            "imagens": [
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-Flash-1.jpg",
-                "https://t.ctcdn.com.br/oYQskb0sxZ2-wHjAdazRfuopsyY=/1280x720/smart/i537145.jpeg",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/04/Flash.jpg",
-                "https://www.einerd.com.br/wp-content/uploads/2018/10/flash-multiverso-e1540573791203-890x465.jpg",
-                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/01/legiao_mVsUkb7C6E9tMSTizqJ0NoeFQ1dOjLx5vyhHA38lZf.jpg.jpeg"
-            ],
-            "criadores": [
-                {
-                    "image": "",
-                    "nome": ""
-                },
-                {
-                    "image": "",
-                    "nome": ""
-                }
-            ],
-            "historia": [
-                {
-                    "title": "",
-                    "text": [
-                        "",
-                        "",
-                        ""
-                    ]
-                }
-            ],
-            "habilidades": [
-                {
-                    "titulo": "Força",
-                    "number": 5
-                },
-                {
-                    "titulo": "Agilidade",
-                    "number": 7
-                },
-                {
-                    "titulo": "Resistência",
-                    "number": 5
-                },
-                {
-                    "titulo": "Inteligência",
-                    "number": 8
-                },
-                {
-                    "titulo": "Velocidade",
-                    "number": 10
-                }
-            ],
-            "editora": "DC",
-            "estilo": "misto"
-        },
-        {
-            "id": 3,
-            "corPri": "green",
+            "id": 19,
+            "corPri": "#",
             "corSec": "#",
-            "tipoP": "Heroi",
+            "tipoP": "",
+            "especie": "",
             "tags": [
                 "",
                 "",
                 "",
                 ""
             ],
-            "thamb": "https://static.wikia.nocookie.net/aurageekrpg/images/f/fd/Hal_jordan.png/revision/latest/scale-to-width-down/500?cb=20190729210913&path-prefix=pt-br",
-            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_lanterna-verde.png?alt=media&token=3c05b34f-b39d-42b5-9dfa-6494f2feaaa4",
-            "wallpaper": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/green-lantern-sideshow-997972-1280x0.jpg",
-            "nomeHeroi": "Lanterna Verde",
-            "nome": "Hal Jordan",
-            "desc": "Um piloto do exército é escolhido por um anel verde com vontade própria, o anel a apresentou a uma nova forma de servir e ajudar, mas desta vez seria para o universo inteiro.",
-            "PA": "Showcase #22 (Outubro, 1959)",
-            "altura": "1,88cm",
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],  
+            "thamb": "",
+            "logo": "",
+            "wallpaper": "",
+            "nomePerso": "",
+            "nome": "",
+            "desc": "",
+            "PA": "",
+            "altura": "",
             "poderes": [
-                "Voo",
-                "Manipulçao de Energia",
-                "Materializção de Objetos"
+                {
+                    "poder":"",
+                    "desc": ""
+                }
             ],
             "sinopse": [
-                "Um dos melhores piloto da aeronáutica, porém com comportamento inadequado e rebelde, após um alienígena cair na Terra e morrer, misteriosamente Hal recebe uma visita de um anel verde que permitiu que ele tivesse poderes.",
-                "Hal descobre que o anel o escolheu pois ele era o ser com maior força de vontade da Terra, desta forma sendo convocado para a Tropa dos Lanternas Verdes, os responsáveis puderam manter a ordem no Universo."
+                ""
             ],
             "imagens": [
-                "https://geeksgamers.com.br/wp-content/uploads/2021/06/thumb-1920-820545.jpg",
-                "https://1.bp.blogspot.com/-fECQ2cLvp30/XvenjNqObwI/AAAAAAAAG-w/o8a3vDETOkwBlsrNS9A2-3IM4IS5pXXUQCK4BGAsYHg/s2560/tropa_dercy_green_lanterns_corps.jpg",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/cropped-Lanterna-Verde.jpg",
-                "https://www.planocritico.com/wp-content/uploads/2017/02/lei-de-sinestro-plano-critico.jpg",
-                "https://d33wubrfki0l68.cloudfront.net/7ef3c4c6698bfffd410746ffe1fe435d011d90cb/38dd3/static/1039e3ac241ee37325dccde3d9e0e97c/8735e/lanterna-verde-ivan-reis-wall.jpg"
+                "",
+                "",
+                "",
+                "",
+                ""
             ],
             "criadores": [
                 {
                     "image": "",
                     "nome": ""
-                },
-                {
-                    "image": "",
-                    "nome": ""
-                }
-            ],
-            "historia": [
-                {
-                    "title": "",
-                    "text": [
-                        "",
-                        "",
-                        ""
-                    ]
-                }
-            ],
-            "habilidades": [
-                {
-                    "titulo": "Força",
-                    "number": 8
-                },
-                {
-                    "titulo": "Agilidade",
-                    "number": 6
-                },
-                {
-                    "titulo": "Resistência",
-                    "number": 6
-                },
-                {
-                    "titulo": "Inteligência",
-                    "number": 6
-                },
-                {
-                    "titulo": "Velocidade",
-                    "number": 7
-                }
-            ],
-            "editora": "DC",
-            "estilo": "padrão"
-        },
-        {
-            "id": 4,
-            "corPri": "#5B13AB",
-            "corSec": "#2CC61F",
-            "tipoP": "Vilão",
-            "tags": [
-                "Palhaço",
-                "Assassino",
-                "Louco",
-                "Perigoso"
-            ],
-            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fcoringa.png?alt=media&token=bd0acc5b-6075-4258-bf0c-9e0c016cd971",
-            "logo": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Flogo_coringa.png?alt=media&token=0b7ac2f1-3100-47be-99fc-0a4cb291a6d8",
-            "wallpaper": "https://uploads.jovemnerd.com.br/wp-content/uploads/2020/06/coringa-matou-batman.jpg",
-            "nomeHeroi": "Coringa",
-            "nome": "Desconhecido",
-            "desc": "Um maníaco homicida completamente imprevisível, sem levar em conta a vida humana, o Coringa acha o assassinato e o caos engraçados o que o leva a uma contagem de corpos que chega aos milhares.",
-            "PA": "Detective Comics #569(Dezembro, 1986)",
-            "altura": "1,95cm",
-            "equipes": [
-                {
-                    "id": ""
-                },
-                {
-                    "id": ""
-                }
-            ],
-            "poderes": [
-                "Imprevisível",
-                "Mestre Estratégico",
-                "Gás do Coringa",
-                "Habilidade de Luta",
-                "Inumeros Seguidores",
-                "Loucura Extrema"
-            ],
-            "sinopse": [
-                "O maior psicopata das ficções, o famoso palhaço assassino dos quadrinhos, muitas vezes um dos vilões mais sinistros e aterrorizantes dos quadrinhos, conhecido como louco e imprevisível, sempre foi o maior desafio do Batman.",
-                "Coringa é dado como um agente do caos devido a tudo que faz não ter um objetivo logico ou movido por um sentimento apenas acha bonito e engraçado causar o caos. Devido a sua loucura extrema acreditasse que seja o único vilão em Gotham que não tem medo do Cavaleiro das Trevas."
-
-            ],
-            "imagens": [
-                "https://www.einerd.com.br/wp-content/uploads/2019/10/Coringa-origens-capa.jpg",
-                "https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q95/wp-content/uploads/2020/06/legiao_6FZecShpHJkG.jpg.jpeg",
-                "https://uploads.jovemnerd.com.br/wp-content/uploads/2019/04/coringa-origem-1210x544.jpeg",
-                "https://lh3.googleusercontent.com/-EcBAJsg36YU/YVjt3MIu3aI/AAAAAAAAULo/1jdW12VPLtsfeor_go__PiSOJTNz5hqGgCLcBGAsYHQ/s1600/304710.png",
-                "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/09/cropped-Coringa.jpg"
-            ],
-            "criadores": [
-                {
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/ComicCon2008jerryrobinson.jpg/220px-ComicCon2008jerryrobinson.jpg",
-                    "nome": "Jerry Robinson"
-                },
-                {
-                    "image": "https://br.web.img3.acsta.net/pictures/21/02/09/16/04/2097581.jpg",
-                    "nome": "Bill Finger"
-                },
-		{
-                    "image": "https://media.fstatic.com/GIv77KaG0ha5jPRRt5Q1vVxlj74=/210x312/smart/media/artists/avatar/2018/11/bob-kane_a8630.jpg",
-                    "nome": "Bob Kane"
                 }
             ],
             "historia": [
@@ -2234,20 +2095,254 @@
             "estilo": "misto"
         }
     ],
-    "equipes": [
+    "teste": [
         {
             "id": 0,
-            "nome": "Os Iluminati",
-            "desc": "Grupo formado pelos super-herois mais influentes do mundo",
-            "texto": "",
-            "thamb": "https://cabanadoleitor.com.br/wp-content/uploads/2022/02/Illuminati-originais.webp",
-            "membros": [
-                2,
-                7,
-                9,
-                10
+            "corPri": "#290612",
+            "corSec": "#3f0259",
+            "tipoP": "Anti-Heroi",
+            "especie": "Hibrido(Fábula)",
+            "tags": [
+                "",
+                "",
+                "",
+                ""
             ],
-            "editora": "Marvel" 
+            "thamb": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/personagens%2Fbigby.png?alt=media&token=351fb2b2-a317-478d-a219-e218d9a98027",
+            "logo": "",
+            "wallpaper": "https://images4.alphacoders.com/123/1234722.jpg",
+            "nomePerso": "Lobo Mau",
+            "nome": "Bigby Wolf",
+            "desc": "Bigby é a personificação do Grande Lobo Mau, no passado ele foi mal e cruel , agora age como xerife da cidade das Fabulas trazendo paz, ordem e justiça",
+            "PA": "Fables #1 (Julho 2002)",
+            "altura": "1,75cm até 2,5cm",
+            "poderes": [
+                "Semi-Imortalidade",
+                "Tranformação",
+                "Força",
+                "Resitência"
+            ],
+            "sinopse": [
+                "Bigby é a representação do Grande Lobo Mau, um vilão frequente em muitas fábulas que contamos a crianças como Os Três Porquinhos, Chapeuzinho Vermelho, entre outras. Mesmo depois de tanto mal que causou conseguiu se perdoar e passou a ser o xerife do Novo Mundo, mas havia um motivo para isso, quem melhor para manter as fábulas na linha do que a criatura que elas mais temem.",
+                "Ao chegar no Novo Mundo ganhou uma poção de licantropia que permitiu que assumisse uma forma humana, pois em sua forma original é um lobo Negro de 2,5cm, mas a poção permitiu mudar sua forma livremente permitindo que Bigby se transforme parcialmente, podendo virar um híbrido de homem e lobo. Sua forma humana limita suas habilidades físicas, ao usar as transformações suas capacidades físicas aumentam tornam ele mais forte, rápido e resistente."
+
+            ],
+            "imagens": [
+                "https://images8.alphacoders.com/603/thumb-1920-603817.jpg",
+                "https://i.pinimg.com/originals/fd/50/e1/fd50e132b0170816cd66a821f70b41a8.jpg",
+                "https://www.teahub.io/photos/full/319-3198422_free-download-wolf-wallpaper-id-big-bad-wolf.jpg",
+                "https://img3.goodfon.com/wallpaper/nbig/3/17/wolf-among-us-bigbi-fables.jpg",
+                "https://www.pcgamesn.com/wp-content/uploads/legacy/the_wolf_among_us_episode_4_date.jpg"
+            ],
+            "criadores": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/10.13.12BillWillinghamByLuigiNovi1.jpg",
+                    "nome": "Bill Willingham"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 4
+                }
+            ],
+            "editora": "Vertigo",
+            "estilo": "misto"
+        },
+        {
+            "id": 1,
+            "corPri": "#290612",
+            "corSec": "#3f0259",
+            "tipoP": "Heroi",
+            "especie": "Humano (Fábula)",
+            "tags": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "thamb": "http://pm1.narvii.com/6576/36249d5c5d90797ae1d0c6a98e260021561862b8_00.jpg",
+            "logo": "",
+            "wallpaper": "https://images4.alphacoders.com/123/1234722.jpg",
+            "nomePerso": "Branca de Neve",
+            "nome": "Branca de Neve",
+            "desc": "Depois de viver acorrentada a maior parte da vida, foi libertada por uma criatura misteriosa, um tipo de lobo, se tornou uma mulher forte que quer ajudar todos ao seu redor.",
+            "PA": "Fables #1 (Julho, 2002)",
+            "altura": "1,67cm",
+            "poderes": [
+                "Semi-Imortalidade",
+                "Resitência"
+            ],
+            "sinopse": [
+                "Branca de Neve ou White Snow, é uma mulher com um passado repleto de sofrimento, diferente das histórias normais de contos de fadas, Snow passou por uma tentativa de assalto e de assassinato e até foi feita de escrava, mas foi libertada por uma espécie de logo gigante, isso tudo á fez parecer fria, mas é uma mulher forte e determinada.",
+                "No Novo Mundo passou a trabalhar no governo da Cidade das Fabulas agindo como vice-prefeita, mas sempre era tratada como uma secretária, com o tempo começou a trabalhar e se envolver com Bigby e com os acontecimentos da cidade, com o tempo se tornaram amantes e parceiros para trazer ordem e justiça para as fabulas."
+
+            ],
+            "imagens": [
+                "https://static.wikia.nocookie.net/fables/images/8/8a/FI96_Poisoned_Apple.png/revision/latest?cb=20200212011432",
+                "https://www.writeups.org/wp-content/uploads/Snow-White-Fables-Comics-Willingham-h2.jpg",
+                "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1619174539i/31223863.jpg",
+                "https://static.wikia.nocookie.net/fables/images/d/d3/FI148_Snow.jpg/revision/latest/scale-to-width-down/1010?cb=20180504235808",
+                "https://78.media.tumblr.com/d5eb1f362ae868eaeefcded78c85ab76/tumblr_nnsj8tZqBK1qzdb0ko2_1280.jpg",
+                "https://static.wikia.nocookie.net/fables/images/9/91/FI133_Huntsman_and_Snow.png/revision/latest?cb=20200212013343"
+            ],
+            "criadores": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/10.13.12BillWillinghamByLuigiNovi1.jpg",
+                    "nome": "Bill Willingham"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 4
+                }
+            ],
+            "editora": "Vertigo",
+            "estilo": "misto"
+        },
+        {
+            "id": 2,
+            "corPri": "#290612",
+            "corSec": "#3f0259",
+            "tipoP": "Vilão",
+            "especie": "Reflexo (Fábula)",
+            "tags": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "thamb": "https://static.wikia.nocookie.net/villains/images/0/00/ACM_Mary_Menacing.png/revision/latest?cb=20140409060024",
+            "logo": "",
+            "wallpaper": "https://static.wikia.nocookie.net/marvel_dc/images/4/45/Bloody_Mary_Fables_001.png/revision/latest?cb=20140610145256",
+            "nomePerso": "Bloody Mary",
+            "nome": "Maria Sangrenta",
+            "desc": "Mary é a antagonista secundaria do jogo e a inimiga mais difícil que Bigby enfrenta. Implacável e extremamente violenta, é uma assassina que trabalha para o Homem Torto.",
+            "PA": "TWAU (Outubro, 2013)",
+            "altura": "1,78cm",
+            "poderes": [
+                {
+                    "poder":"",
+                    "desc": ""
+                }
+            ],
+            "sinopse": [
+                "Essa personagem foi criada no jogo The Wolf Among Us, mas posteriormente foi oficializada na série em quadrinhos ‘Fables: The Wolf Among Us’.",
+                "Está personagem deriva da antiga história de terror Bloody Mary, onde ao falar seu nome três vezes no espelho Mary apareceria para matar quem a chamasse.",
+                "Bloody Mary é na verdade o reflexo de uma mulher chamada Mary, Mary vê um homem preso em seu espelho, o Valete, e eles se apaixonam, após uma grande tragédia e traição do Valete, Mary é morta, porém seu reflexo permaneceu vivo e se torno uma sanguinária e vingativa assassina."
+            ],
+            "imagens": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "criadores": [
+                {
+                    "image": "https://static.wikia.nocookie.net/fables/images/3/39/230px-10.13.12BillWillinghamByLuigiNovi1.jpg/revision/latest?cb=20140903080528",
+                    "nome": "Bill Willingham"
+                }
+            ],
+            "historia": [
+                {
+                    "title": "",
+                    "text": [
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "habilidades": [
+                {
+                    "titulo": "Força",
+                    "number": 5
+                },
+                {
+                    "titulo": "Energia",
+                    "number": 1
+                },
+                {
+                    "titulo": "Habilidades de luta",
+                    "number": 3
+                },
+                {
+                    "titulo": "Resistência",
+                    "number": 3
+                },
+                {
+                    "titulo": "Inteligência",
+                    "number": 6
+                },
+                {
+                    "titulo": "Velocidade",
+                    "number": 4
+                }
+            ],
+            "editora": "DC",
+            "estilo": "misto"
         }
     ],
     "quadrinhos": [
@@ -2255,6 +2350,7 @@
             "id": 0,
             "editora": "Marvel",
             "titulo": "Hulk Contra o Mundo",
+            "preco": "42,30",
             "nota": 9.4,
             "thamb": "https://www.planocritico.com/wp-content/uploads/2014/12/hulk-contra-o-mundo.jpg",
             "data": "Junho 2007",
@@ -2262,22 +2358,25 @@
             "equipe": [
                 {
                     "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-greg_pak.jpg?alt=media&token=738fdf28-db1a-445a-96e7-251313a642e1",
-                    "text": "Escritor: Greg Pak"
+                    "text": "Greg Pak",
+                    "funcao": "Escritor"
                 },
                 {
                     "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-john_romita.jpg?alt=media&token=52ccd188-db98-4c9e-8879-2d6e0a2bd8b8",
-                    "text": "Desenhista: John Romita"
+                    "text": "John Romita",
+                    "funcao": "Desenhista"
                 },
                 {
                     "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-david-finch.jpg?alt=media&token=dfc0e954-7071-4bf6-8643-1e1195b29fcc",
-                    "text": "Desenhista da Capa: David Finch"
+                    "text": "David Finch",
+                    "funcao": "Desenhista da Capa"
                 }
             ],
             "personDestaque": "Hulk (Bruce Banner)",
             "sinopse": [
-                "Um dos maiores classicos da editora, esta historia mostra o quanto o hulk pode ser realmnete perigoso e imparaval. World War Hulk é um crossover dos quadrinhos publicado em título próprio e em diversos títulos da Marvel Comics em 2007.",
-                "A história é consequência dos eventos ocorridos na saga Guerras Secretas onde Hulk está completamnete bestial e é expulso da Terra pelos Iluminate.",
-                "Após um acontecimento que deixou Hulk no auge de sua raiva e consequentemente de sua força de toda a história dos quadrinhos, Hulk volta para a Terra para se vingar e pretende enfrentar todos os herois da Terra de frente"
+                "Um dos maiores classicos da editora, esta historia mostra o quanto o hulk pode ser realmnete perigoso e implacável. World War Hulk é um crossover dos quadrinhos publicado em título próprio e em diversos títulos da Marvel Comics em 2007.",
+                "A história é consequência dos eventos ocorridos na saga Guerras Secretas onde Hulk está completamnete bestial e é expulso da Terra pelos Iluminati.",
+                "Após um acontecimento que deixou Hulk no auge de sua raiva e consequentemente de sua força de toda a história dos quadrinhos, Hulk volta para a Terra para se vingar e pretende enfrentar todos os herois da Terra de frente."
             ],
             "imagens": [
                 "https://sm.ign.com/ign_br/screenshot/default/blob_5uta.jpg",
@@ -2289,6 +2388,7 @@
             "id": 1,
             "editora": "Marvel",
             "titulo": "Guerras Secretas II #1",
+            "preco": "24,50",
             "nota": 9.2,
             "thamb": "https://static1.srcdn.com/wordpress/wp-content/uploads/2017/07/marvel-crossover-secret-wars-ii-beyonder.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5",
             "data": "Maio 1984",
@@ -2296,17 +2396,19 @@
             "equipe": [
                 {
                     "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-jim_shooter.jpg?alt=media&token=e21dbbe8-2fc3-4f08-9aed-ffbcb3c093a5",
-                    "text": "Escritor: Jim Shooter"
+                    "text": "Jim Shooter",
+                    "funcao": "Escritor"
                 },
                 {
                     "image": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/artistas%2Fperfil-al_milgrom.jpg?alt=media&token=89d6bb45-3113-43b1-a550-f212cb8fe3c0",
-                    "text": "Desenhista: Al Milgrom"
+                    "text": "Al Milgrom",
+                    "funcao": "Desenhista"
                 }
             ],
             "personDestaque": "Beyonder",
             "sinopse": [
-                "A mega saga começa quando a entidade chamada Beyonder promove uma batalha nunca antes vista entre os maiores heróis e vilões do universo Marvel, oferecendo ao grupo vencedor, como prêmio, a realização de todos os seus desejos.",
-                "Poucas séries na cronologia Marvel foram tão importantes como Guerras Secretas, uma imensa história em 12 partes, envolvendo os principais heróis e vilões do universo. A lista de convocados envolve medalhões do porte de Homem-Aranha, os X-Men e Hulk, do lado dos heróis, e Doutor Destino, Lagarto, Ultron e Galactus do lado dos vilões.",
+                "A mega saga começa quando a entidade chamada Beyonder promove uma batalha nunca antes vista entre os maiores heróis e vilões do universo Marvel, oferecendo ao vencedor, como prêmio, a realização de todos os seus desejos.",
+                "Poucas séries na cronologia Marvel foram tão importantes como Guerras Secretas, uma imensa história em 12 partes, envolvendo os principais heróis e vilões do universo. A lista de convocados para essa guerra trás muitos personagens de peso como Homem-Aranha, os X-Men e Hulk, do lado dos heróis, e Doutor Destino, Lagarto, Ultron e Galactus do lado dos vilões.",
                 "A premissa é simples: uma entidade cósmica chamada Beyonder cria um planeta e transporta para lá os seres mais poderosos da Terra, dividindo-os em dois grupos. Sem mais delongas, Beyonder diz: 'Destruam seus inimigos e todos os seus sonhos serão realizados! Nenhum de seus desejos me é impossível de realizar!' Pronto. A confusão está armada e brigas começam a surgir dos dois lados."
             ],
             "imagens": [
@@ -2319,25 +2421,26 @@
     "notiicias": [
         {
             "id": 0,
-            "titulo": "Cavaleiro da lua traz novidades para o UCM",
+            "titulo": "Marvel revela os próximos filmes das próximas fases do UCM",
+            "desc": "Foi anunciado o fim da fase 4 e novos trailers dos mais recentes filmes da Marvel o maior destaque foi para o novo filme do Pantera Negra.", 
             "escritor": "Denis Nascimento",
-            "thamb": "https://sm.ign.com/ign_br/screenshot/default/blob_fhce.jpg",
-            "data": "2022-06-01",
+            "thamb": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&rect=0%2C0%2C2000%2C1000&poi=%5B1000%2C106%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F07%2F25%2FKevin-Feige-Marvel-Studios-Panel-072522.jpg",
+            "data": "2022-07-29T18:00:00",
             "conteudo": [
-                "Trazendo um novo lado do Universo Marvel, o lado sobrenatural da Marvel chegou com Cavaleiro da Lua, trazendo um novo herói com uma pegada completamente diferente e nova, Deuses, poderes e muito mais violência.",
-                "",
-                "",
-                "",
-                ""
+                "Essa semana na San Diego ComicCon, um dos maiores eventos Geek do mundo, a Marvel surgiu com muitas novidades, a maior novidade foi a o planejamento de filmes e series para a Fase 4 e 5 do UCM.",
+                "A apresentação de series como Demolidor, Iron-Heart e Invasão Secreta pegaram as pessoas de surpresa e a confirmação da segunda temporada de Loki deixou o evento pegando fogo.",
+                "https://cinebuzz.uol.com.br/media/_versions/demolidor_capitao_america_4_e_thunderbolts_estao_na_fase_5_do_universo_cinematografico_da_marvel_widemd.png",
+                "O presidente da Marvel, Kevin Feige, que apresentou o painel da Marvel disse que as próximas fases da Marvel serão chamadas “A Saga do Multiverso”, confirmando que podemos esperar de tudo no futuro do UCM."
             ]
 
         },
         {
             "id": 1,
             "titulo": "Os Eternos podem participar da proxima grande guerra da Marvel",
+            "desc": "",
             "escritor": "Denis Nascimento",
             "thamb": "https://marvelucm.com/wp-content/uploads/2021/10/Eternos-1024x680.jpg",
-            "data": "2022-06-01",
+            "data": "2022-07-29T18:00:00",
             "conteudo": [
                 "",
                 "",
@@ -2350,9 +2453,10 @@
         {
             "id": 2,
             "titulo": "Veremos como será o futuro do UCM com Bucky e Sam",
+            "desc": "",
             "escritor": "Denis Nascimento",
             "thamb": "https://files.tecnoblog.net/meiobit/wp-content/uploads/2021/04/falcon-winter-soldier-001.jpg",
-            "data": "2022-06-04",
+            "data": "2022-07-29T18:00:00",
             "conteudo": [
                 "",
                 "",
@@ -2361,6 +2465,109 @@
                 ""
             ]
 
+        }
+    ],
+    "galeria": [
+        {
+            "id": 0,
+            "desc": "",
+            "url": "https://i.pinimg.com/564x/bf/05/79/bf0579493d8c46c52c62a0c3f1e60298.jpg",
+            "tags": [
+                "demolidor",
+                "cavaleirodalua",
+                "panteranegra",
+                "comics"
+            ]
+        },
+        {
+            "id": 1,
+            "desc": "The Comic Ninja - Moon Knight #1 variant cover by Gabriele Dell'Otto",
+            "url": "https://i.pinimg.com/564x/9c/4b/72/9c4b72d1e5182049b425a66898bd098f.jpg",
+            "tags": [
+                "cavaleirodalua",
+                "art"
+            ]
+        },
+        {
+            "id": 2,
+            "desc": "",
+            "url": "https://i.pinimg.com/564x/8c/5f/65/8c5f65c70f58e356975b5abe8c61b622.jpg",
+            "tags": [
+                "sandman",
+                "wallpaper",
+                "art"
+            ]
+        },
+        {
+            "id": 3,
+            "desc": "Spiderman",
+            "url": "https://i.pinimg.com/564x/b4/bd/74/b4bd74ab6caa7e96ece918cfc89312de.jpg",
+            "tags": [
+                "spiderman",
+                "homemaranha",
+                "marvel",
+                "wallpaper"
+            ]
+        },
+        {
+            "id": 4,
+            "desc": "",
+            "url": "https://i.pinimg.com/564x/0f/ca/17/0fca17d1a2ccfd4cdbda54512cd62915.jpg",
+            "tags": [
+                "spiderman",
+                "homemaranha",
+                "multiverso",
+                "wallpaper"
+            ]
+        },
+        {
+            "id": 5,
+            "desc": "Ei Nerd on Instagram: “Diz aí: o que o Rocket Raccon estava falando pro THANOS?",
+            "url": "https://i.pinimg.com/564x/a8/fd/58/a8fd5820789650e8cb42aca9a7e8c479.jpg",
+            "tags": [
+                "thanos",
+                "rocky",
+                "marvel",
+                "art"
+            ]
+        }
+    ],
+    "produtos": [
+        {
+            "id": 0,
+            "titulo": "Kit Almofada Pipoca Veludo Marvel Classic",
+            "img": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/produtos%2Fprod_01_kitMarvelAlmofada.png?alt=media&token=56b76adc-1132-41fd-a0c8-3f07c4559c4e",
+            "preco": "24,99",
+            "detalhes": [
+                ""
+            ]
+        },
+        {
+            "id": 1,
+            "titulo": "Anel Joias do Infinito Preto - Marvel",
+            "img": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/produtos%2Fprod_02_anelJoiasInfinitoPreto.png?alt=media&token=a18c256b-62b7-4e45-9e94-65cc07f0c719",
+            "preco": "34,90",
+            "detalhes": [
+                ""
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Pulseira do Esmeralada do Loki Marvel - XRockLove",
+            "img": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/produtos%2Fprod_03_anelLokiJoia.png?alt=media&token=1788c413-59a8-4764-8273-d10b2913d032",
+            "preco": "195,00",
+            "detalhes": [
+                ""
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Fone Bluetooth Marvel - Iron Man ",
+            "img": "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/produtos%2Fprod_04_foneBluetoothMarvel.png?alt=media&token=bc9ad8cf-5ce8-43be-a9c1-9e012f0965af",
+            "preco": "99,00",
+            "detalhes": [
+                ""
+            ]
         }
     ]
 }

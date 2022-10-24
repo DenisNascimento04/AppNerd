@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MeuMundoNerd2.0-ty",
-    "slug": "MeuMundoNerd20ty",
+    "name": "MeuApp-Offline",
+    "slug": "MeuApp-Offline",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

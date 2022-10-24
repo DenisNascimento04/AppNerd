@@ -7,6 +7,7 @@ import { propsStack } from '../../services/types';
 
 type PropsCompPesquisaCont ={
     setText: (text: string) => void,
+    setfilter: () => void
 }
  
 export function CompPesquisa(){
@@ -44,7 +45,7 @@ export function CompPesquisaCont(props:PropsCompPesquisaCont){
                     onChangeText={props.setText}
                     placeholder='Pesquise....'
                     placeholderTextColor='#ACAAAA'
-                    onSubmitEditing={() =>{}}
+                    onSubmitEditing={props.setfilter}
                 />
             </View>
         </View>

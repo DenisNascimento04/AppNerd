@@ -54,7 +54,6 @@ export const stylesPerfil = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center', 
-        marginTop: 10,
         marginBottom: 20
     },
 
@@ -71,10 +70,28 @@ export const stylesPerfil = StyleSheet.create({
         justifyContent: 'space-around'
     },
 
+    
     textHeader: {
-        color: '#fff'
+        color: '#fff',
+        fontFamily: theme.text
     }, 
     textHeaderOpacity: {
-        color: 'rgba(255, 255, 255, 0.6)'
-    }, 
+        color: 'rgba(255, 255, 255, 0.6)',
+        fontFamily: theme.text
+    },
+
+    buttons: {
+        flexDirection: 'row',
+        marginHorizontal: 10,
+        paddingVertical: 10,
+        borderColor: "#000",
+        borderBottomWidth: .3,
+        alignItems: 'center'
+    },
+    textButtons: {
+        color: theme.colors.light,
+        fontFamily: theme.text,
+        fontSize: 14,
+        marginLeft: 5
+    },
 });

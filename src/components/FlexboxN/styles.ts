@@ -1,3 +1,4 @@
+import { theme } from './../../themes/index';
 import { StyleSheet } from 'react-native';
 
 export const styles121 = StyleSheet.create({
@@ -21,7 +22,7 @@ export const styles121 = StyleSheet.create({
     },
     selo: {
         position: 'absolute',
-        backgroundColor: '#880808', 
+        backgroundColor: theme.colors.regular, 
         padding: 5, 
         top: 10, 
         left: 10, 
@@ -64,7 +65,7 @@ export const styles11G = StyleSheet.create({
     },
     selo: {
         position: 'absolute',
-        backgroundColor: '#880808', 
+        backgroundColor: theme.colors.regular, 
         padding: 5, 
         top: 10, 
         left: 10, 

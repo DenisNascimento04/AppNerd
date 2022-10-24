@@ -9,6 +9,7 @@ import { propsStack } from "../../services/types";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/index";
 import Carousel from "react-native-snap-carousel";
+import { theme } from "../../themes";
 
 const { width } = Dimensions.get('window')
 
@@ -45,7 +46,6 @@ export function PageQuadrinhos() {
             ),
         };
     });
-
     const titleStyle = useAnimatedStyle(() => {
         return {
             left: interpolate(
@@ -56,8 +56,6 @@ export function PageQuadrinhos() {
             ),
         };
     });
-
-    
     const dadosOpacityStyle = useAnimatedStyle(() => {
         return {
             transform:[
@@ -117,7 +115,7 @@ export function PageQuadrinhos() {
     return(
         <View>
             <Animated.View style={[ headerStyle, styles.header]}>
-                <View style={{ width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,.3)" }}>
+                <View style={{ width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,.5)" }}>
                     <Animated.View style={[buttonBack, { position: 'absolute', left: 20,}]}>
                         <Pressable onPress={() => navigation.goBack()} style={styles.buttonBack}>
                             <Icons name='chevron-back' size={28} color="#000" />
@@ -144,11 +142,11 @@ export function PageQuadrinhos() {
                         <Animated.Text style={[ titleStyle, styles.cardTitulo]}>{data.titulo}</Animated.Text>
                         <Animated.View style={[ dadosOpacityStyle, { flexDirection: 'row', alignItems: 'center' }]}>
                             <View style={{ marginRight: 5, flexDirection: 'row' }}>
-                                { data.nota-5 > 1 ? <Icons name='heart' size={13} color="red" /> : <Icons name='heart' size={13} color="#585858" /> }
-                                { data.nota-5 > 2 ? <Icons name='heart' size={13} color="red" /> : <Icons name='heart' size={13} color="#585858" /> }
-                                { data.nota-5 > 3 ? <Icons name='heart' size={13} color="red" /> : <Icons name='heart' size={13} color="#585858" /> }
-                                { data.nota-5 > 4 ? <Icons name='heart' size={13} color="red" /> : <Icons name='heart' size={13} color="#585858" /> }
-                                { data.nota-5 > 5 ? <Icons name='heart' size={13} color="red" /> : <Icons name='heart' size={13} color="#585858" /> }
+                                { data.nota-5 > 1 ? <Icons name='heart' size={13} color="#C0392B" /> : <Icons name='heart' size={13} color="#585858" /> }
+                                { data.nota-5 > 2 ? <Icons name='heart' size={13} color="#C0392B" /> : <Icons name='heart' size={13} color="#585858" /> }
+                                { data.nota-5 > 3 ? <Icons name='heart' size={13} color="#C0392B" /> : <Icons name='heart' size={13} color="#585858" /> }
+                                { data.nota-5 > 4 ? <Icons name='heart' size={13} color="#C0392B" /> : <Icons name='heart' size={13} color="#585858" /> }
+                                { data.nota-5 > 5 ? <Icons name='heart' size={13} color="#C0392B" /> : <Icons name='heart' size={13} color="#585858" /> }
                             </View>
                             <Text style={styles.cardNota}>
                                 {data.nota}
@@ -166,18 +164,18 @@ export function PageQuadrinhos() {
                 </View>
             </Animated.View>
 
-            <Animated.View style={[ buttoLike, { position: 'absolute', right: 0, marginRight: 10, zIndex: 5 }]}>
+            <Animated.View style={[ buttoLike, { position: 'absolute', right: 0, zIndex: 5 }]}>
                 <Pressable style={styles.buttonLike}>
-                    <Icons name='heart' size={32} color="red" />
+                    <Icons name='cart-outline' size={32} color={theme.colors.destaque} />
                 </Pressable>
             </Animated.View> 
 
 
-            <View>
+            <View style={{ backgroundColor: theme.colors.regular }}>
                 <Animated.ScrollView 
                     onScroll={scrollHandler} 
                     scrollEventThrottle={16}
-                    contentContainerStyle={{ paddingTop: 280 }}
+                    contentContainerStyle={{ paddingTop: 280, paddingBottom: 50 }}
                 >
                     <StatusBar style='light' />
                     <View style={{ backgroundColor: 'transparent', paddingTop: 80, paddingHorizontal: 20 }}>
@@ -189,13 +187,15 @@ export function PageQuadrinhos() {
                         ))}
                         <Text style={styles.contentTitulo}>Equipe</Text>
                         <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-                            {data.equipe.map((item: {image: string, text: string}, index: number) => (
+                            {data.equipe.map((item: {image: string, text: string, funcao: string}, index: number) => (
                                 <View key={index} style={{ marginBottom: 10, marginRight: 10 }}>
                                     <Image 
                                         source={{ uri: item.image }}
                                         style={styles.imagemEquipes}
                                     />
                                     <Text style={styles.imagemDesc} >
+                                        {item.funcao}:
+                                        {'\n'}
                                         {item.text}
                                     </Text>
                                 </View>
@@ -221,11 +221,6 @@ export function PageQuadrinhos() {
                                     </View>
                                 )}
                             />
-                        </View>
-                        <View style={{ marginBottom: 50, marginTop: 20, alignItems: 'center'}}>
-                            <Pressable style={{ backgroundColor: '#000', width: 120, borderRadius: 5, padding: 10, alignItems: 'center' }}>
-                                <Text style={{ color: '#fff' }}>Ler</Text>
-                            </Pressable>
                         </View>
                     </View>
                 </Animated.ScrollView>

@@ -31,20 +31,20 @@ export function PageVerTudo() {
             const filter: any = [];
             var cont = 0;
     
-            data.personagensMarvel.map((item) => {
+            data.personagens.map((item) => {
                 // @ts-ignore
                 if (item.tipoP === text) {
                     filter.push({ ...item, id_complex: cont })
                     cont++;
                 }
             })
-            data.personagensDC.map((item) => {
-                // @ts-ignore
-                if (item.tipoP === text) {
-                    filter.push({ ...item, id_complex: cont })
-                    cont++;
-                }
-            })
+            // data.personagensDC.map((item) => {
+            //     // @ts-ignore
+            //     if (item.tipoP === text) {
+            //         filter.push({ ...item, id_complex: cont })
+            //         cont++;
+            //     }
+            // })
             return filter
         }
         const filtro = SetFiltargem();
@@ -56,7 +56,7 @@ export function PageVerTudo() {
     
         return(
             <View style={{ paddingTop: 30, flex: 1, backgroundColor: '#E6E5E4' }}>
-                <StatusBar style='light' backgroundColor='#CA2015' />
+                <StatusBar style='light' backgroundColor="transparent" />
                 <Animated.View style={{ backgroundColor: '#CA2015' }} entering={FadeInUp.duration(500)}>
                     <Header back title={text} />
                     <View style={{ marginTop: 10 }}>
@@ -114,13 +114,7 @@ export function PageVerTudo() {
             var cont = 0;
 
             if(pesquisa != ''){
-                data.personagensMarvel.map((item) => {
-                    if (item.nomeHeroi.includes(pesquisa) || item.nome.includes(pesquisa)) {
-                        filter.push({ ...item, id_complex: cont })
-                        cont++;
-                    }
-                })
-                data.personagensDC.map((item, index) => {
+                data.personagens.map((item) => {
                     if (item.nomeHeroi.includes(pesquisa) || item.nome.includes(pesquisa)) {
                         filter.push({ ...item, id_complex: cont })
                         cont++;

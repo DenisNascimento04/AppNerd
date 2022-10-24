@@ -8,14 +8,10 @@ interface User {
     imagePerfil: string,
     imageFundo: string,
     frase: string,
-    favoritos: [{
-        id: string,
-        editora: string
-    }],
+    favoritos: number[],
     uid: string,
     isLogin: boolean
 }
-
 
 const initialState: User = {
     id: 0,
@@ -25,10 +21,7 @@ const initialState: User = {
     imagePerfil: 'https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/perfis%2Fperfil-user.png?alt=media&token=a8631a95-df35-4a66-8f7f-15846c883af0',
     imageFundo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEY13sg0Y8cDbTL_VBFlWHsqGnzj7Un_hW9Q&usqp=CAU',
     frase: 'Fazer Login',
-    favoritos: [{
-        id: '',
-        editora: ''
-    }],
+    favoritos: [1],
     uid: '',
     isLogin: false
 }
@@ -39,6 +32,7 @@ export const usuario = createSlice({
     reducers: {
         setLogin: (state, actions) => {
             state.id = actions.payload.id,
+            state.uid = actions.payload.uid,
             state.email = actions.payload.email,
             state.senha = actions.payload.senha,
             state.nome = actions.payload.nome,
@@ -46,6 +40,18 @@ export const usuario = createSlice({
             state.imagePerfil = actions.payload.imagePerfil,
             state.imageFundo = actions.payload.imageFundo,
             state.favoritos = actions.payload.favoritos
+        },
+        resetLogin: (state) => {
+            state.id = 0,
+            state.email = '',
+            state.senha = '',
+            state.nome = 'Criar/Logar',
+            state.imagePerfil = 'https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/perfis%2Fperfil-user.png?alt=media&token=a8631a95-df35-4a66-8f7f-15846c883af0',
+            state.imageFundo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEY13sg0Y8cDbTL_VBFlWHsqGnzj7Un_hW9Q&usqp=CAU',
+            state.frase = 'Fazer Login',
+            state.favoritos = [1],
+            state.uid = '',
+            state.isLogin = false
         },
         setNewImage: (state, actions) => {
             state.imagePerfil = actions.payload
@@ -66,7 +72,7 @@ export const usuario = createSlice({
         },
         deleteFavoritos: (state, actions) => {
             state.favoritos.map((item, index) => {
-                if (item.id === actions.payload.id && item.editora === actions.payload.editora) {
+                if (item === actions.payload) {
                     state.favoritos.splice(index, index+1)
                 }
             })
@@ -74,5 +80,5 @@ export const usuario = createSlice({
     }
 })
 
-export const { setNewImage, setNewFrase, setNewImageFundo, setFavoritos, deleteFavoritos, setLogin, setIsLogin } = usuario.actions
+export const { setNewImage, setNewFrase, setNewImageFundo, setFavoritos, deleteFavoritos, setLogin, setIsLogin, resetLogin } = usuario.actions
 export default usuario.reducer;

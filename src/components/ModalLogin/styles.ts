@@ -1,11 +1,12 @@
+import { theme } from './../../themes/index';
 import { StyleSheet, Dimensions } from 'react-native';
 
-const { width, height } = Dimensions.get('screen')
+const { width, height } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
     Modal: {
-        width: '100%',
-        height: 850,
+        width: width,
+        height: height,
         position: 'absolute',
         alignItems: 'center',
         justifyContent: 'flex-end', 
@@ -14,9 +15,8 @@ export const styles = StyleSheet.create({
 
     contentModal: {
         width: width,
-        height: height-250,
-        backgroundColor: '#ffffff',
-        borderRadius: 40,
+        height: height,
+        backgroundColor: theme.colors.contraste,
         paddingHorizontal: 20,
         paddingVertical: 10
     },

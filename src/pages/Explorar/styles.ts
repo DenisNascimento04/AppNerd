@@ -16,23 +16,39 @@ export const styles = StyleSheet.create({
         flexDirection: 'row', 
         alignItems: 'center', 
         marginHorizontal: 20, 
-        paddingBottom: 20
+        paddingBottom: 20,
+        paddingTop: 20
     },
     titleHeader: {
         color: '#fff', 
-        fontSize: 20,
-        fontFamily: theme.titleRubik
+        fontSize: 24,
+        fontFamily: theme.title
+    },
+
+    viewInput: {
+        backgroundColor: theme.colors.contraste, 
+        flexDirection: 'row',
+        width: 300, 
+        justifyContent: 'center',  
+        borderRadius: 50,
+    },
+
+    buttonInput: {
+        // backgroundColor: '#BDB9BF', 
+        width: 45, 
+        height: 45, 
+        alignItems: 'center', 
+        justifyContent: 'center', 
     },
     
     title: {
-        fontSize: 18,
-        fontFamily: theme.titleRubik,
-        color: "#000"
+        fontSize: 20,
+        fontFamily: theme.textItalic,
+        color: theme.colors.contraste
     },
 
     buttonTudo: {
-        color: '#880808', 
+        color: theme.colors.destaque, 
         fontSize: 14, 
-        fontWeight: '700',
     },
 });

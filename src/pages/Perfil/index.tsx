@@ -97,18 +97,61 @@ export function Perfil(){
         };
 
         if (estado === "login") {
+            if(email != '' && senha != ''){
+                if(email.includes('@') === true && email.includes('.com') === true && senha.length >= 6){
+                    setLogando(true);
+                    await firebase.auth().signInWithEmailAndPassword(email,senha)
+                    .then((userCredential) => {
+                        const uid = userCredential.user?.uid;
+                        SetUser(uid);
+                    }).catch((error) => {
+                        setTextErro("Email ja registrado");
+                        setError(true)
+                        setLogando(false);
+                    })
+                }else{
+                    setTextErro("Email ou senha não seguem os padrões. Verifique e tente de novo");
+                    setError(true)
+                    setLogando(false);
+                }
+            }else{
+                setTextErro("Email ou senha estâo fora dos padrões. Verifiuque e tente de novo");
+                setError(true)
+                setLogando(false);
+            }
+        }else{
             if(nome != '' && email != '' && senha != '' && confSenha != ''){
                 if (senha === confSenha) {
                     if(email.includes('@') === true && email.includes('.com') === true && senha.length >= 6){
                         setLogando(true);
+                        const size = (await firebase.firestore().collection('Users').get()).size
                         await firebase.auth().signInWithEmailAndPassword(email,senha)
                         .then((userCredential) => {
-                            const uid = userCredential.user?.uid;
-                            SetUser(uid);
-                        }).catch((error) => {
-                            setTextErro("Email ja registrado");
                             setError(true)
                             setLogando(false);
+                        }).catch((error) => {
+                            firebase.auth().createUserWithEmailAndPassword(email,senha)
+                            .then((userCredential) => {
+                                perfil.id = size + 1;
+                                perfil.uid = userCredential.user?.uid;
+                                perfil.nome = `${nome} ${sobrenome}`; 
+                                perfil.email = email;
+                                perfil.senha = senha;
+                                perfil.imagePerfil = imageP;
+                                perfil.imageFundo = imageF;
+                                perfil.frase = frase;
+                                perfil.favoritos = []
+                                console.log(perfil)
+                                firebase.firestore().collection('Users')
+                                .add({...perfil})
+                            }).finally(() => {
+                                dispatch(setLogin({
+                                    ...perfil
+                                }));
+                                dispatch(setIsLogin(true));
+                                setLogando(false)
+                                setStatusLogin(true);
+                            })
                         })
                     }else{
                         setTextErro("Email ou senha não seguem os padrões. Verifique e tente de novo");
@@ -125,37 +168,6 @@ export function Perfil(){
                 setError(true)
                 setLogando(false);
             }
-        }else{
-            setLogando(true);
-            const size = (await firebase.firestore().collection('Users').get()).size
-            await firebase.auth().signInWithEmailAndPassword(email,senha)
-            .then((userCredential) => {
-                setError(true)
-                setLogando(false);
-            }).catch((error) => {
-                firebase.auth().createUserWithEmailAndPassword(email,senha)
-                .then((userCredential) => {
-                    perfil.id = size + 1;
-                    perfil.uid = userCredential.user?.uid;
-                    perfil.nome = `${nome} ${sobrenome}`; 
-                    perfil.email = email;
-                    perfil.senha = senha;
-                    perfil.imagePerfil = imageP;
-                    perfil.imageFundo = imageF;
-                    perfil.frase = frase;
-                    perfil.favoritos = []
-                    console.log(perfil)
-                    firebase.firestore().collection('Users')
-                    .add({...perfil})
-                }).finally(() => {
-                    dispatch(setLogin({
-                        ...perfil
-                    }));
-                    dispatch(setIsLogin(true));
-                    setLogando(false)
-                    setStatusLogin(true);
-                })
-            })
         }
 
     }
@@ -171,7 +183,7 @@ export function Perfil(){
         const filter: any = [];
         usuario.favoritos.map((item) => {
             if (item.editora === "Marvel") {
-                data.personagensMarvel.forEach((item_) => {
+            data.personagensMarvel.forEach((item_) => {
                     if (item_.id.toString() === item.id) {
                         filter.push({...item_})
                     }
@@ -211,22 +223,31 @@ export function Perfil(){
         return(
             <View style={{ flex: 1 }}>
                 <StatusBar style='light' />
-                <ImageBackground 
-                    source={{ uri: usuario.imageFundo }} 
-                    style={{ width: '100%', height: 395 }}
-                >
-                    <View style={{ flex: 1, backgroundColor: 'rgba(58,58,58,0.6)', paddingTop: 25}}>
+                <View style={{ width: width }}>
+                    <Image source={{ uri: usuario.imageFundo }} style={{ width: '100%', height: '100%', position: 'absolute', top: 0}} />
+                    <View style={{ backgroundColor: 'rgba(58,58,58,0.6)', paddingTop: 40, paddingBottom: 10}}>
 
-                        <Header perfil title='' colorBack='transparent'/>
-                            <View 
-                                style={{ width: 150, height: 100, position: 'absolute', top: 160, left: 22, alignItems: 'center', justifyContent: 'center'}}  
-                            >
-                                <Image 
-                                    source={{ uri: "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/ferramentas_quadrihos%2Fcomic-talk.png?alt=media&token=383304d8-638e-4849-92f1-add14dfb6edf" }}
-                                    style={{ width: '100%', height: '100%', transform:[{ rotateY: '180deg' }], position: 'absolute', resizeMode: 'contain' }}
-                                />
-                                <Text style={{ fontFamily: 'ComicNeue_700Bold' }} >{usuario.frase}</Text>
-                            </View>
+                        <View style={{
+                            backgroundColor: 'trasnparent', 
+                            alignItems: 'center', 
+                            flexDirection: 'row',
+                            width: "100%",
+                            justifyContent: 'flex-end' ,
+                            paddingRight: 30
+                        }}>
+                            <Pressable style={{ padding: 8, borderRadius: 40, backgroundColor: '#fff' }}>
+                                <Icons name='notifications' size={28} color='#000' />
+                            </Pressable>
+                        </View>
+                        <View 
+                            style={{ width: 150, height: 100, position: 'absolute', top: 140, left: 22, alignItems: 'center', justifyContent: 'center'}}  
+                        >
+                            <Image 
+                                source={{ uri: "https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/ferramentas_quadrihos%2Fcomic-talk.png?alt=media&token=383304d8-638e-4849-92f1-add14dfb6edf" }}
+                                style={{ width: '100%', height: '100%', transform:[{ rotateY: '180deg' }], position: 'absolute', resizeMode: 'contain' }}
+                            />
+                            <Text style={{ fontFamily: 'ComicNeue_700Bold' }} >{usuario.frase}</Text>
+                        </View>
 
                         <View style={stylesPerfil.viewImage}>
                             <Avatar
@@ -235,11 +256,7 @@ export function Perfil(){
                                 source={{ uri: usuario.imagePerfil }}
                                 containerStyle={{ backgroundColor: '#ffff', padding: 2 }}
                             >
-                                <Avatar.Accessory 
-                                    style={{ width: 30, height: 30, borderRadius: 15, backgroundColor: 'red' }}
-                                    size={25}
-                                    onPress={() => setStatusModal(true)}
-                                />
+                                
                             </Avatar>
                         </View>
 
@@ -268,31 +285,30 @@ export function Perfil(){
                         </View>
                         
                     </View>    
-                </ImageBackground>
-                <View style={{ flex: 1, marginTop: 25, }}>
-                    <View style={{ flexDirection: 'row', marginLeft: 15, marginRight: 35, justifyContent: 'space-between', marginBottom: 10 }}>
-                        <Text style={{ fontSize: 18 }}>Seus Persoangens Favoritos</Text>
-                        <Icons name='arrow-forward' size={20} color='#fff' style={{ backgroundColor: '#585858', paddingVertical: 2, paddingHorizontal: 10, borderRadius: 5 }} /> 
-                    </View>
-                    <View>
-                        <FlatList 
-                            data={filterFavoritos()}
-                            keyExtractor={(item, index) => index.toString()}
-                            horizontal
-                            showsHorizontalScrollIndicator={false}
-                            contentContainerStyle={{ alignItems: 'center', paddingTop: 5, paddingBottom: 20, paddingLeft: 15}}
-                            renderItem={({ item }) => (
-                                <View style={{ backgroundColor: item.corPri, width: 80, height: 80, borderRadius: 40, alignItems: 'center', marginHorizontal: 10 }}>
-                                    <Image 
-                                        source={{ uri: item.thamb }}
-                                        style={{ width: 100, height: 100 }}
-                                    />
-                                </View>
-                            )}
-                        />
-                    </View>
                 </View>
-                <ModalAvatarPerfil show={statusModalAvatar} close={() => setStatusModalAvatar(!statusModalAvatar)}>
+                {/* <View style={{ flex: 1, paddingTop: 10, backgroundColor: theme.colors.regular }}>
+                    <TouchableOpacity  style={stylesPerfil.buttons}>
+                        <Icons name='list-circle' size={26} color={theme.colors.light} />
+                        <Text style={stylesPerfil.textButtons} >Minha Lista</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={stylesPerfil.buttons}>
+                        <Icons name='person' size={26} color={theme.colors.light} />
+                        <Text style={stylesPerfil.textButtons} >Pessoal</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={stylesPerfil.buttons}>
+                        <Icons name='settings' size={26} color={theme.colors.light} />
+                        <Text style={stylesPerfil.textButtons} >Configurações</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={stylesPerfil.buttons}>
+                        <Icons name='alert-circle' size={26} color={theme.colors.light} />
+                        <Text style={stylesPerfil.textButtons} >Sobre</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={stylesPerfil.buttons}>
+                        <Icons name='log-out' size={26} color={theme.colors.light} />
+                        <Text style={stylesPerfil.textButtons} >Sair</Text>
+                    </TouchableOpacity>
+                </View> */}
+                {/* <ModalAvatarPerfil show={statusModalAvatar} close={() => setStatusModalAvatar(!statusModalAvatar)}>
                     <View>
                         <FlatList 
                             data={avatares}
@@ -308,7 +324,7 @@ export function Perfil(){
                             )}
                         />
                     </View>
-                </ModalAvatarPerfil>
+                </ModalAvatarPerfil> */}
             </View>  
         )
     }else{
@@ -326,10 +342,10 @@ export function Perfil(){
                             <Icons name="chevron-back" size={32} color="#fff" />
                         </Pressable>
                         <Text style={stylesLogin.title}>Mundo {'\n'} Nerd</Text>
-                        <TouchableOpacity onPress={() => {setStatusModal(true), setSing(true)}} style={[stylesLogin.botoes,{ backgroundColor: theme.colors.bold }]}>
+                        <TouchableOpacity onPress={() => {setStatusModal(true), setSing(true)}} style={[stylesLogin.botoes,{ backgroundColor: theme.colors.regular }]}>
                             <Text style={{ color: "#fff", fontSize: 18 }} >Sign In</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => {setStatusModal(true), setSing(false)}} style={[stylesLogin.botoes,{ backgroundColor: theme.colors.light }]}>
+                        <TouchableOpacity onPress={() => {setStatusModal(true), setSing(false)}} style={[stylesLogin.botoes,{ backgroundColor: theme.colors.bold }]}>
                             <Text style={{ color: "#fff", fontSize: 18 }} >Sign Up</Text>
                         </TouchableOpacity>                              
                     </View>

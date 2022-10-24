@@ -1,20 +1,25 @@
+import { useState } from 'react';
+import api from '../BDTeste/api';
 import data from '../BDTeste/banco.json';
+import { PropsPerso } from '../services/types';
 
 export const BHerois = () => {
-    const dataHerois: any = [];
 
-    data.personagensMarvel.map((item) => {
+    const dataViloes: any = []
+
+    data.personagens.map((item) => {
         if (item.tipoP === "Heroi" ) {
-            dataHerois.push({ ...item })
+            dataViloes.push({ ...item })
         }
     })
 
-    return dataHerois;
+    return dataViloes;
+
 } 
 export const BViloes = () => {
     const dataViloes: any = []
 
-    data.personagensMarvel.map((item) => {
+    data.personagens.map((item) => {
         if (item.tipoP === "Vilão" ) {
             dataViloes.push({ ...item })
         }
@@ -25,7 +30,7 @@ export const BViloes = () => {
 export const BAntiHerois = () => {
     const dataAnti: any = []
 
-    data.personagensMarvel.map((item) => {
+    data.personagens.map((item) => {
         if (item.tipoP === "Anti-Heroi" ) {
             dataAnti.push({ ...item })
         }
