@@ -21,7 +21,7 @@ const initialState: User = {
     imagePerfil: 'https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/perfis%2Fperfil-user.png?alt=media&token=a8631a95-df35-4a66-8f7f-15846c883af0',
     imageFundo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEY13sg0Y8cDbTL_VBFlWHsqGnzj7Un_hW9Q&usqp=CAU',
     frase: 'Fazer Login',
-    favoritos: [1],
+    favoritos: [0],
     uid: '',
     isLogin: false
 }
@@ -49,7 +49,7 @@ export const usuario = createSlice({
             state.imagePerfil = 'https://firebasestorage.googleapis.com/v0/b/appnerd-9e189.appspot.com/o/perfis%2Fperfil-user.png?alt=media&token=a8631a95-df35-4a66-8f7f-15846c883af0',
             state.imageFundo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEY13sg0Y8cDbTL_VBFlWHsqGnzj7Un_hW9Q&usqp=CAU',
             state.frase = 'Fazer Login',
-            state.favoritos = [1],
+            state.favoritos = [0],
             state.uid = '',
             state.isLogin = false
         },
@@ -67,7 +67,7 @@ export const usuario = createSlice({
         },
         setFavoritos: (state, actions) => {
             if (state.isLogin) {
-                state.favoritos.push(actions.payload)
+                state.favoritos.push(actions.payload);
             }
         },
         deleteFavoritos: (state, actions) => {

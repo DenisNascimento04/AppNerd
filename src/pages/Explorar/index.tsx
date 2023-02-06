@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, Dimensions, FlatList, Pressable, ScrollView, ActivityIndicator, Image, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, Dimensions, FlatList, Pressable, ScrollView, ActivityIndicator, Image, TouchableOpacity, TextInput, Animated } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { Modalize } from 'react-native-modalize';
 import Icons from 'react-native-vector-icons/Ionicons';
 import { useDispatch, useSelector } from 'react-redux';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -10,13 +9,13 @@ import { LinearGradient } from 'expo-linear-gradient';
 import data from '../../BDTeste/banco.json';
 
 import { styles } from './styles';
-import { ItemPersonagens, ItemPersonagensBack, ItensQuadrinhos } from '../../components/Itens';
+import { ItemPersonagens, ItemPersonagensBack } from '../../components/Itens';
 import { PropsPerso, propsStack } from '../../services/types';
 import { RootState } from '../../store/index';
 import { ModalPerso } from '../../components/ModalPerso';
-import { BHerois, BViloes } from '../../mente';
+import { BAntiHerois, BHerois } from '../../mente';
 import { theme } from '../../themes';
-// import api from '../../BDTeste/api';
+import { Modal } from '../../components/Modal';
 
 const { width, height } = Dimensions.get('window');
 
@@ -24,16 +23,15 @@ export function Explorar(){
 
     const navigationStack = useNavigation<propsStack>()
     const usuario = useSelector((state: RootState) => state.usuario)
-    // const modal = useSelector((state: RootState) => state.modal)
-    const dispatch = useDispatch();
     const [pesquisa, setPesquisa] = useState("");
-    const modalTeste = useRef<Modalize>(null); 
+    const [modal, setModal] = useState(false); 
     const [dataItem, setDataItem] = useState<PropsPerso>(); 
     const [activy, setActivy] = useState(true); 
     const dataHeroi:PropsPerso[] = BHerois();
-    const dataVilao: PropsPerso[] = BViloes();
-    const dataQuadrinhos = data.quadrinhos;
-    const dataTeste: any = data.teste;
+    const dataAnti:PropsPerso[] = BAntiHerois();
+
+    const scrollX = useRef(new Animated.Value(0)).current;
+    const item_size = width-100;
 
     useEffect(() => {
         // setDataPage();
@@ -44,10 +42,10 @@ export function Explorar(){
 
 
     function OpenModal(data: PropsPerso) {
-        setDataItem(data)
+        setDataItem(data);
         setTimeout(() => {
-            modalTeste.current?.open()
-        }, 300);
+            setModal(!modal)
+        }, 500);
     }
 
     return(
@@ -60,7 +58,7 @@ export function Explorar(){
                     <ScrollView contentContainerStyle={{ paddingBottom: 80, backgroundColor: theme.colors.fundo }} scrollEventThrottle={16}>
                         <View style={{ paddingTop: 40, backgroundColor: theme.colors.fundo }}>
                             <View style={styles.header}>
-                                <View style={{ alignItems: 'center' }}>
+                                <View style={{ alignItems: 'center', flex: 1, marginRight: 8 }}>
                                     <View style={styles.viewInput}>
                                         <TouchableOpacity onPress={() => {}} style={styles.buttonInput}>
                                             <Icons name='search' size={20} color='#858383' />
@@ -75,7 +73,7 @@ export function Explorar(){
                                     </View>
                                 </View>
                                 <Pressable 
-                                    style={{ backgroundColor: '#fff', marginLeft: 20, elevation: 5, padding: 3, justifyContent: 'center', alignItems: 'center', borderRadius: 50 }} 
+                                    style={{ backgroundColor: '#fff',  elevation: 5, padding: 3, justifyContent: 'center', alignItems: 'center', borderRadius: 50, marginRight: 32 }} 
                                     onPress={() => {}}
                                 >
                                     <Image 
@@ -104,33 +102,8 @@ export function Explorar(){
                                 </View>
                             </View>
 
-                            <View style={{ marginBottom: 5 }} >
-                                <View style={styles.flatList}>
-                                    <Text style={styles.title}>Herois</Text>
-                                    <Pressable onPress={() => navigationStack.navigate("PageVerTudo", { text: "Herois" })}>
-                                        <Text style={styles.buttonTudo}>Ver Tudo</Text>
-                                    </Pressable>
-                                </View>
-                                <FlatList 
-                                    data={dataHeroi?.slice(6,11)} 
-                                    keyExtractor={(item,index) => index.toString()}
-                                    horizontal
-                                    snapToInterval={160}
-                                    onContentSizeChange={(w: number, h: number) => {w = 180, h = 250}}
-                                    showsHorizontalScrollIndicator={false}
-                                    contentContainerStyle={{ paddingLeft: 20, paddingBottom: 30, paddingRight: 20}}
-                                    renderItem={({ item }) => (
-                                        <ItemPersonagensBack 
-                                            data={item}
-                                            vertical
-                                            navig={() => OpenModal(item)} 
-                                        />
-                                    )}
-                                />
-                            </View>
-
-                            <View style={{ marginBottom: 5 }}>
-                                <Text style={[styles.title, { marginLeft: 20, marginBottom: 5}]}>Favoritos da Galera</Text> 
+                            <View style={{ }}>
+                                <Text style={[styles.title, { marginLeft: 20, marginBottom: 6}]}>Favoritos da Galera</Text> 
                                 <FlatList 
                                     data={dataHeroi?.slice(0,10)}
                                     keyExtractor={(item, index) => index.toString()}
@@ -150,63 +123,126 @@ export function Explorar(){
                                 />
                             </View>
 
-                            <View>
+                            <View style={{ marginTop: 8 }} >
+                                <View style={styles.flatList}>
+                                    <Text style={styles.title}>Herois</Text>
+                                    <Pressable onPress={() => navigationStack.navigate("PageVerTudo", { text: "Herois" })}>
+                                        <Text style={styles.buttonTudo}>Ver Tudo</Text>
+                                    </Pressable>
+                                </View>
                                 <FlatList 
-                                    data={dataHeroi?.slice(0,7)}
-                                    keyExtractor={(_,i) => i.toString()}
+                                    data={dataHeroi?.slice(0,8)} 
+                                    keyExtractor={(_,index) => index.toString()}
                                     horizontal
-                                    contentContainerStyle={{ alignItems: 'center' }}
-                                    snapToInterval={width-100}
-                                    initialScrollIndex={dataHeroi?.slice(0,7).length/2.44}
-                                    renderItem={({item, index}) => (
-                                        <View style={{ width: width-100, alignItems: 'center', marginLeft: index === 0 ? 40 : 0, marginRight: index === dataHeroi?.slice(0,7).length-1 ? 40 : 0 }}>
-                                            <ItemPersonagens 
-                                                data={item}
-                                                navig={() => OpenModal(item)}
-                                            />
-                                        </View>
+                                    snapToInterval={160}
+                                    onContentSizeChange={(w: number, h: number) => {w = 180, h = 250}}
+                                    showsHorizontalScrollIndicator={false}
+                                    contentContainerStyle={{ paddingLeft: 20, paddingBottom: 30, paddingRight: 20}}
+                                    renderItem={({ item }) => (
+                                        <ItemPersonagensBack 
+                                            data={item}
+                                            vertical
+                                            navig={() => navigationStack.navigate("PagePerso", { data: item })} 
+                                        />
                                     )}
                                 />
                             </View>
 
-                            <View style={{ marginBottom: 5 }} >
+                            <View style={{ marginTop: 8 }} >
+                                <View style={styles.flatList}>
+                                    <Text style={styles.title}>Anti-Herois</Text>
+                                    <Pressable onPress={() => navigationStack.navigate("PageVerTudo", { text: "Herois" })}>
+                                        <Text style={styles.buttonTudo}>Ver Tudo</Text>
+                                    </Pressable>
+                                </View>
                                 <FlatList 
-                                    data={data.teste}
-                                    keyExtractor={(_,i) => i.toString()}
+                                    data={dataAnti} 
+                                    keyExtractor={(_,index) => index.toString()}
                                     horizontal
-                                    contentContainerStyle={{ alignItems: 'center' }}
-                                    snapToInterval={width-100}
-                                    renderItem={({item, index}) => (
-                                        <View style={{ width: width-100, alignItems: 'center', marginLeft: index === 0 ? 40 : 0, marginRight: index === data.teste.length-1 ? 40 : 0 }}>
-                                            <ItemPersonagens 
-                                                data={item}
-                                                navig={() => OpenModal(item)}
-                                            />
-                                        </View>
+                                    snapToInterval={160}
+                                    onContentSizeChange={(w: number, h: number) => {w = 180, h = 250}}
+                                    showsHorizontalScrollIndicator={false}
+                                    contentContainerStyle={{ paddingLeft: 20, paddingBottom: 30, paddingRight: 20}}
+                                    renderItem={({ item }) => (
+                                        <ItemPersonagensBack 
+                                            data={item}
+                                            vertical
+                                            navig={() => navigationStack.navigate("PagePerso", { data: item })} 
+                                        />
                                     )}
                                 />
                             </View>
+
+                            <View style={{ marginTop: 8 }} >
+                                <View style={styles.flatList}>
+                                    <Text style={styles.title}>Vertigo</Text>
+                                    <Pressable onPress={() => navigationStack.navigate("PageVerTudo", { text: "Herois" })}>
+                                        <Text style={styles.buttonTudo}>Ver Tudo</Text>
+                                    </Pressable>
+                                </View>
+                                <FlatList 
+                                    data={data.teste} 
+                                    keyExtractor={(_,index) => index.toString()}
+                                    horizontal
+                                    snapToInterval={160}
+                                    onContentSizeChange={(w: number, h: number) => {w = 180, h = 250}}
+                                    showsHorizontalScrollIndicator={false}
+                                    contentContainerStyle={{ paddingLeft: 20, paddingBottom: 30, paddingRight: 20}}
+                                    renderItem={({ item }) => (
+                                        <ItemPersonagensBack 
+                                            data={item}
+                                            vertical
+                                            navig={() => navigationStack.navigate("PagePerso", { data: item })} 
+                                        />
+                                    )}
+                                />
+                            </View>
+
+                            {/* <LinearGradient end={[ 1,0 ]} colors={[ theme.colors.complementar, "#8A69DB" ]} style={{ borderRadius: 18 }} > 
+                                <Animated.FlatList 
+                                    data={dataHeroi?.slice(0,5)}
+                                    keyExtractor={(_,i) => i.toString()}
+                                    horizontal
+                                    contentContainerStyle={{ alignItems: 'center', paddingHorizontal: 44 }}
+                                    showsHorizontalScrollIndicator={false}
+                                    scrollEventThrottle={16}
+                                    decelerationRate={1}
+                                    snapToInterval={item_size}
+                                    onScroll={Animated.event(
+                                        [{ nativeEvent: { contentOffset: { x: scrollX } } }],
+                                        { useNativeDriver: true }
+                                    )}
+                                    renderItem={({item, index}) => {
+
+                                        const inputRange = [
+                                            (index - 1) * (item_size),
+                                            index * (item_size),
+                                            (index + 1) * (item_size),
+                                        ];
+                                        const translateY = scrollX.interpolate({
+                                            inputRange,
+                                            outputRange: [-20, 0, -20]
+                                        })
+                                        const scale = scrollX.interpolate({
+                                            inputRange,
+                                            outputRange: [.8, 1, .8]
+                                        })
+                                    
+                                        return(
+                                            <Animated.View style={{ transform: [{ scale }], width: item_size, alignItems: 'center',  }}>
+                                                <ItemPersonagens 
+                                                    data={item}
+                                                    navig={() => OpenModal(item)}
+                                                />
+                                            </Animated.View>
+                                        )
+                                    }}
+                                />
+                            </LinearGradient> */}
 
                         </View>
                     </ScrollView>
                 }
-            <Modalize
-                ref={modalTeste}
-                modalHeight={height}
-                useNativeDriver={true}
-                disableScrollIfPossible={true}
-                scrollViewProps={{
-                    scrollEnabled: undefined,
-                    showsVerticalScrollIndicator: false,
-                }}
-                handlePosition='inside'
-            >
-                <ModalPerso
-                    // @ts-ignore
-                    data={dataItem}
-                    close={() => modalTeste.current?.close()}
-                />
-            </Modalize>
         </>
     );
 }

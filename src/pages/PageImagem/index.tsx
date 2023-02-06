@@ -119,14 +119,14 @@ export function PageImagem() {
                 <View style={{ paddingHorizontal: 20 }}>
                     <View style={{ alignItems: "center" }}>
                         <View>
-                            <Text style={styles.titulo}>{data.desc}</Text>
+                            {data.titulo != "" ? <Text style={styles.titulo}>{data.titulo}</Text> : null}
                             <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 10 }}>
                                 {data.tags.map((item, index) => (
                                     <Text key={index} style={styles.tags}>#{item}</Text>
                                 ))}
                             </View>
                         </View>
-                        <Text style={styles.desc}>{data.desc}</Text>
+                        {data.desc != "" ? <Text style={styles.desc}>{data.desc}</Text> : null}
                     </View>
                 </View>
                 <View style={styles.container}>

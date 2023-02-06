@@ -7,7 +7,7 @@ export const stylesItensBack = StyleSheet.create({
     container: {
         height: 250, 
         width: 160,
-        borderRadius: 20, 
+        borderRadius: 10, 
         marginRight: 10, 
     },
 
@@ -15,7 +15,7 @@ export const stylesItensBack = StyleSheet.create({
         height: 250, 
         width: 160,
         elevation: 15,
-        borderRadius: 20, 
+        borderRadius: 10, 
         justifyContent: 'flex-end', 
     },
 
@@ -30,13 +30,13 @@ export const stylesItensBack = StyleSheet.create({
         width: '100%', 
         height: '100%',
         backgroundColor: 'transparent',
-        borderRadius: 20
+        borderRadius: 10
     }, 
 
     viewGradient: {
         width: '100%', 
         height: 180, 
-        borderRadius: 20,
+        borderRadius: 10,
         paddingLeft: 10, 
         paddingBottom: 20, 
         justifyContent: 'flex-end',
@@ -51,32 +51,6 @@ export const stylesItensBack = StyleSheet.create({
         fontFamily: theme.title, 
         fontSize: 22, 
         maxWidth: 150
-    }
-})
-
-export const stylesItensNoticias = StyleSheet.create({
-
-})
-export const stylesItensNoticias2 = StyleSheet.create({
-    container: {
-        width: 150, 
-        height: 350, 
-        marginRight: 20, 
-        borderRadius: 9, 
-        borderBottomWidth: .5, 
-        borderColor: theme.colors.regular
-    },
-
-    titulo: {
-        fontSize: 18, 
-        fontFamily: theme.title,
-        color: "#fff",
-    },
-
-    data: {
-        fontSize: 12, 
-        fontFamily: theme.text,
-        color: theme.colors.regularLight,
     }
 })
 
@@ -109,18 +83,16 @@ export const styles = StyleSheet.create({
 
     itens: { 
         width: 280,
-        // height: 280,
         paddingHorizontal: 40,
         paddingVertical: 40,  
         borderRadius: 30,
-        // marginHorizontal: 8,
-        elevation: 20,
+        elevation: 10,
     },
 
     logo: {
         width: 158, 
         height: 150, 
-        marginTop: -120,
+        marginTop: -110,
         left: 20, 
         zIndex: 1
     },
@@ -129,7 +101,7 @@ export const styles = StyleSheet.create({
         width: '100%', 
         height: 150, 
         position: 'absolute', 
-        top: -140, 
+        top: -130, 
         zIndex: 2
     },
 

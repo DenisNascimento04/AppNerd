@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
 
     contentModal: {
         width: '90%',
-        height: '50%',
+        height: '70%',
         backgroundColor: '#ffffff',
         elevation: 5,
         borderRadius: 20,

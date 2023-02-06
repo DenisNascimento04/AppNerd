@@ -1,10 +1,10 @@
 import { theme } from './../../themes/index';
 import { StyleSheet, Dimensions } from 'react-native';
 
-const { width, height } = Dimensions.get('window')
+const { width, height } = Dimensions.get('screen')
 
 export const styles = StyleSheet.create({
-    Modal: {
+        Modal: {
         width: width,
         height: height,
         position: 'absolute',
@@ -14,11 +14,11 @@ export const styles = StyleSheet.create({
     },
 
     contentModal: {
-        width: width,
-        height: height,
+        height: '80%',
         backgroundColor: theme.colors.contraste,
-        paddingHorizontal: 20,
-        paddingVertical: 10
+        paddingTop: 20,
+        paddingHorizontal: 30,
+        borderRadius: 40,
     },
 
     closedModal: {

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, Pressable, Image, Animated, Easing } from 'react-native';
-import LottieView from 'lottie-react-native';
-import { styles } from './styles';
 import Icons from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import { deleteFavoritos, setFavoritos } from '../../store';
 import { useDispatch } from 'react-redux';
-import { LinearGradient } from 'expo-linear-gradient';
-import { propsDrawer, propsStack } from '../../services/types';
+
+import { styles } from './styles';
+import { deleteFavoritos, setFavoritos } from '../../store';
+import { propsStack } from '../../services/types';
+import firebase from '../../serverData/connect';
 
 type PropsHeader = {
     title: string,
@@ -19,7 +19,7 @@ type PropsHeader = {
 }
 type PropsHeaderPage = {
     titulo: string,
-    id: string,
+    id: number,
     editora: string,
     stateFavorito: boolean,
     userLoading: boolean,
@@ -30,7 +30,6 @@ type PropsHeaderPage = {
 export function Header(props: PropsHeader){
 
     const navigation = useNavigation<propsStack>();
-    const navigationDrawer = useNavigation<propsDrawer>()
 
     return(
         <>
@@ -69,13 +68,13 @@ export function HeaderPage(props: PropsHeaderPage){
     const dispatch = useDispatch()
     const [buttomHeart, setButtomHeart] = useState(false);
 
-    function SetFavoritos(id: string) {
+    async function SetFavoritos(id: number) {
         if (props.userLoading) {
             setButtomHeart(true);
             dispatch(setFavoritos(id));
         }
     }
-    function DeleteFavoritos(id: string) {
+    async function DeleteFavoritos(id: number) {
         if (props.userLoading) {
             setButtomHeart(false);
             dispatch(deleteFavoritos(id));
@@ -84,7 +83,6 @@ export function HeaderPage(props: PropsHeaderPage){
 
     return(
         <View style={{ width: '100%', backgroundColor: 'transparent', marginBottom: 10, paddingHorizontal: 20, paddingVertical: 5, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-            
             {props.modal ? 
                 <Pressable style={styles.headerIcons} onPress={props.close}>
                     <Icons name='close' size={28} color='#000' />

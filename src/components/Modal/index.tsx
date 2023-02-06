@@ -9,13 +9,11 @@ const { height } = Dimensions.get('screen')
 
 type PropsModal = {
     show: boolean,
-    sign: boolean,
-    signIn: () => void,
-    signUp: () => void,
+    height?: number,
     children: ReactNode
 }
 
-export function ModalLogin (props: PropsModal){
+export function Modal (props: PropsModal){
 
     const [statusModal, setStatusModal] = useState({
         container: new Animated.Value(height),
@@ -64,32 +62,6 @@ export function ModalLogin (props: PropsModal){
                 ]
             }]}
             >
-                <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginHorizontal: 95, marginBottom: 10 }}>
-                    <Pressable onPress={props.signIn} style={{ }}>
-                        <Text style={{ 
-                            fontFamily: theme.title, 
-                            fontSize: 20, 
-                            paddingBottom: 2, 
-                            color: props.sign ? theme.colors.destaque : "#C8C8C8", 
-                            borderBottomWidth: props.sign ? 2.5 : 0, 
-                            borderColor: props.sign ? theme.colors.destaque : "#C8C8C8"
-                        }} >
-                            Sign In
-                        </Text>
-                    </Pressable>
-                    <Text style={{ fontSize: 20, marginHorizontal: 15, color: "#C8C8C8", fontFamily: theme.title }}>|</Text>
-                    <Pressable onPress={props.signUp}>
-                        <Text style={{ 
-                            fontSize: 20, 
-                            fontFamily: theme.title,
-                            color: !props.sign ? theme.colors.destaque : "#C8C8C8", 
-                            borderBottomWidth: !props.sign ? 2.5 : 0, 
-                            borderColor: !props.sign ? theme.colors.destaque : "#C8C8C8" 
-                        }} >
-                            Sign Up
-                        </Text>
-                    </Pressable>
-                </View>
                 {props.children}
             </Animated.View>
         </Animated.View>

@@ -1,6 +1,6 @@
 {
 	"Estrututa": {
-		"scope": "typescript",
+		"scope": "typescriptreact, javascript, typescript",
 		"prefix": "newPage",
 		"body": [
 			"import React from 'react';",

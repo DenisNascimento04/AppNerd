@@ -1,5 +1,8 @@
+import { Dimensions } from 'react-native';
 import { StyleSheet } from 'react-native';
 import { theme } from '../../themes';
+
+const { width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
     flatList: {
@@ -7,16 +10,17 @@ export const styles = StyleSheet.create({
         width: '100%', 
         alignItems: 'center', 
         justifyContent: 'space-between', 
-        paddingHorizontal: 20, 
-        marginBottom: 20
+        paddingHorizontal: 16, 
+        marginBottom: 8
     },
 
     header: {
+        width: width,
         backgroundColor: "transparent", 
         flexDirection: 'row', 
-        alignItems: 'center', 
-        marginHorizontal: 20, 
-        paddingBottom: 20,
+        alignItems: 'center',
+        marginHorizontal: 16,
+        paddingBottom: 16,
         paddingTop: 20
     },
     titleHeader: {
@@ -27,10 +31,9 @@ export const styles = StyleSheet.create({
 
     viewInput: {
         backgroundColor: theme.colors.contraste, 
-        flexDirection: 'row',
-        width: 300, 
+        flexDirection: 'row', 
         justifyContent: 'center',  
-        borderRadius: 50,
+        borderRadius: 8,
     },
 
     buttonInput: {
@@ -42,9 +45,10 @@ export const styles = StyleSheet.create({
     },
     
     title: {
-        fontSize: 20,
-        fontFamily: theme.textItalic,
-        color: theme.colors.contraste
+        fontSize: 18,
+        fontFamily: theme.title,
+        color: theme.colors.contraste,
+        marginBottom: 4
     },
 
     buttonTudo: {

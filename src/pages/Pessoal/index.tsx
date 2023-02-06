@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { View, Dimensions, KeyboardAvoidingView, Image, Pressable, Text, TouchableOpacity, ActivityIndicator, TextInput } from 'react-native';
 import Icons from 'react-native-vector-icons/Ionicons';
+import { MaterialIcons, Ionicons } from '@expo/vector-icons';
 import { Avatar } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
@@ -79,7 +80,6 @@ export function Pessoal(){
     }
 
     async function Verificar({email,nome,senha,imagePerfil, favoritos}: PropsPerfil, 
-        sobrenome: string,
         estado: string, 
         confSenha: string
     ) {
@@ -185,24 +185,21 @@ export function Pessoal(){
     if (statusLogin) { 
         return(
             <View style={{ flex: 1, backgroundColor: theme.colors.fundo }}>
-                <View style={{ 
-                    backgroundColor: theme.colors.destaque, 
-                    paddingTop: 40, 
-                    paddingBottom: 10, 
-                    width: width,
-                    borderBottomLeftRadius: 20,
-                    borderBottomRightRadius: 20 
-                }}>
+                <View style={stylesPerfil.headerPerfil}>
                     <Avatar
-                        size={110}
+                        size={90}
                         rounded
                         source={{ uri: usuario.imagePerfil }}
                         containerStyle={{ backgroundColor: theme.colors.contraste, padding: 2 }}
                     />
                     <View style={stylesPerfil.viewNome}>
-                        <Text style={stylesPerfil.textHeaderOpacity}>Bem-Vindo</Text>
                         <Text style={stylesPerfil.textHeader}>{usuario.nome}</Text>
+                        <Text style={stylesPerfil.textHeaderOpacity}>{usuario.email}</Text>
                     </View>
+
+                    <Pressable style={{  marginLeft: 70 }}>
+                        <Ionicons name='settings' size={26} color={theme.colors.contraste} />
+                    </Pressable>
                     
                 </View>    
                 <View style={{ flex: 1, paddingTop: 10 }}>
@@ -210,24 +207,24 @@ export function Pessoal(){
                         onPress={() => navigation.navigate("PageLista")} 
                         style={stylesPerfil.buttons}
                     >
-                        <Icons name='list-circle' size={26} color={theme.colors.fundo} />
+                        <Icons name='list-circle' size={26} color={theme.colors.contraste} />
                         <Text style={stylesPerfil.textButtons} >Minha Lista</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={stylesPerfil.buttons}>
-                        <Icons name='person' size={26} color={theme.colors.fundo} />
+                        <Icons name='person' size={26} color={theme.colors.contraste} />
                         <Text style={stylesPerfil.textButtons} >Pessoal</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={stylesPerfil.buttons}>
-                        <Icons name='settings' size={26} color={theme.colors.fundo} />
+                        <Icons name='settings' size={26} color={theme.colors.contraste} />
                         <Text style={stylesPerfil.textButtons} >Configurações</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={stylesPerfil.buttons}>
-                        <Icons name='alert-circle' size={26} color={theme.colors.fundo} />
+                        <Icons name='alert-circle' size={26} color={theme.colors.contraste} />
                         <Text style={stylesPerfil.textButtons} >Sobre</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => Logout()} style={stylesPerfil.buttons}>
-                        <Icons name='log-out' size={26} color={theme.colors.fundo} />
+                        <Icons name='log-out' size={26} color={theme.colors.contraste} />
                         <Text style={stylesPerfil.textButtons} >Sair</Text>
                     </TouchableOpacity>
                 </View>
@@ -236,7 +233,7 @@ export function Pessoal(){
     }else{
 
         return(
-            <KeyboardAvoidingView behavior='height' style={stylesLogin.container}>
+            <View style={stylesLogin.container}>
                 <StatusBar style='light' backgroundColor={theme.colors.fundo}/>
                 <View style={{ width: "100%", height: "100%" }}>
                     <Image 
@@ -244,9 +241,6 @@ export function Pessoal(){
                         style={{ width: "100%", height: "100%", position: 'absolute', zIndex: -999 }}
                     />
                     <View style={{ width: "100%", height: "100%", alignItems: 'center', justifyContent: 'center', backgroundColor: "rgba(0, 0, 0,.6)" }}>
-                        <Pressable onPress={() => navigation.goBack()} style={{ position: 'absolute', top: 40, left: 10 }}>
-                            <Icons name="chevron-back" size={32} color="#fff" />
-                        </Pressable>
                         <Text style={stylesLogin.title}>Mundo {'\n'} Nerd</Text>
                         <TouchableOpacity onPress={() => {setStatusModal(true), setSing(true)}} style={[stylesLogin.botoes,{ backgroundColor: theme.colors.lightBold }]}>
                             <Text style={{ color: "#fff", fontSize: 18 }} >Sign In</Text>
@@ -264,32 +258,40 @@ export function Pessoal(){
                         />
                     </View>
                 : null}
-                {/* <KeyboardAvoidingView></KeyboardAvoidingView> */}
                 <ModalLogin 
                     show={statusModal} 
                     sign={sign} 
                     signIn={() => setSing(true)}
                     signUp={() => setSing(false)}
                 >
-                    <View style={{ flex: 1, paddingTop: 20, paddingBottom: 40 }}>
+                    <KeyboardAvoidingView behavior='padding'  style={{ paddingTop: 10 }}>
                         {sign ? 
                             <>
+                                <View style={{ width: '100%', alignItems: 'center' }}>
+                                    <View style={{ width: 90, height: 90, backgroundColor: "#585858" }} />
+                                </View>
                                 <View>
                                     <Text style={stylesLogin.labels}>Email:</Text>
-                                    <TextInput 
-                                        style={stylesLogin.inputs} 
-                                        placeholder=''
-                                        placeholderTextColor='#858383'
-                                        onChangeText={(text) => setEmail(text)}
-                                    />
+                                    <View style={stylesLogin.inputs}>
+                                        <MaterialIcons name='email' size={20} color={theme.colors.destaque} />
+                                        <TextInput 
+                                            style={{ marginLeft: 5, width: "100%" }}
+                                            placeholder='Ex: tony_man@gmaisl.com.br'
+                                            placeholderTextColor='#858383'
+                                            onChangeText={(text) => setEmail(text)}
+                                        />
+                                    </View>
                                     <Text style={[stylesLogin.labels,{ marginTop: 20 }]}>Senha:</Text>
-                                    <TextInput 
-                                        style={stylesLogin.inputs}
-                                        secureTextEntry
-                                        placeholder=''
-                                        placeholderTextColor='#858383'
-                                        onChangeText={(text) => setSenha(text)}
-                                    />
+                                    <View style={stylesLogin.inputs}>
+                                        <MaterialIcons name='lock' size={20} color={theme.colors.destaque} />
+                                        <TextInput
+                                            style={{ marginLeft: 5, width: "100%" }} 
+                                            secureTextEntry
+                                            placeholder='*********'
+                                            placeholderTextColor='#858383'
+                                            onChangeText={(text) => setSenha(text)}
+                                        />
+                                    </View>
                                 </View>
                                 {error ? <Text style={{ color: 'red' }}>{textErro}</Text> : null}
                                 <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginTop: 30 }}>
@@ -303,7 +305,7 @@ export function Pessoal(){
                                             imagePerfil: imageP, 
                                             nome: nome, 
                                             favoritos: [] 
-                                        }, sobrenome, "login", confSenha)} 
+                                        }, "login", confSenha)} 
                                         style={[ stylesLogin.buttons, { backgroundColor: theme.colors.destaque }]}
                                     >
                                         <Text style={{ color: "#fff" }}>Login</Text>
@@ -327,43 +329,46 @@ export function Pessoal(){
                                             />
                                         </Avatar>
                                     </View>
-                                    <Text style={stylesLogin.labels}>Nome:</Text>
-                                    <TextInput 
-                                        style={stylesLogin.inputs} 
-                                        placeholder=''
-                                        placeholderTextColor='#858383'
-                                        onChangeText={(text) => setNome(text)}
-                                    />
-                                    <Text style={[stylesLogin.labels,{ marginTop: 20 }]}>Sobrenome:</Text>
-                                    <TextInput 
-                                        style={stylesLogin.inputs}
-                                        placeholder=''
-                                        placeholderTextColor='#858383'
-                                        onChangeText={(text) => setSobrenome(text)}
-                                    />
+                                    <Text style={stylesLogin.labels}>Nome e sobrenome:</Text>
+                                    <View style={stylesLogin.inputs}>
+                                        <MaterialIcons name='person' size={20} color={theme.colors.destaque} />
+                                        <TextInput 
+                                            style={{ marginLeft: 5, width: "100%" }}
+                                            placeholder='Ex: Ana Maria'
+                                            placeholderTextColor='#858383'
+                                            onChangeText={(text) => setNome(text)}
+                                        />
+                                    </View>
                                     <Text style={[stylesLogin.labels,{ marginTop: 20 }]}>Email:</Text>
-                                    <TextInput 
-                                        style={stylesLogin.inputs}
-                                        placeholder=''
-                                        placeholderTextColor='#858383'
-                                        onChangeText={(text) => setEmail(text)}
-                                    />
+                                    <View style={stylesLogin.inputs}>
+                                        <MaterialIcons name='email' size={20} color={theme.colors.destaque} />
+                                        <TextInput 
+                                            style={{ marginLeft: 5, width: "100%" }}
+                                            placeholder='Ex: tony_man@gmaisl.com.br'
+                                            placeholderTextColor='#858383'
+                                            onChangeText={(text) => setEmail(text)}
+                                        />
+                                    </View>
                                     <Text style={[stylesLogin.labels,{ marginTop: 20 }]}>Senha:</Text>
-                                    <TextInput 
-                                        style={stylesLogin.inputs}
-                                        secureTextEntry
-                                        placeholder=''
-                                        placeholderTextColor='#858383'
-                                        onChangeText={(text) => setSenha(text)}
-                                    />
+                                    <View style={stylesLogin.inputs}>
+                                        <MaterialIcons name='lock-outline' size={20} color={theme.colors.destaque} />
+                                        <TextInput 
+                                            style={{ marginLeft: 5, width: "100%" }}
+                                            placeholder='*******'
+                                            placeholderTextColor='#858383'
+                                            onChangeText={(text) => setSenha(text)}
+                                        />
+                                    </View>
                                     <Text style={[stylesLogin.labels,{ marginTop: 20 }]}>Confirmar Senha:</Text>
-                                    <TextInput 
-                                        style={stylesLogin.inputs}
-                                        secureTextEntry
-                                        placeholder=''
-                                        placeholderTextColor='#858383'
-                                        onChangeText={(text) => setConfSenha(text)}
-                                    />
+                                    <View style={stylesLogin.inputs}>
+                                        <MaterialIcons name='lock-outline' size={20} color={theme.colors.destaque} />
+                                        <TextInput 
+                                            style={{ marginLeft: 5, width: "100%" }}
+                                            placeholder='*******'
+                                            placeholderTextColor='#858383'
+                                            onChangeText={(text) => setConfSenha(text)}
+                                        />
+                                    </View>
                                 </View>
                                 <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginTop: 30 }}>
                                     <Pressable onPress={() => setStatusModal(false)} style={[ stylesLogin.buttons, { backgroundColor: theme.colors.fundo } ]}>
@@ -375,13 +380,13 @@ export function Pessoal(){
                                                 imagePerfil: imageP, 
                                                 nome: nome, 
                                                 favoritos: [] 
-                                            }, sobrenome, "cadastro", confSenha )} style={[ stylesLogin.buttons, { backgroundColor: theme.colors.destaque } ]}>
+                                            }, "cadastro", confSenha )} style={[ stylesLogin.buttons, { backgroundColor: theme.colors.destaque } ]}>
                                         <Text style={{ color: "#fff" }}>Cadastrar</Text>
                                     </Pressable>
                                 </View>
                             </>
                         }
-                    </View>
+                    </KeyboardAvoidingView>
                 </ModalLogin>
                 <ModalAvatarPerfil show={setarPerfilModal} close={() => setSetarPerfilModal(!setarPerfilModal)}>
                     <View>
@@ -390,7 +395,7 @@ export function Pessoal(){
                             keyExtractor={(_,i) => i.toString()}
                             horizontal
                             renderItem={({ item }) => (
-                                <Pressable onPress={() => setImageP(item.perfil)} style={{ marginRight: 10 }}>
+                                <Pressable onPress={() => {setImageP(item.perfil),setSetarPerfilModal(!setarPerfilModal)}} style={{ marginRight: 10 }}>
                                     <Image 
                                         source={{ uri: item.perfil }} 
                                         style={{ width: 60, height: 60, borderRadius: 30 }} 
@@ -400,7 +405,7 @@ export function Pessoal(){
                         />
                     </View>
                 </ModalAvatarPerfil>
-            </KeyboardAvoidingView>
+            </View>
         );
     }
 

@@ -1,50 +1,46 @@
 import { StyleSheet } from 'react-native';
+import { theme } from '../../themes';
 
 export const styles = StyleSheet.create({
-
-    header: {
-        alignItems: 'center', 
-        paddingBottom: 10, 
-        paddingTop: 20,
-        borderBottomLeftRadius: 25,
-        borderBottomRightRadius: 25, 
-        position: 'absolute',
-        overflow: 'hidden',
-        left: 0,
-        right: 0,
-        top: 0,
-        // zIndex: -1
+    title: {
+        fontFamily: theme.title,
+        fontSize: 18,
+        color: theme.colors.contraste,
+        marginBottom: 6
     },
 
-    titles: {
-        fontSize: 20, 
-        fontWeight: '700', 
-        marginBottom: 5,
-        marginTop: 20,
-    },
-
-    image: {
-        // left: 35,
-        width: 230, 
-        height: 220, 
-    },
-    dadosHeader: {
-        flexDirection: 'row', 
-        marginTop: 65,
-        // marginBottom: 5, 
-        justifyContent: 'space-evenly', 
-        width: '100%'
-    },
-
-    titledDados: {
-        color: '#fff',
-        fontSize: 16,
-        fontWeight: '700'
-    },
-
-    textDados: {
-        color: '#fff',
+    text: {
+        fontFamily: theme.text,
         fontSize: 14,
-        textAlign: 'center'
+        lineHeight: 18,
+        marginBottom: 6,
+        color: theme.colors.contraste,
+        textAlign: 'justify'
+    },
+
+    barTools: {
+        flexDirection: 'row',  
+        marginTop: 16, 
+        justifyContent: 'space-around'
+    },
+
+    viewPoderes: {
+        flexDirection: 'row', 
+        backgroundColor: "#E4E3E2", 
+        alignItems: 'center', 
+        marginBottom: 5, 
+        paddingVertical: 10, 
+        paddingHorizontal: 5, 
+        borderRadius: 5,
+        zIndex: 1 
+    },
+    viewPoderesDesc: {
+        position: 'absolute', 
+        width: "100%", 
+        backgroundColor: theme.colors.light,
+        borderRadius: 5, 
+        paddingHorizontal: 5, 
+        paddingVertical: 12,
+        zIndex: 0 
     },
 });

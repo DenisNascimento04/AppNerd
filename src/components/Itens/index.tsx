@@ -4,8 +4,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native'; 
 import Icons from 'react-native-vector-icons/Ionicons';
 
-import { stylesItensBack, styles, stylesItensNoticias2, stylesItensQuadrinhos } from './styles';
-import { PropsItem, PropsItemBack, PropsItensNoticias, PropsItensPersonagensPadrao, PropsItensQuadrinhos, propsStack } from '../../services/types';
+import { stylesItensBack, styles, stylesItensQuadrinhos } from './styles';
+import { PropsItem, PropsItemBack, PropsItensPersonagensPadrao, PropsItensQuadrinhos, propsStack } from '../../services/types';
 import { theme } from '../../themes';
 
 const { width } = Dimensions.get('screen')
@@ -14,7 +14,7 @@ export function ItemPersonagens(props: PropsItem){
 
     return(
         <View style={{ }}>
-            <Pressable onPress={props.navig} style={{ paddingTop: 100, marginBottom: 50 }} key={props.data.id}>
+            <Pressable onPress={props.navig} style={{ paddingTop: 80, marginBottom: 14 }} key={props.data.id}>
                 {props.data.estilo === "padrão" ? 
                     <View style={[styles.itens, {backgroundColor: props.data.corPri, shadowColor: props.data.corPri}]}>
                         {props.data.logo != "" ? 
@@ -86,7 +86,7 @@ export function ItemPersonagensBack(props: PropsItemBack){
                             <View style={[stylesItensBack.content, { shadowColor: props.data.corPri === "#000" ? "#B0AEB1" : props.data.corPri }]}>
                                 <Image 
                                     onLoadEnd={() => setStatus(false)} 
-                                    source={{ uri: props.data.imagens[2] }} 
+                                    source={{ uri: props.data.imagens[0] }} 
                                     borderRadius={20} 
                                     style={stylesItensBack.styleImageBack} 
                                 />
@@ -153,108 +153,6 @@ export function ItensQuadrinhos({ data, navig }: PropsItensQuadrinhos) {
                         </View>
                     </View>
                 </View>
-            </View>
-        </Pressable>
-    );
-}
-
-export function ItensNoticias(props: PropsItensNoticias) {
-    return (
-        <>
-            {props.small ? 
-                <Pressable onPress={() => {}} style={{ marginBottom: 10, elevation: 8}}>
-                    <ImageBackground 
-                        source={{ uri: props.data.thamb }} 
-                        style={{ width: 340, height: 220, justifyContent: 'flex-end', overflow: 'hidden' }}
-                        borderRadius={8}
-                    >
-                        <Text style={{ color: '#fff', backgroundColor: '#880808', padding: 5, top: 15, left: 20, borderRadius: 5, fontSize: 13, position: 'absolute' }}>Filmes</Text>
-                        <LinearGradient colors={['transparent','#000']} style={{ width: 340, height: 120, justifyContent: 'flex-end', paddingBottom: 10, borderRadius: 8 }}>
-                            <View style={{ width: 340, paddingHorizontal: 30, marginBottom: 10, }}>
-                                <Text style={{ fontSize: 16, fontFamily: theme.title, color: '#fff'  }}>{ props.data.titulo }</Text>
-                                <Text style={{ color: '#585858' }}>7 horas atrás</Text>
-                            </View>
-                        </LinearGradient>
-                    </ImageBackground>
-                </Pressable>
-            :
-                <Pressable onPress={() => {}} style={{ marginBottom: 10, elevation: 8}}>
-                    <ImageBackground 
-                        source={{ uri: props.data.thamb }} 
-                        style={{ width: width, height: 300, justifyContent: 'flex-end' }}
-                    >
-                        <Text style={{ color: '#fff', backgroundColor: '#880808', padding: 5, top: 15, left: 20, borderRadius: 5, fontSize: 13, position: 'absolute' }}>Filmes</Text>
-                        <LinearGradient colors={['transparent','#000']} style={{ width: width, height: 120, justifyContent: 'flex-end', paddingBottom: 10 }}>
-                            <View style={{ width: width, paddingHorizontal: 30, marginBottom: 10, }}>
-                                <Text style={{ fontSize: 18, fontFamily: theme.title, color: '#fff'  }}>{ props.data.titulo }</Text>
-                                <Text style={{ color: '#585858' }}>7 horas atrás</Text>
-                            </View>
-                        </LinearGradient>
-                    </ImageBackground>
-                </Pressable>
-            }
-        </>
-    );
-}
-
-export function ItensNoticias2(props: PropsItensNoticias) {
-
-    const data = props.data.data;
-    const DH = new Date(data);
-
-    const definirTempoData = () => {
-        const atual = new Date();
-        if ((atual.getDate() - DH.getDate() === 0)) {
-            const t = atual.getHours().valueOf() - DH.getHours().valueOf();
-            return "Publicado a " + t.toString() + " horas";
-        }else{
-            if (DH.getMonth().valueOf()+1 === atual.getMonth().valueOf()+1) {
-                const t = atual.getDate() - DH.getDate();
-                return "Publicado a " + t.toString() + " dias";
-            }
-        }
-        switch (DH.getMonth().valueOf()+1) {
-            case 1:
-                return "Publicado em " + DH.getDate() + " janeiro, " + DH.getFullYear()
-            case 2:
-                return "Publicado em " + DH.getDate() + " fevereiro, " + DH.getFullYear()
-            case 3:
-                return "Publicado em " + DH.getDate() + " março, " + DH.getFullYear()
-            case 4:
-                return "Publicado em " + DH.getDate() + " Aabril, " + DH.getFullYear()
-            case 5:
-                return "Publicado em " + DH.getDate() + " maio, " + DH.getFullYear()
-            case 6:
-                return "Publicado em " + DH.getDate() + " junho, " + DH.getFullYear()
-            case 7:
-                return "Publicado em " + DH.getDate() + " julho, " + DH.getFullYear()
-            case 8:
-                return "Publicado em " + DH.getDate() + " agosto, " + DH.getFullYear()
-            case 9:
-                return "Publicado em " + DH.getDate() + " setembro, " + DH.getFullYear()
-            case 10:
-                return "Publicado em " + DH.getDate() + " outubro, " + DH.getFullYear()
-            case 11:
-                return "Publicado em " + DH.getDate() + " novembro, " + DH.getFullYear()
-            case 12:
-                return "Publicado em " + DH.getDate() + " dezembro, " + DH.getFullYear()
-        
-            default:
-                break;
-        }
-        
-    }
-
-    const date = definirTempoData();
-
-    const navigation = useNavigation<propsStack>();
-
-    return(
-        <Pressable onPress={() => navigation.navigate("PageNoticia", {data: props.data})} style={stylesItensNoticias2.container}>
-            <Image source={{ uri: props.data.thamb }} style={{ width: '100%', height: 200 }} borderRadius={8} />
-            <View style={{ padding: 5 }}>
-                <Text style={stylesItensNoticias2.titulo}>{props.data.titulo}</Text>
-                <Text style={stylesItensNoticias2.data}>{date}</Text>
             </View>
         </Pressable>
     );

@@ -33,7 +33,10 @@ export const stylesLogin = StyleSheet.create({
     },
 
     inputs: {
-        backgroundColor: "rgba(58,58,58,0.4)", 
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: theme.colors.fundo, 
         borderRadius: 5, 
         padding: 3
     },
@@ -56,6 +59,18 @@ export const stylesPerfil = StyleSheet.create({
         justifyContent: 'space-between'
     },
 
+    headerPerfil: {
+        backgroundColor: theme.colors.destaque, 
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingLeft: 30,
+        paddingTop: 40, 
+        width: width,
+        height: 200,
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20 
+    },
+
     viewImage: {
         width: '100%',
         alignItems: 'center',
@@ -64,10 +79,7 @@ export const stylesPerfil = StyleSheet.create({
     },
 
     viewNome: {
-        width: '100%', 
-        alignItems: 'center', 
-        justifyContent: 'center', 
-        marginBottom: 30
+        marginLeft: 10
     },
 
     info: {
@@ -95,9 +107,9 @@ export const stylesPerfil = StyleSheet.create({
         alignItems: 'center'
     },
     textButtons: {
-        color: theme.colors.fundo,
+        color: theme.colors.contraste,
         fontFamily: theme.text,
         fontSize: 14,
-        marginLeft: 5
+        marginLeft: 7
     },
 });

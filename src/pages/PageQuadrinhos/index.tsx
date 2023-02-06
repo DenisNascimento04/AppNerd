@@ -203,24 +203,7 @@ export function PageQuadrinhos() {
                         </View>
                         <View style={{ marginVertical: 5 }}>
                             <Text style={styles.contentTitulo}>Fotos</Text>
-                            <Carousel 
-                                data={data.imagens}
-                                layout={'stack'}
-                                sliderWidth={width-20}
-                                firstItem={2}
-                                inactiveSlideOpacity={1}
-                                itemWidth={width-100}
-                                renderItem={({ item }) => (
-                                    <View>
-                                        <Image 
-                                            // @ts-ignore
-                                            source={{ uri: item }} 
-                                            borderRadius={10} 
-                                            style={{ width: 320, height: 220 }} 
-                                        />
-                                    </View>
-                                )}
-                            />
+                            
                         </View>
                     </View>
                 </Animated.ScrollView>

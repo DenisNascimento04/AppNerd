@@ -7,20 +7,15 @@ export const theme = {
         regularLight: "#737373",
         light: "#A6A6A6",
 
-        destaque: "#BF1744",
-        fundo: "#404040",
-        contraste: "#F2F2F2",
-        complementar: "#8AA6BF"
+        destaque: "#8785FF",
+        destaqueTabActi: "#6A68C5",
+        fundo: "#1C1F26",
+        contraste: "#EAEEF6",
+        complementar: "#89C3F9"
     },
-    // title: "Oswald_700Bold",
-    // text: "Oswald_400Regular",
 
     text: "Roboto_400Regular",
     title: "Roboto_700Bold",
     textItalic: "Roboto_500Medium_Italic",
     titleItalic: "Roboto_700Bold_Italic",
-
-    Comic700: "ComicNeue_700Bold",
-    Comic400: "ComicNeue_400Regular",
-    Comic300: "ComicNeue_300Light"
 }

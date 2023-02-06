@@ -20,11 +20,6 @@ const { height } = Dimensions.get('window');
 
 export default function App() {
   let [fontsLoaded] = useFonts({
-    ComicNeue_300Light, 
-    ComicNeue_400Regular, 
-    ComicNeue_700Bold,
-    Oswald_700Bold, 
-    Oswald_400Regular,
     Roboto_400Regular, 
     Roboto_700Bold,
     Roboto_100Thin_Italic,

@@ -16,6 +16,7 @@ const { width, height } = Dimensions.get('window');
 
 export function Loja(){
     const usuario = useSelector((state: RootState) => state.usuario)
+    const cart = useSelector((state: RootState) => state.cart)
     const navigation = useNavigation<propsStack>();
 
     const [text, setText] = useState("");
@@ -42,12 +43,19 @@ export function Loja(){
                             />
                         </View>
                     </View>
-                    <Pressable 
-                        style={{ backgroundColor: theme.colors.contraste, width: 42, height: 42, marginLeft: 15, elevation: 5, padding: 3, justifyContent: 'center', alignItems: 'center', borderRadius: 50 }} 
-                        onPress={() => {}}
-                    >
-                        <Ionicons name='cart' size={25} color={theme.colors.destaque} />
-                    </Pressable>
+                    <View>
+                        {cart.cart.length-1 != 0 ? 
+                            <View style={{ width: 20, height: 20, top: 20, left: 7, position: 'absolute', zIndex: 999, backgroundColor: theme.colors.destaque, borderRadius: 50, alignItems: 'center', justifyContent: 'center' }}>
+                                <Text style={{ color: theme.colors.contraste }}>{cart.cart.length-1}</Text>
+                            </View>
+                        : null}
+                        <Pressable 
+                            style={{ backgroundColor: theme.colors.contraste, width: 42, height: 42, marginLeft: 15, padding: 3, justifyContent: 'center', alignItems: 'center', borderRadius: 50 }} 
+                            onPress={() => navigation.navigate("Carrinho")}
+                        >
+                            <Ionicons name='cart' size={25} color={theme.colors.fundo} />
+                        </Pressable>
+                    </View>
                 </View>
             </View>
 

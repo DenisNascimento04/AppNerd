@@ -11,8 +11,7 @@ export type PropsRouteListTab = {
 export type PropsRouteListStack = {
     Larning: undefined,
     PagePerso: {
-        id: string, 
-        edit: string
+        data: PropsPerso 
     },
     PageQuadrinhos: {
         data: {
@@ -39,7 +38,8 @@ export type PropsRouteListStack = {
     PageNoticia: {
         data: PropsNoticias
     },
-    Produto: { data: PropsProdutos }
+    Produto: { data: PropsProdutos },
+    Carrinho: undefined,
     PageLista: undefined,
     PesquisarPerso: {text?: string},
     PageImagem: { data: PropsImagens }
@@ -48,6 +48,7 @@ export type PropsRouteListStack = {
 
 export type PropsImagens = {
     id: number,
+    titulo: string,
     desc: string,
     url: string,
     tags: string[]
